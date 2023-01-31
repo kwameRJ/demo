@@ -8,7 +8,7 @@ from st_aggrid.grid_options_builder import GridOptionsBuilder
 from streamlit_option_menu import option_menu
 import matplotlib.pyplot as plt
 import seaborn as sns
-import APS_CODE.aps_rf as model
+import aps_rf as model
 
 
 sns.set()
