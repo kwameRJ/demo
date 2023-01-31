@@ -1,0 +1,2 @@
+id,course_code,mid_score,mid_participation_score,mid_lab_score,final_grade,sex,age,address,Medu,Fedu,Mjob,Fjob,reason,guardian,traveltime,studytime,activities,higher,health,wassce,Predicted Grade
+RJD,CS102,5.0,,,nan,Male,17,Rural,Secondary Education,Secondary Education,At Home,At Home,Course,Father,1-15 Mins,< 2Hours,Yes,Yes,7,8,A

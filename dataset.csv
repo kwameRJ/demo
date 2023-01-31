@@ -1,0 +1,1001 @@
+id,course_code,mid_score,mid_participation_score,mid_lab_score,final_grade,sex,age,address,Medu,Fedu,Mjob,Fjob,reason,guardian,traveltime,studytime,activities,higher,health,wassce
+Stu0,UFS101,7.55,1.79,1.79,B,male,60,urban,primary education,none,health,other,course,other,30mins - 1 hour,5-10 hours,no,yes,2,34
+Stu1,CS103,6.19,0.86,3.49,A-,male,36,rural,junior high,none,at home,teacher,course,other,30mins - 1 hour,5-10 hours,yes,no,8,27
+Stu2,FRN101,15.02,1.74,4.59,A+,male,56,urban,secondary education,primary education,teacher,other,other,other,> 1hour,2-5 hours,no,yes,8,10
+Stu3,UFS101,4.18,0.18,1.25,C-,male,52,rural,junior high,higher education,teacher,other,other,father,1-15 mins,5-10 hours,yes,yes,2,14
+Stu4,CS103,16.4,3.95,3.35,A+,male,43,urban,junior high,higher education,other,teacher,reputation,father,> 1hour,2-5 hours,no,yes,8,12
+Stu5,FRN101,12.42,1.89,4.69,A+,female,49,rural,secondary education,junior high,at home,at home,reputation,other,> 1hour,2-5 hours,yes,no,1,29
+Stu6,UFS101,3.54,1.83,4.09,B+,female,23,rural,primary education,none,teacher,civil,reputation,father,> 1hour,2-5 hours,no,no,7,38
+Stu7,IT102,0.16,2.9,0.56,F,female,20,urban,higher education,secondary education,other,teacher,course,father,15-30 mins,< 2hours,no,no,5,25
+Stu8,CS103,14.78,0.66,0.37,A+,female,40,urban,none,higher education,at home,at home,reputation,father,15-30 mins,>10 hours,yes,no,1,43
+Stu9,UFS101,7.0,4.81,0.44,C,male,18,urban,none,secondary education,teacher,other,other,other,15-30 mins,< 2hours,yes,no,10,9
+Stu10,ENG101,17.05,2.91,2.03,A+,female,37,urban,secondary education,none,teacher,teacher,reputation,father,15-30 mins,< 2hours,yes,no,9,36
+Stu11,UFS101,0.92,3.13,0.26,F,male,51,rural,higher education,primary education,health,teacher,course,father,> 1hour,5-10 hours,yes,no,10,18
+Stu12,UFS101,14.49,3.85,4.8,A+,female,56,rural,higher education,none,other,teacher,course,mother,1-15 mins,>10 hours,no,yes,2,42
+Stu13,ENG101,9.19,2.35,0.52,B-,female,23,rural,junior high,secondary education,civil,other,reputation,father,30mins - 1 hour,2-5 hours,yes,yes,5,22
+Stu14,FRN101,2.7,0.32,4.24,B,female,24,urban,junior high,primary education,health,health,other,father,15-30 mins,>10 hours,yes,no,4,41
+Stu15,ENG101,6.8,3.14,1.95,B,male,52,urban,secondary education,junior high,at home,teacher,course,mother,> 1hour,5-10 hours,no,no,10,32
+Stu16,CS103,8.89,0.34,3.63,A+,male,56,urban,higher education,primary education,other,civil,reputation,mother,> 1hour,5-10 hours,yes,no,3,40
+Stu17,ENG101,9.33,4.13,2.86,A+,female,60,rural,none,higher education,health,health,course,other,> 1hour,< 2hours,no,no,5,46
+Stu18,CS102,16.72,4.31,4.18,A+,male,44,urban,none,secondary education,health,teacher,other,father,30mins - 1 hour,2-5 hours,yes,no,2,31
+Stu19,FRN101,17.43,3.98,4.13,A+,female,19,urban,junior high,junior high,health,teacher,other,father,15-30 mins,< 2hours,yes,yes,6,42
+Stu20,UFS101,3.87,0.42,0.73,E,female,25,rural,higher education,primary education,health,health,other,father,30mins - 1 hour,>10 hours,no,yes,3,30
+Stu21,ENG101,1.49,3.19,2.71,C-,male,57,rural,primary education,none,teacher,civil,course,other,> 1hour,2-5 hours,yes,yes,8,53
+Stu22,CS102,17.12,4.92,1.02,A+,male,58,urban,higher education,junior high,teacher,health,course,father,1-15 mins,< 2hours,no,no,8,19
+Stu23,ACCT101,8.39,1.63,4.81,A+,male,35,urban,higher education,none,at home,health,course,other,> 1hour,>10 hours,yes,no,10,17
+Stu24,FRN101,8.73,0.6,2.98,A+,male,56,rural,primary education,higher education,civil,other,course,father,30mins - 1 hour,>10 hours,no,yes,1,30
+Stu25,ENG101,10.48,3.34,0.61,B+,female,19,rural,primary education,secondary education,health,health,other,father,1-15 mins,< 2hours,yes,yes,2,52
+Stu26,ACCT101,1.27,4.7,0.72,F,male,18,rural,secondary education,junior high,other,health,reputation,mother,> 1hour,2-5 hours,yes,yes,4,13
+Stu27,FRN101,17.12,0.2,0.77,A+,male,31,rural,secondary education,none,at home,teacher,reputation,mother,15-30 mins,>10 hours,yes,no,1,35
+Stu28,FRN101,8.77,3.14,3.29,A+,female,49,rural,higher education,higher education,health,civil,course,father,> 1hour,< 2hours,no,yes,3,23
+Stu29,CS102,11.61,0.48,4.84,A+,female,22,urban,higher education,none,teacher,teacher,home,mother,15-30 mins,2-5 hours,yes,no,1,20
+Stu30,ACCT101,2.96,3.49,3.05,C+,female,24,urban,junior high,secondary education,at home,civil,home,other,15-30 mins,< 2hours,yes,yes,8,29
+Stu31,ACCT101,5.87,1.37,3.13,B+,male,38,urban,primary education,junior high,other,teacher,reputation,father,30mins - 1 hour,< 2hours,yes,no,10,19
+Stu32,ACCT101,2.35,3.99,3.27,C+,male,50,rural,higher education,junior high,at home,teacher,course,father,15-30 mins,< 2hours,no,no,8,19
+Stu33,ACCT101,3.11,4.46,4.88,A-,female,40,rural,primary education,junior high,civil,health,home,mother,> 1hour,< 2hours,yes,yes,2,48
+Stu34,FRN101,14.15,2.37,0.02,A,female,48,rural,junior high,higher education,health,civil,other,other,15-30 mins,< 2hours,yes,no,5,54
+Stu35,CS102,2.22,1.25,3.13,C,female,44,urban,higher education,higher education,health,teacher,course,father,1-15 mins,< 2hours,no,no,2,45
+Stu36,CS102,13.75,4.2,3.76,A+,male,30,rural,higher education,higher education,health,other,home,mother,1-15 mins,< 2hours,yes,no,3,36
+Stu37,UFS101,14.67,3.66,1.32,A+,male,40,rural,primary education,higher education,civil,other,course,father,> 1hour,>10 hours,yes,no,5,24
+Stu38,UFS101,1.15,4.16,2.29,D,female,19,urban,higher education,none,teacher,at home,course,mother,30mins - 1 hour,5-10 hours,yes,yes,6,45
+Stu39,ENG101,16.22,0.43,2.95,A+,female,60,rural,higher education,secondary education,at home,civil,other,mother,1-15 mins,>10 hours,yes,no,10,53
+Stu40,IT102,1.18,1.72,2.78,C-,female,43,urban,higher education,secondary education,health,teacher,reputation,father,30mins - 1 hour,>10 hours,no,yes,9,43
+Stu41,ACCT101,6.9,4.4,1.73,B-,male,19,urban,secondary education,primary education,other,at home,home,mother,15-30 mins,>10 hours,no,yes,2,23
+Stu42,ENG101,15.65,2.36,2.14,A+,female,17,rural,junior high,junior high,other,teacher,reputation,mother,> 1hour,2-5 hours,yes,yes,3,8
+Stu43,IT102,8.26,0.79,2.92,A,male,17,rural,primary education,secondary education,other,teacher,home,father,30mins - 1 hour,5-10 hours,yes,no,5,20
+Stu44,CS103,11.56,0.17,0.17,B+,female,43,rural,junior high,secondary education,health,health,other,mother,1-15 mins,5-10 hours,yes,yes,5,35
+Stu45,IT102,10.36,1.21,0.48,B,female,21,rural,secondary education,junior high,other,civil,home,mother,1-15 mins,>10 hours,yes,yes,10,23
+Stu46,IT102,14.79,4.12,2.07,A+,male,17,rural,higher education,none,health,teacher,home,father,> 1hour,5-10 hours,yes,yes,9,32
+Stu47,ACCT101,13.64,2.19,0.29,A,male,19,urban,secondary education,junior high,civil,other,reputation,mother,1-15 mins,2-5 hours,no,no,7,35
+Stu48,ACCT101,6.43,3.15,2.94,B+,male,21,urban,junior high,higher education,health,at home,other,father,1-15 mins,< 2hours,no,no,7,12
+Stu49,CS103,9.59,3.5,4.94,A+,male,44,rural,higher education,secondary education,other,teacher,other,mother,30mins - 1 hour,>10 hours,no,yes,7,42
+Stu50,CS103,13.94,1.04,4.39,A+,female,42,rural,higher education,higher education,teacher,health,home,mother,1-15 mins,5-10 hours,no,no,6,52
+Stu51,UFS101,4.87,1.36,0.57,D,male,31,urban,secondary education,primary education,civil,other,other,father,> 1hour,5-10 hours,yes,no,8,47
+Stu52,ACCT101,15.16,3.36,4.54,A+,female,36,rural,primary education,secondary education,teacher,at home,home,other,> 1hour,>10 hours,yes,no,6,41
+Stu53,UFS101,7.13,1.47,3.76,A+,male,40,urban,none,none,civil,civil,home,other,15-30 mins,< 2hours,yes,yes,4,18
+Stu54,CS102,1.98,2.7,1.83,D,male,34,rural,junior high,primary education,health,at home,other,other,> 1hour,< 2hours,no,no,2,36
+Stu55,ENG101,4.02,0.47,1.05,D,female,51,rural,junior high,higher education,teacher,civil,reputation,mother,1-15 mins,>10 hours,no,no,7,24
+Stu56,UFS101,17.49,2.58,3.66,A+,male,20,urban,none,primary education,other,health,home,other,> 1hour,2-5 hours,no,no,5,40
+Stu57,ENG101,5.32,0.18,1.87,C+,female,21,urban,junior high,secondary education,civil,other,course,other,15-30 mins,5-10 hours,no,yes,5,53
+Stu58,ACCT101,2.97,2.4,4.46,B+,male,54,rural,junior high,higher education,other,teacher,reputation,other,1-15 mins,5-10 hours,yes,yes,5,8
+Stu59,IT102,9.61,4.09,0.34,B-,male,38,rural,higher education,primary education,at home,other,course,other,30mins - 1 hour,>10 hours,yes,no,9,41
+Stu60,ACCT101,12.12,0.66,3.79,A+,male,26,rural,secondary education,secondary education,civil,health,other,mother,30mins - 1 hour,>10 hours,no,no,1,31
+Stu61,UFS101,14.03,4.98,3.1,A+,female,24,urban,none,none,other,teacher,other,father,1-15 mins,< 2hours,no,yes,2,8
+Stu62,FRN101,6.22,4.76,0.29,C-,female,54,urban,higher education,primary education,civil,at home,reputation,other,1-15 mins,5-10 hours,no,no,7,25
+Stu63,FRN101,1.77,4.3,0.07,F,female,30,urban,primary education,none,at home,at home,home,mother,15-30 mins,>10 hours,yes,yes,9,46
+Stu64,IT102,12.53,4.79,0.82,A,female,30,rural,junior high,junior high,teacher,other,other,other,> 1hour,< 2hours,yes,yes,3,29
+Stu65,IT102,15.22,1.98,0.53,A+,male,23,rural,secondary education,none,health,at home,other,other,15-30 mins,2-5 hours,yes,yes,10,50
+Stu66,CS102,14.87,3.26,3.03,A+,female,40,urban,higher education,secondary education,at home,health,course,mother,30mins - 1 hour,< 2hours,no,yes,8,27
+Stu67,UFS101,4.22,4.4,2.12,C,female,42,urban,junior high,junior high,teacher,at home,reputation,father,> 1hour,5-10 hours,yes,yes,4,17
+Stu68,ENG101,15.96,2.39,2.53,A+,male,32,urban,secondary education,primary education,other,at home,home,father,1-15 mins,2-5 hours,yes,no,2,11
+Stu69,CS103,15.11,3.55,1.35,A+,male,41,urban,higher education,secondary education,civil,health,reputation,mother,> 1hour,2-5 hours,yes,no,8,36
+Stu70,UFS101,6.24,2.63,0.01,D,female,27,urban,higher education,junior high,other,health,course,other,> 1hour,< 2hours,yes,yes,4,20
+Stu71,CS102,11.33,3.73,3.71,A+,female,52,rural,primary education,secondary education,at home,teacher,course,other,> 1hour,2-5 hours,no,yes,8,47
+Stu72,ENG101,1.01,3.54,0.15,F,female,45,rural,secondary education,junior high,health,at home,course,father,30mins - 1 hour,< 2hours,no,no,5,14
+Stu73,UFS101,3.63,0.35,4.16,B+,male,28,urban,secondary education,junior high,other,teacher,other,other,30mins - 1 hour,5-10 hours,yes,no,8,33
+Stu74,UFS101,4.77,3.43,0.25,E,female,51,urban,none,junior high,teacher,other,home,other,1-15 mins,< 2hours,no,no,1,51
+Stu75,UFS101,0.27,4.74,4.81,B-,male,46,urban,primary education,primary education,other,civil,other,father,1-15 mins,5-10 hours,yes,yes,3,17
+Stu76,CS103,16.29,1.5,2.7,A+,male,49,urban,junior high,none,other,teacher,course,mother,30mins - 1 hour,< 2hours,yes,yes,1,37
+Stu77,CS102,3.22,2.5,4.39,B+,female,28,rural,higher education,higher education,teacher,at home,reputation,mother,30mins - 1 hour,< 2hours,yes,no,5,29
+Stu78,UFS101,15.17,3.8,3.69,A+,male,55,rural,higher education,higher education,other,at home,reputation,other,1-15 mins,< 2hours,yes,no,4,12
+Stu79,CS102,12.98,4.96,3.08,A+,male,27,rural,primary education,none,other,health,home,other,15-30 mins,< 2hours,yes,yes,3,23
+Stu80,CS103,16.57,3.04,2.91,A+,female,27,urban,none,secondary education,civil,civil,home,mother,30mins - 1 hour,5-10 hours,no,no,7,16
+Stu81,ENG101,4.76,1.21,4.07,A-,male,60,rural,primary education,primary education,health,health,home,mother,30mins - 1 hour,5-10 hours,yes,no,10,8
+Stu82,CS102,9.24,0.93,2.19,A,female,30,rural,junior high,primary education,at home,teacher,home,other,1-15 mins,5-10 hours,no,no,8,17
+Stu83,ACCT101,4.01,2.6,0.89,D,male,25,rural,none,junior high,at home,other,home,other,1-15 mins,< 2hours,yes,yes,8,45
+Stu84,IT102,9.22,1.93,1.72,A-,female,38,urban,junior high,primary education,other,civil,reputation,other,1-15 mins,2-5 hours,no,yes,1,37
+Stu85,CS102,2.91,1.71,4.62,B+,female,25,urban,none,none,health,civil,course,mother,> 1hour,>10 hours,yes,no,10,11
+Stu86,FRN101,14.53,3.01,3.32,A+,male,54,rural,higher education,higher education,civil,civil,home,mother,30mins - 1 hour,< 2hours,yes,yes,1,42
+Stu87,CS102,3.62,3.9,4.42,B+,male,20,urban,primary education,primary education,teacher,civil,other,father,15-30 mins,2-5 hours,no,yes,7,35
+Stu88,FRN101,2.67,4.2,1.2,E,female,58,rural,secondary education,secondary education,teacher,civil,course,mother,1-15 mins,5-10 hours,no,no,9,23
+Stu89,UFS101,15.59,3.43,2.28,A+,female,28,rural,none,secondary education,other,other,course,other,15-30 mins,5-10 hours,yes,no,7,15
+Stu90,FRN101,1.94,2.85,2.53,C-,female,17,rural,higher education,higher education,civil,civil,other,other,30mins - 1 hour,2-5 hours,no,yes,7,45
+Stu91,CS102,4.4,3.26,4.51,A-,female,35,urban,none,secondary education,teacher,health,home,other,15-30 mins,>10 hours,yes,yes,9,21
+Stu92,ENG101,14.75,2.21,4.27,A+,female,47,rural,secondary education,junior high,at home,teacher,home,father,> 1hour,>10 hours,no,yes,6,22
+Stu93,FRN101,8.6,2.37,1.03,B,female,53,rural,primary education,primary education,at home,teacher,course,mother,30mins - 1 hour,>10 hours,no,no,4,38
+Stu94,IT102,0.19,3.22,2.09,F,female,57,urban,none,higher education,other,civil,reputation,mother,1-15 mins,2-5 hours,yes,no,5,11
+Stu95,IT102,14.82,0.04,0.86,A+,female,51,rural,primary education,junior high,at home,teacher,other,father,> 1hour,2-5 hours,yes,yes,8,26
+Stu96,ENG101,11.98,3.75,4.77,A+,female,60,urban,higher education,secondary education,health,civil,reputation,mother,30mins - 1 hour,2-5 hours,yes,yes,7,20
+Stu97,ENG101,11.22,1.57,3.17,A+,male,30,rural,junior high,primary education,at home,civil,other,mother,> 1hour,< 2hours,no,yes,4,21
+Stu98,CS102,14.3,1.03,4.21,A+,male,60,rural,none,higher education,health,health,reputation,other,1-15 mins,>10 hours,yes,no,4,26
+Stu99,UFS101,0.07,4.74,2.49,E,female,21,rural,higher education,none,teacher,civil,home,other,30mins - 1 hour,5-10 hours,no,no,3,48
+Stu100,FRN101,0.66,3.6,4.11,C+,male,42,rural,primary education,secondary education,at home,civil,reputation,other,30mins - 1 hour,>10 hours,no,no,1,32
+Stu101,FRN101,7.85,2.83,2.69,A-,female,26,rural,primary education,primary education,at home,at home,course,mother,1-15 mins,5-10 hours,no,yes,4,29
+Stu102,ACCT101,11.34,3.9,4.67,A+,male,46,urban,secondary education,junior high,other,teacher,other,father,> 1hour,5-10 hours,no,yes,6,36
+Stu103,IT102,2.34,1.75,2.98,C,female,60,rural,none,junior high,health,health,course,father,30mins - 1 hour,5-10 hours,yes,no,6,38
+Stu104,IT102,6.56,3.65,1.51,B-,male,45,urban,secondary education,secondary education,civil,teacher,reputation,mother,> 1hour,5-10 hours,no,yes,2,11
+Stu105,UFS101,13.09,2.57,4.49,A+,male,50,rural,primary education,higher education,teacher,civil,course,other,> 1hour,< 2hours,no,yes,4,33
+Stu106,CS103,14.61,3.82,3.67,A+,male,60,rural,junior high,junior high,at home,civil,reputation,mother,15-30 mins,< 2hours,no,yes,4,23
+Stu107,CS103,13.52,4.64,2.35,A+,male,44,rural,primary education,higher education,health,at home,other,father,15-30 mins,< 2hours,no,no,9,15
+Stu108,IT102,1.59,4.82,2.98,C,male,55,urban,primary education,higher education,teacher,health,course,mother,> 1hour,>10 hours,no,no,7,34
+Stu109,ACCT101,10.13,4.36,4.85,A+,female,35,rural,junior high,secondary education,at home,at home,reputation,father,> 1hour,2-5 hours,yes,yes,2,22
+Stu110,FRN101,15.52,4.57,1.22,A+,male,31,rural,none,junior high,other,civil,course,other,15-30 mins,>10 hours,yes,no,6,41
+Stu111,ACCT101,5.95,2.36,3.5,A-,male,30,rural,none,junior high,teacher,at home,home,mother,1-15 mins,< 2hours,no,no,9,34
+Stu112,CS103,14.06,4.41,0.51,A+,female,49,rural,secondary education,none,at home,health,other,father,1-15 mins,>10 hours,yes,no,5,29
+Stu113,CS103,13.26,2.06,1.78,A+,male,37,urban,secondary education,junior high,teacher,teacher,reputation,mother,1-15 mins,< 2hours,no,yes,9,8
+Stu114,ACCT101,15.77,3.6,2.52,A+,male,20,urban,none,higher education,at home,teacher,reputation,father,> 1hour,2-5 hours,no,no,1,52
+Stu115,UFS101,11.12,3.38,4.21,A+,female,38,urban,primary education,none,health,civil,course,father,> 1hour,2-5 hours,no,yes,9,37
+Stu116,CS103,17.37,1.77,3.6,A+,female,22,rural,junior high,primary education,health,other,home,father,> 1hour,>10 hours,no,yes,6,25
+Stu117,FRN101,5.98,1.33,0.05,D,male,18,urban,junior high,junior high,civil,health,other,mother,> 1hour,2-5 hours,yes,yes,4,14
+Stu118,CS102,5.9,4.85,2.92,B+,female,41,urban,junior high,higher education,other,health,other,father,1-15 mins,5-10 hours,yes,yes,7,50
+Stu119,IT102,14.62,0.26,1.49,A+,male,46,urban,secondary education,none,health,civil,other,mother,1-15 mins,2-5 hours,no,yes,1,19
+Stu120,ENG101,14.12,0.24,1.55,A+,male,19,urban,higher education,secondary education,civil,teacher,other,other,> 1hour,5-10 hours,no,no,6,40
+Stu121,IT102,7.08,2.33,1.09,C+,male,55,rural,none,primary education,teacher,health,home,father,> 1hour,>10 hours,yes,no,8,9
+Stu122,IT102,9.69,1.33,1.07,B+,male,17,urban,higher education,higher education,civil,teacher,course,mother,15-30 mins,>10 hours,yes,yes,2,35
+Stu123,IT102,15.45,2.67,0.3,A+,female,18,rural,none,junior high,at home,civil,other,mother,30mins - 1 hour,2-5 hours,yes,no,10,44
+Stu124,CS102,5.66,0.25,0.48,C-,male,17,rural,primary education,higher education,other,teacher,other,father,1-15 mins,5-10 hours,yes,yes,10,27
+Stu125,CS103,15.86,1.02,0.48,A+,female,34,urban,none,higher education,at home,health,home,other,15-30 mins,5-10 hours,no,yes,10,31
+Stu126,CS103,6.13,3.01,2.03,B-,female,60,urban,none,primary education,civil,at home,home,other,1-15 mins,>10 hours,yes,yes,6,19
+Stu127,ENG101,13.2,3.92,3.77,A+,male,17,urban,junior high,higher education,at home,other,reputation,father,1-15 mins,>10 hours,yes,no,8,36
+Stu128,UFS101,2.12,2.53,2.99,C,male,30,urban,primary education,primary education,civil,at home,other,mother,> 1hour,>10 hours,yes,no,6,46
+Stu129,IT102,8.6,3.52,3.84,A+,female,57,rural,junior high,none,teacher,teacher,other,mother,1-15 mins,2-5 hours,yes,no,8,14
+Stu130,CS103,9.31,0.74,3.29,A+,female,24,urban,secondary education,primary education,teacher,teacher,home,other,30mins - 1 hour,>10 hours,yes,no,8,37
+Stu131,ACCT101,12.44,2.94,3.97,A+,female,37,urban,secondary education,junior high,health,health,reputation,other,> 1hour,2-5 hours,no,no,4,44
+Stu132,FRN101,3.28,1.48,1.84,C-,female,30,rural,higher education,higher education,health,teacher,other,other,1-15 mins,2-5 hours,no,no,6,53
+Stu133,ENG101,2.94,2.67,4.59,B+,female,20,urban,secondary education,junior high,civil,civil,reputation,father,1-15 mins,2-5 hours,no,yes,10,37
+Stu134,FRN101,12.38,3.33,3.58,A+,female,24,rural,higher education,primary education,civil,health,reputation,mother,1-15 mins,2-5 hours,no,yes,7,48
+Stu135,ACCT101,2.41,0.44,0.12,F,male,48,rural,junior high,higher education,other,other,reputation,other,30mins - 1 hour,< 2hours,yes,no,7,29
+Stu136,IT102,16.66,0.54,0.55,A+,male,21,urban,none,higher education,at home,at home,reputation,other,> 1hour,5-10 hours,yes,no,10,8
+Stu137,CS103,4.37,0.62,0.78,D,male,47,urban,none,secondary education,other,health,reputation,other,> 1hour,>10 hours,yes,yes,2,12
+Stu138,FRN101,5.01,4.33,3.65,B+,female,34,rural,primary education,secondary education,teacher,at home,home,mother,> 1hour,2-5 hours,yes,yes,6,40
+Stu139,FRN101,3.29,1.12,0.51,F,male,48,rural,higher education,junior high,civil,civil,course,mother,30mins - 1 hour,5-10 hours,yes,yes,1,20
+Stu140,CS102,14.03,3.31,0.05,A,female,51,urban,primary education,none,at home,teacher,reputation,mother,1-15 mins,5-10 hours,no,no,7,43
+Stu141,CS103,9.25,0.89,1.48,B+,male,41,urban,junior high,primary education,teacher,civil,reputation,other,> 1hour,5-10 hours,no,no,8,52
+Stu142,ENG101,0.17,4.92,0.59,F,male,28,urban,primary education,none,civil,civil,home,father,15-30 mins,>10 hours,yes,yes,6,34
+Stu143,IT102,12.5,1.03,3.28,A+,male,43,rural,junior high,secondary education,other,at home,home,mother,1-15 mins,>10 hours,no,no,3,36
+Stu144,ACCT101,10.07,1.19,1.73,A,male,45,rural,higher education,higher education,teacher,teacher,course,father,15-30 mins,< 2hours,no,no,9,29
+Stu145,CS103,14.16,1.5,4.6,A+,male,32,urban,junior high,primary education,at home,health,home,other,> 1hour,5-10 hours,yes,no,3,41
+Stu146,CS103,3.6,4.17,2.94,C+,female,35,rural,secondary education,none,health,at home,other,father,1-15 mins,>10 hours,yes,no,9,30
+Stu147,CS102,8.74,0.44,0.48,B-,male,51,urban,junior high,junior high,at home,other,reputation,father,> 1hour,< 2hours,yes,no,6,52
+Stu148,ACCT101,10.06,3.36,0.52,B,male,21,urban,secondary education,none,other,health,other,other,15-30 mins,5-10 hours,no,yes,3,41
+Stu149,UFS101,0.45,2.41,0.69,F,female,36,urban,junior high,primary education,teacher,health,reputation,father,30mins - 1 hour,< 2hours,yes,yes,2,36
+Stu150,FRN101,6.35,0.27,4.82,A+,male,32,rural,primary education,junior high,civil,other,other,mother,> 1hour,5-10 hours,yes,no,4,29
+Stu151,ACCT101,3.66,2.85,1.16,D,male,25,rural,secondary education,primary education,teacher,at home,course,father,30mins - 1 hour,2-5 hours,no,yes,6,51
+Stu152,FRN101,12.47,3.06,3.6,A+,female,44,rural,none,higher education,teacher,other,home,mother,15-30 mins,>10 hours,yes,yes,5,52
+Stu153,IT102,9.24,0.3,0.83,B,male,22,urban,higher education,higher education,health,at home,home,father,15-30 mins,5-10 hours,no,yes,8,52
+Stu154,CS103,14.32,0.66,2.75,A+,female,34,urban,junior high,secondary education,other,other,home,father,30mins - 1 hour,2-5 hours,yes,yes,4,10
+Stu155,ENG101,15.76,0.22,1.16,A+,male,55,rural,primary education,primary education,teacher,at home,course,mother,1-15 mins,>10 hours,no,no,8,44
+Stu156,UFS101,16.12,0.01,3.82,A+,male,46,rural,primary education,none,at home,civil,reputation,mother,1-15 mins,>10 hours,yes,no,3,37
+Stu157,ACCT101,10.04,2.36,2.15,A,male,27,urban,none,higher education,teacher,teacher,home,father,1-15 mins,5-10 hours,yes,yes,9,14
+Stu158,CS102,16.98,4.89,1.41,A+,male,25,urban,junior high,higher education,civil,civil,reputation,mother,30mins - 1 hour,2-5 hours,yes,yes,2,26
+Stu159,UFS101,14.71,4.72,4.58,A+,female,47,urban,secondary education,primary education,at home,health,reputation,other,> 1hour,2-5 hours,yes,no,1,35
+Stu160,UFS101,5.39,2.85,0.3,D,male,24,rural,higher education,higher education,health,teacher,home,father,30mins - 1 hour,5-10 hours,no,no,4,38
+Stu161,ENG101,8.49,2.51,4.63,A+,female,45,rural,primary education,junior high,health,health,reputation,father,1-15 mins,5-10 hours,no,no,2,28
+Stu162,UFS101,7.42,3.04,2.52,B+,male,58,urban,higher education,primary education,other,other,home,other,30mins - 1 hour,5-10 hours,yes,yes,6,37
+Stu163,UFS101,9.62,0.26,1.09,B+,male,23,urban,higher education,secondary education,other,health,reputation,other,30mins - 1 hour,< 2hours,no,no,8,49
+Stu164,CS102,6.64,1.14,0.13,C-,female,22,rural,primary education,primary education,at home,health,reputation,mother,1-15 mins,< 2hours,yes,yes,1,37
+Stu165,CS102,17.12,2.9,4.61,A+,male,29,rural,none,secondary education,civil,civil,other,other,15-30 mins,>10 hours,no,no,3,16
+Stu166,FRN101,15.77,1.91,0.72,A+,male,33,rural,higher education,junior high,other,other,reputation,other,15-30 mins,2-5 hours,yes,no,3,43
+Stu167,IT102,15.64,3.32,1.56,A+,male,60,urban,higher education,primary education,at home,at home,home,other,15-30 mins,>10 hours,no,yes,3,30
+Stu168,IT102,8.99,0.85,4.44,A+,female,35,urban,primary education,none,health,civil,other,father,1-15 mins,5-10 hours,no,yes,4,17
+Stu169,UFS101,1.21,2.36,3.34,C,male,24,urban,secondary education,higher education,other,at home,other,other,15-30 mins,5-10 hours,no,yes,8,48
+Stu170,ACCT101,17.17,4.22,2.84,A+,male,39,urban,junior high,primary education,civil,at home,reputation,father,1-15 mins,2-5 hours,no,yes,3,15
+Stu171,CS103,3.39,4.79,4.69,A-,female,39,rural,primary education,secondary education,civil,teacher,home,other,> 1hour,2-5 hours,no,no,8,21
+Stu172,UFS101,12.87,1.06,2.45,A+,female,60,urban,none,junior high,other,civil,home,mother,15-30 mins,< 2hours,yes,yes,10,35
+Stu173,CS103,6.62,3.41,4.65,A+,male,42,rural,primary education,secondary education,teacher,other,course,father,30mins - 1 hour,5-10 hours,no,yes,1,20
+Stu174,ACCT101,9.3,2.09,1.71,A-,female,58,rural,none,primary education,health,civil,other,father,15-30 mins,>10 hours,yes,yes,3,31
+Stu175,CS102,8.19,0.2,4.33,A+,male,32,urban,secondary education,higher education,at home,civil,home,other,> 1hour,2-5 hours,no,no,10,52
+Stu176,IT102,16.3,4.18,0.12,A+,male,19,urban,primary education,secondary education,other,at home,other,mother,30mins - 1 hour,>10 hours,yes,yes,3,18
+Stu177,FRN101,17.45,3.37,2.71,A+,male,50,urban,higher education,secondary education,at home,health,reputation,mother,15-30 mins,>10 hours,no,yes,9,16
+Stu178,UFS101,1.28,1.72,3.88,C+,male,41,rural,higher education,none,teacher,other,course,other,> 1hour,5-10 hours,yes,yes,4,23
+Stu179,FRN101,1.0,3.39,1.47,F,male,24,rural,none,junior high,teacher,at home,other,father,15-30 mins,>10 hours,no,no,10,29
+Stu180,ACCT101,10.09,0.4,3.24,A+,male,58,rural,primary education,higher education,teacher,other,reputation,mother,30mins - 1 hour,2-5 hours,no,no,7,16
+Stu181,CS102,1.4,0.37,2.73,C-,female,47,urban,junior high,secondary education,civil,teacher,home,mother,> 1hour,< 2hours,yes,no,1,48
+Stu182,FRN101,3.39,0.0,2.19,C,male,45,urban,secondary education,secondary education,teacher,civil,reputation,other,15-30 mins,2-5 hours,yes,yes,1,9
+Stu183,UFS101,5.52,1.36,2.98,B,male,42,urban,primary education,primary education,other,at home,reputation,father,1-15 mins,>10 hours,no,no,1,27
+Stu184,UFS101,12.97,4.68,2.54,A+,male,58,rural,junior high,primary education,at home,health,home,mother,15-30 mins,>10 hours,no,no,1,21
+Stu185,UFS101,10.76,0.96,2.51,A+,female,28,urban,none,junior high,other,other,reputation,father,30mins - 1 hour,>10 hours,no,yes,6,49
+Stu186,CS102,6.99,1.67,2.02,B,male,26,urban,primary education,primary education,teacher,at home,home,other,30mins - 1 hour,>10 hours,no,no,2,15
+Stu187,CS102,14.16,3.89,0.83,A+,male,35,urban,secondary education,none,at home,civil,home,father,> 1hour,>10 hours,no,yes,7,19
+Stu188,FRN101,5.51,1.65,1.1,C,female,20,urban,none,secondary education,teacher,other,other,other,> 1hour,2-5 hours,no,no,4,8
+Stu189,IT102,7.57,3.62,1.87,B,female,52,rural,junior high,primary education,teacher,at home,reputation,other,1-15 mins,2-5 hours,no,no,1,43
+Stu190,FRN101,5.87,1.58,2.47,B,female,37,urban,primary education,higher education,teacher,other,course,mother,> 1hour,< 2hours,yes,yes,9,51
+Stu191,IT102,11.12,0.3,3.81,A+,female,29,rural,secondary education,none,teacher,teacher,reputation,father,30mins - 1 hour,< 2hours,no,no,2,43
+Stu192,ACCT101,0.09,3.32,0.86,F,male,25,urban,higher education,secondary education,civil,teacher,reputation,father,30mins - 1 hour,2-5 hours,no,yes,1,28
+Stu193,FRN101,3.64,3.97,1.04,D,male,51,rural,primary education,none,at home,civil,reputation,mother,15-30 mins,5-10 hours,no,yes,7,43
+Stu194,ENG101,0.06,0.72,1.59,F,male,29,urban,junior high,none,other,health,other,other,30mins - 1 hour,2-5 hours,no,yes,10,14
+Stu195,ACCT101,14.93,2.15,2.18,A+,female,34,rural,higher education,primary education,at home,civil,course,other,1-15 mins,>10 hours,no,no,1,43
+Stu196,CS103,17.11,3.11,3.02,A+,female,27,rural,secondary education,junior high,other,teacher,home,mother,15-30 mins,>10 hours,no,no,8,53
+Stu197,CS102,6.2,2.92,3.74,A,male,38,rural,junior high,secondary education,at home,health,other,other,> 1hour,>10 hours,no,yes,5,35
+Stu198,FRN101,12.67,0.73,0.39,A-,female,26,rural,secondary education,secondary education,other,other,reputation,mother,1-15 mins,>10 hours,no,no,4,40
+Stu199,ACCT101,1.44,1.66,4.9,B,female,21,rural,primary education,secondary education,other,health,course,other,> 1hour,2-5 hours,no,no,1,17
+Stu200,IT102,14.14,4.44,1.27,A+,female,54,rural,higher education,none,teacher,health,course,father,> 1hour,>10 hours,no,yes,3,18
+Stu201,FRN101,4.19,1.89,4.49,A-,female,22,rural,junior high,none,teacher,health,course,father,> 1hour,< 2hours,yes,no,2,15
+Stu202,CS102,16.04,4.37,1.4,A+,female,42,urban,primary education,none,civil,teacher,course,other,15-30 mins,5-10 hours,no,yes,10,38
+Stu203,ACCT101,6.76,3.08,3.59,A,female,20,urban,none,secondary education,at home,teacher,course,father,> 1hour,>10 hours,no,yes,5,22
+Stu204,IT102,7.36,2.77,4.62,A+,female,26,rural,primary education,none,teacher,teacher,other,other,30mins - 1 hour,5-10 hours,no,no,7,16
+Stu205,IT102,2.03,1.45,2.86,C,female,41,rural,junior high,junior high,teacher,civil,course,mother,30mins - 1 hour,5-10 hours,no,no,10,23
+Stu206,CS102,13.74,1.52,4.8,A+,female,32,urban,junior high,primary education,teacher,health,course,father,15-30 mins,>10 hours,yes,yes,4,11
+Stu207,ACCT101,7.83,4.48,1.85,B+,female,45,urban,secondary education,none,health,teacher,course,father,1-15 mins,< 2hours,no,no,1,37
+Stu208,UFS101,7.73,2.46,1.37,B-,female,48,rural,primary education,junior high,at home,at home,other,father,15-30 mins,5-10 hours,yes,no,1,13
+Stu209,IT102,6.62,3.7,2.64,B+,male,51,rural,primary education,junior high,civil,other,reputation,father,30mins - 1 hour,5-10 hours,no,no,10,14
+Stu210,UFS101,14.26,1.38,4.24,A+,female,40,rural,none,junior high,other,other,home,father,> 1hour,5-10 hours,no,yes,2,45
+Stu211,UFS101,3.92,2.71,1.14,D,female,47,urban,secondary education,higher education,civil,health,course,other,30mins - 1 hour,>10 hours,no,no,4,29
+Stu212,CS102,7.36,2.23,1.2,B-,male,18,rural,junior high,junior high,teacher,civil,reputation,father,15-30 mins,2-5 hours,yes,yes,9,29
+Stu213,ENG101,11.21,1.73,2.24,A+,female,24,rural,junior high,none,civil,health,other,father,1-15 mins,2-5 hours,no,yes,3,46
+Stu214,CS103,12.33,3.64,4.37,A+,male,52,urban,primary education,higher education,other,other,course,mother,15-30 mins,< 2hours,no,no,5,30
+Stu215,IT102,6.36,1.78,0.45,C-,female,28,urban,secondary education,none,health,health,home,mother,1-15 mins,< 2hours,no,no,8,26
+Stu216,ENG101,8.72,3.88,3.08,A+,female,51,urban,higher education,none,health,other,other,father,15-30 mins,< 2hours,no,yes,9,47
+Stu217,ENG101,10.49,3.02,3.82,A+,female,59,rural,primary education,secondary education,civil,other,course,mother,> 1hour,< 2hours,yes,no,2,13
+Stu218,FRN101,14.54,0.26,2.25,A+,female,48,urban,junior high,junior high,other,at home,reputation,mother,1-15 mins,2-5 hours,no,yes,2,34
+Stu219,CS102,12.29,2.61,1.72,A+,female,50,urban,none,none,teacher,civil,other,mother,> 1hour,5-10 hours,no,no,4,29
+Stu220,ACCT101,0.63,2.42,3.01,C-,female,22,rural,higher education,secondary education,at home,health,home,other,1-15 mins,>10 hours,no,yes,7,48
+Stu221,UFS101,13.23,2.83,4.27,A+,female,29,urban,secondary education,none,health,teacher,other,other,15-30 mins,< 2hours,yes,yes,10,18
+Stu222,ENG101,7.36,1.93,4.25,A+,female,25,rural,higher education,none,health,health,home,father,> 1hour,2-5 hours,yes,no,4,8
+Stu223,ACCT101,7.08,0.75,2.24,B+,male,19,urban,secondary education,junior high,at home,civil,other,mother,15-30 mins,>10 hours,yes,no,1,21
+Stu224,FRN101,15.04,3.12,0.07,A+,female,56,rural,higher education,primary education,civil,civil,other,other,> 1hour,< 2hours,no,no,7,52
+Stu225,FRN101,16.69,2.23,0.39,A+,female,45,rural,junior high,none,civil,civil,other,father,30mins - 1 hour,5-10 hours,no,yes,5,47
+Stu226,CS103,8.83,0.5,1.7,B+,male,22,rural,primary education,secondary education,at home,health,reputation,mother,15-30 mins,>10 hours,no,yes,1,30
+Stu227,ACCT101,0.13,0.68,2.74,D,male,60,urban,secondary education,higher education,other,at home,reputation,father,1-15 mins,>10 hours,no,yes,3,51
+Stu228,CS102,0.71,2.16,3.99,C+,female,23,urban,primary education,junior high,at home,teacher,course,father,15-30 mins,< 2hours,no,yes,5,27
+Stu229,CS103,13.13,2.92,0.99,A+,male,35,rural,secondary education,junior high,other,teacher,other,father,30mins - 1 hour,>10 hours,no,yes,1,39
+Stu230,ACCT101,9.36,1.33,1.74,A-,male,52,urban,higher education,secondary education,teacher,health,reputation,other,1-15 mins,5-10 hours,no,yes,5,52
+Stu231,CS103,0.51,1.85,1.52,F,female,37,rural,higher education,junior high,at home,other,reputation,mother,30mins - 1 hour,5-10 hours,yes,no,5,37
+Stu232,CS103,11.99,3.66,3.47,A+,female,50,urban,junior high,higher education,health,at home,other,father,1-15 mins,5-10 hours,yes,no,4,26
+Stu233,UFS101,13.83,0.9,2.89,A+,male,50,rural,junior high,junior high,teacher,civil,home,father,1-15 mins,< 2hours,no,no,2,39
+Stu234,FRN101,10.03,0.27,2.47,A+,male,38,urban,higher education,primary education,other,teacher,course,mother,> 1hour,5-10 hours,yes,no,10,32
+Stu235,ENG101,15.55,0.2,3.83,A+,female,39,rural,junior high,primary education,health,at home,other,other,15-30 mins,< 2hours,no,no,8,49
+Stu236,CS103,4.3,4.48,3.94,B+,male,27,rural,primary education,higher education,teacher,health,home,other,1-15 mins,5-10 hours,yes,yes,6,43
+Stu237,CS102,13.65,2.8,3.11,A+,male,44,rural,primary education,higher education,teacher,other,home,mother,15-30 mins,>10 hours,yes,yes,10,36
+Stu238,ACCT101,8.51,0.25,3.37,A+,male,43,rural,junior high,secondary education,civil,at home,course,mother,15-30 mins,2-5 hours,no,no,2,13
+Stu239,FRN101,10.71,4.44,3.54,A+,female,40,rural,junior high,primary education,civil,teacher,home,father,> 1hour,2-5 hours,yes,no,7,46
+Stu240,ACCT101,1.28,3.28,3.72,C+,female,44,urban,none,junior high,health,teacher,reputation,other,1-15 mins,>10 hours,yes,yes,4,27
+Stu241,CS102,0.43,2.04,2.51,E,female,17,rural,junior high,higher education,teacher,at home,home,other,1-15 mins,< 2hours,no,no,10,18
+Stu242,CS103,4.59,4.2,2.39,C+,male,40,urban,primary education,junior high,at home,health,reputation,father,> 1hour,5-10 hours,no,no,2,39
+Stu243,FRN101,1.67,3.58,4.5,B,male,56,rural,higher education,secondary education,at home,civil,home,mother,15-30 mins,5-10 hours,yes,no,10,14
+Stu244,UFS101,12.01,4.12,0.18,B+,female,50,rural,higher education,secondary education,at home,civil,course,father,1-15 mins,< 2hours,yes,no,6,39
+Stu245,UFS101,8.01,2.55,4.04,A+,female,42,rural,higher education,none,other,civil,other,other,> 1hour,2-5 hours,yes,yes,5,17
+Stu246,UFS101,13.24,2.0,2.67,A+,male,52,urban,secondary education,none,health,health,other,other,1-15 mins,>10 hours,yes,yes,7,23
+Stu247,CS102,7.14,1.79,0.48,C,male,22,rural,primary education,higher education,civil,teacher,other,mother,> 1hour,< 2hours,no,no,1,21
+Stu248,ACCT101,4.86,4.94,1.79,C,female,33,rural,higher education,primary education,at home,civil,reputation,other,> 1hour,< 2hours,yes,no,2,44
+Stu249,FRN101,1.45,2.05,2.39,D,male,20,urban,none,secondary education,civil,health,reputation,mother,15-30 mins,>10 hours,no,no,8,24
+Stu250,CS103,3.68,3.19,3.58,B,male,60,urban,primary education,primary education,teacher,at home,home,father,1-15 mins,< 2hours,no,yes,1,36
+Stu251,UFS101,10.75,3.13,3.35,A+,female,51,rural,none,secondary education,teacher,at home,home,father,> 1hour,< 2hours,yes,no,4,49
+Stu252,ENG101,11.67,3.69,0.98,A,male,34,rural,junior high,primary education,civil,other,course,other,30mins - 1 hour,5-10 hours,no,no,7,47
+Stu253,IT102,3.87,2.64,3.03,B-,male,35,rural,higher education,junior high,health,at home,reputation,mother,15-30 mins,< 2hours,yes,yes,3,28
+Stu254,UFS101,7.54,1.42,0.91,C+,female,58,rural,none,secondary education,health,health,other,father,30mins - 1 hour,>10 hours,no,yes,3,9
+Stu255,IT102,1.27,0.01,0.25,F,female,37,rural,primary education,primary education,at home,civil,reputation,other,15-30 mins,< 2hours,no,no,6,32
+Stu256,ACCT101,11.61,4.84,3.2,A+,female,26,rural,junior high,primary education,civil,other,reputation,father,> 1hour,5-10 hours,no,yes,5,32
+Stu257,UFS101,10.42,2.84,3.63,A+,female,56,urban,junior high,primary education,at home,civil,course,other,30mins - 1 hour,2-5 hours,yes,no,5,45
+Stu258,FRN101,3.32,1.98,0.85,E,male,18,rural,higher education,primary education,teacher,civil,reputation,father,> 1hour,>10 hours,no,no,6,31
+Stu259,UFS101,13.18,2.46,0.73,A+,female,40,urban,none,secondary education,teacher,civil,reputation,father,> 1hour,< 2hours,yes,yes,4,9
+Stu260,ACCT101,1.4,1.7,4.47,B-,female,24,urban,primary education,none,other,at home,home,other,30mins - 1 hour,>10 hours,no,no,3,34
+Stu261,CS102,14.89,3.3,4.2,A+,male,27,urban,junior high,primary education,teacher,civil,reputation,mother,> 1hour,< 2hours,no,no,8,41
+Stu262,ACCT101,5.06,0.74,0.8,C-,male,60,urban,higher education,secondary education,health,teacher,reputation,other,30mins - 1 hour,5-10 hours,yes,no,5,24
+Stu263,CS103,12.21,1.41,0.85,A,male,30,urban,secondary education,secondary education,teacher,teacher,other,father,15-30 mins,5-10 hours,no,no,4,28
+Stu264,CS102,4.62,2.08,4.09,A-,female,60,rural,higher education,secondary education,other,at home,reputation,mother,15-30 mins,2-5 hours,yes,yes,3,29
+Stu265,CS102,0.03,0.73,0.41,F,female,41,rural,none,secondary education,other,health,other,father,30mins - 1 hour,5-10 hours,yes,yes,8,36
+Stu266,IT102,2.93,3.12,0.68,F,female,23,urban,junior high,higher education,teacher,other,home,father,> 1hour,< 2hours,no,no,1,16
+Stu267,ENG101,5.52,3.78,3.21,B+,female,57,rural,secondary education,higher education,other,other,other,mother,> 1hour,2-5 hours,yes,yes,4,12
+Stu268,ACCT101,2.78,2.32,1.88,C-,female,50,rural,secondary education,primary education,other,other,home,father,30mins - 1 hour,2-5 hours,yes,yes,7,37
+Stu269,ACCT101,11.22,0.59,4.35,A+,female,32,rural,primary education,primary education,at home,civil,home,father,1-15 mins,< 2hours,no,yes,3,27
+Stu270,ENG101,11.9,4.76,4.65,A+,female,33,rural,none,secondary education,teacher,at home,reputation,father,15-30 mins,>10 hours,yes,no,3,37
+Stu271,ACCT101,4.3,2.54,4.14,A-,female,34,rural,junior high,secondary education,other,other,other,mother,1-15 mins,2-5 hours,no,no,10,18
+Stu272,ACCT101,9.15,1.59,1.98,A-,female,17,rural,secondary education,none,other,at home,reputation,other,30mins - 1 hour,>10 hours,no,yes,6,36
+Stu273,FRN101,11.58,2.1,1.39,A,female,52,rural,junior high,none,civil,civil,course,mother,15-30 mins,< 2hours,no,no,8,26
+Stu274,ACCT101,2.09,1.86,0.22,F,female,47,urban,primary education,primary education,health,teacher,other,other,1-15 mins,2-5 hours,no,no,5,17
+Stu275,ACCT101,15.69,3.11,3.58,A+,female,28,rural,none,junior high,teacher,civil,reputation,father,1-15 mins,>10 hours,no,no,6,11
+Stu276,ACCT101,2.78,3.13,0.46,F,female,26,urban,secondary education,none,civil,teacher,reputation,father,> 1hour,< 2hours,yes,no,5,35
+Stu277,CS103,3.18,0.01,1.61,D,female,56,urban,none,primary education,health,civil,course,other,15-30 mins,< 2hours,yes,no,9,35
+Stu278,CS102,7.73,1.83,1.94,B+,female,47,urban,higher education,secondary education,health,other,home,mother,> 1hour,>10 hours,yes,no,9,12
+Stu279,ENG101,1.61,1.53,0.1,F,female,34,urban,higher education,junior high,civil,civil,reputation,father,15-30 mins,5-10 hours,yes,no,2,38
+Stu280,FRN101,7.26,3.69,3.18,A,male,59,urban,higher education,secondary education,health,at home,home,father,1-15 mins,5-10 hours,no,no,9,9
+Stu281,UFS101,11.3,3.66,3.93,A+,male,44,rural,none,junior high,teacher,health,course,mother,30mins - 1 hour,5-10 hours,yes,no,6,17
+Stu282,UFS101,6.97,1.54,3.09,A-,male,30,rural,junior high,primary education,other,teacher,course,father,30mins - 1 hour,5-10 hours,yes,yes,9,51
+Stu283,CS103,14.63,0.02,3.37,A+,female,19,rural,none,none,health,civil,course,mother,15-30 mins,2-5 hours,no,no,6,20
+Stu284,IT102,13.6,2.54,1.94,A+,female,32,rural,none,higher education,health,at home,course,father,> 1hour,5-10 hours,no,no,10,34
+Stu285,ENG101,3.6,1.79,4.41,B+,male,42,rural,none,primary education,other,other,reputation,other,1-15 mins,2-5 hours,yes,no,3,29
+Stu286,ACCT101,11.17,4.86,0.76,A-,female,27,urban,junior high,junior high,civil,at home,other,mother,> 1hour,2-5 hours,no,yes,4,50
+Stu287,CS103,3.31,3.22,0.99,E,female,30,rural,higher education,junior high,teacher,teacher,other,father,30mins - 1 hour,5-10 hours,no,no,4,22
+Stu288,UFS101,13.33,0.81,2.67,A+,male,53,rural,none,junior high,at home,other,other,other,15-30 mins,>10 hours,no,no,1,26
+Stu289,FRN101,9.28,0.53,0.31,B-,male,30,urban,higher education,primary education,other,civil,other,father,> 1hour,2-5 hours,yes,yes,5,48
+Stu290,CS103,7.71,0.44,2.73,A-,female,25,rural,primary education,junior high,civil,health,other,father,15-30 mins,< 2hours,yes,yes,4,36
+Stu291,CS102,1.48,0.69,1.66,E,male,24,rural,secondary education,junior high,teacher,civil,other,other,30mins - 1 hour,>10 hours,yes,no,10,35
+Stu292,IT102,13.92,1.15,3.48,A+,male,52,rural,none,primary education,civil,at home,reputation,father,1-15 mins,>10 hours,no,yes,2,12
+Stu293,IT102,4.77,2.0,1.63,C,male,53,rural,higher education,primary education,civil,health,other,other,15-30 mins,>10 hours,no,no,8,41
+Stu294,CS102,14.94,2.97,3.01,A+,female,59,urban,higher education,higher education,health,at home,home,other,30mins - 1 hour,>10 hours,yes,yes,2,36
+Stu295,ACCT101,3.33,4.65,3.77,B,male,25,rural,secondary education,none,teacher,health,course,mother,30mins - 1 hour,2-5 hours,no,yes,2,11
+Stu296,CS103,4.92,2.22,3.63,B+,female,25,rural,higher education,none,other,other,reputation,other,1-15 mins,>10 hours,yes,no,1,30
+Stu297,FRN101,5.88,1.86,4.14,A,male,44,urban,junior high,primary education,other,civil,reputation,other,30mins - 1 hour,2-5 hours,yes,no,8,9
+Stu298,IT102,10.01,1.36,3.88,A+,female,60,rural,higher education,secondary education,civil,other,other,mother,15-30 mins,2-5 hours,no,yes,7,46
+Stu299,ACCT101,8.05,1.93,3.12,A,female,60,urban,secondary education,secondary education,teacher,health,other,father,> 1hour,2-5 hours,no,no,7,17
+Stu300,ENG101,10.41,2.01,0.54,B,female,39,urban,secondary education,primary education,other,other,reputation,mother,> 1hour,< 2hours,no,no,9,15
+Stu301,CS102,7.71,4.86,4.61,A+,male,52,urban,secondary education,higher education,other,civil,other,other,15-30 mins,< 2hours,no,no,8,18
+Stu302,ACCT101,17.35,2.71,1.36,A+,male,38,rural,junior high,higher education,civil,civil,reputation,other,30mins - 1 hour,2-5 hours,no,no,1,54
+Stu303,CS103,6.18,0.64,2.0,B-,male,45,urban,primary education,higher education,civil,civil,home,mother,> 1hour,2-5 hours,yes,no,7,42
+Stu304,ACCT101,3.82,4.84,4.7,A-,male,49,urban,secondary education,higher education,civil,teacher,course,mother,> 1hour,< 2hours,no,yes,9,17
+Stu305,FRN101,3.12,1.18,0.55,F,female,57,rural,none,higher education,health,teacher,course,mother,1-15 mins,5-10 hours,yes,yes,1,39
+Stu306,CS103,16.24,3.69,1.8,A+,female,20,rural,none,primary education,teacher,civil,reputation,father,15-30 mins,< 2hours,yes,no,1,35
+Stu307,ACCT101,14.13,3.93,2.37,A+,male,54,urban,primary education,primary education,other,civil,reputation,mother,> 1hour,>10 hours,no,no,4,18
+Stu308,ENG101,7.55,4.66,3.51,A+,male,42,rural,higher education,primary education,teacher,teacher,course,other,30mins - 1 hour,< 2hours,yes,no,5,25
+Stu309,ACCT101,2.94,2.26,4.14,B,male,36,rural,secondary education,secondary education,health,civil,course,mother,> 1hour,< 2hours,yes,yes,1,24
+Stu310,IT102,4.52,1.93,4.19,A-,female,46,urban,none,secondary education,civil,health,reputation,father,1-15 mins,5-10 hours,no,yes,3,47
+Stu311,CS102,0.59,4.54,3.9,C,male,35,urban,primary education,none,other,other,home,other,1-15 mins,>10 hours,no,yes,6,34
+Stu312,ENG101,16.21,2.79,4.15,A+,female,24,urban,primary education,none,civil,civil,course,other,> 1hour,>10 hours,no,yes,5,54
+Stu313,FRN101,11.28,4.07,3.39,A+,male,48,rural,none,secondary education,other,other,reputation,other,15-30 mins,5-10 hours,no,yes,5,51
+Stu314,UFS101,7.24,0.62,1.12,C+,female,17,urban,secondary education,primary education,at home,other,other,other,1-15 mins,>10 hours,no,no,5,33
+Stu315,IT102,5.65,2.0,4.61,A+,male,18,urban,junior high,junior high,other,health,home,mother,30mins - 1 hour,2-5 hours,no,no,5,31
+Stu316,ENG101,2.86,4.64,4.17,B,female,51,urban,none,primary education,other,teacher,reputation,other,30mins - 1 hour,2-5 hours,yes,yes,3,31
+Stu317,IT102,0.61,0.37,1.79,F,male,55,rural,higher education,junior high,health,at home,other,mother,1-15 mins,>10 hours,yes,no,10,42
+Stu318,CS103,16.53,1.88,4.43,A+,female,45,urban,secondary education,none,other,other,reputation,mother,> 1hour,< 2hours,no,no,5,45
+Stu319,CS103,2.51,4.81,4.4,B,female,28,rural,none,higher education,civil,at home,home,mother,> 1hour,2-5 hours,no,yes,2,9
+Stu320,UFS101,4.04,4.45,4.21,B+,female,40,rural,primary education,secondary education,at home,other,home,father,1-15 mins,5-10 hours,yes,yes,9,20
+Stu321,CS103,6.76,3.43,4.22,A+,female,47,urban,none,junior high,health,at home,reputation,mother,1-15 mins,>10 hours,yes,no,3,27
+Stu322,ENG101,10.36,0.65,4.13,A+,male,51,urban,primary education,primary education,health,other,home,other,30mins - 1 hour,< 2hours,yes,yes,7,30
+Stu323,FRN101,11.8,2.13,1.18,A,male,59,rural,none,junior high,teacher,civil,home,other,1-15 mins,>10 hours,no,yes,9,38
+Stu324,CS103,11.7,2.07,0.19,B+,female,34,urban,higher education,higher education,health,at home,reputation,mother,15-30 mins,< 2hours,no,no,6,20
+Stu325,ACCT101,0.74,1.07,0.73,F,male,49,rural,primary education,junior high,at home,health,other,father,15-30 mins,5-10 hours,no,no,2,39
+Stu326,FRN101,11.74,0.2,2.73,A+,female,19,urban,none,secondary education,civil,civil,other,mother,1-15 mins,>10 hours,yes,no,3,8
+Stu327,UFS101,1.89,4.71,4.96,B+,female,38,rural,secondary education,primary education,other,teacher,home,father,30mins - 1 hour,>10 hours,yes,yes,7,53
+Stu328,CS103,16.39,3.46,2.26,A+,male,60,urban,none,higher education,health,other,course,other,1-15 mins,2-5 hours,yes,no,10,18
+Stu329,ENG101,9.19,3.2,1.08,B,female,53,urban,none,junior high,other,teacher,course,father,15-30 mins,5-10 hours,no,no,8,42
+Stu330,ACCT101,14.34,1.99,1.77,A+,female,18,rural,higher education,higher education,other,at home,other,other,30mins - 1 hour,2-5 hours,no,yes,6,50
+Stu331,IT102,0.82,4.71,1.75,F,female,34,urban,primary education,secondary education,at home,at home,course,father,1-15 mins,< 2hours,yes,no,1,24
+Stu332,CS102,1.85,4.89,0.84,F,female,26,urban,junior high,secondary education,other,health,reputation,other,> 1hour,< 2hours,yes,no,3,49
+Stu333,FRN101,1.48,2.54,3.14,C,male,47,urban,secondary education,secondary education,civil,teacher,course,mother,30mins - 1 hour,>10 hours,no,no,8,19
+Stu334,UFS101,10.16,2.12,3.23,A+,female,59,urban,primary education,primary education,at home,teacher,home,mother,1-15 mins,< 2hours,yes,yes,3,33
+Stu335,IT102,12.77,0.29,2.37,A+,female,46,rural,junior high,secondary education,other,at home,reputation,other,30mins - 1 hour,5-10 hours,no,no,5,22
+Stu336,IT102,5.42,2.73,2.96,B,female,37,urban,secondary education,higher education,at home,other,reputation,other,1-15 mins,< 2hours,yes,no,10,36
+Stu337,IT102,10.31,3.87,2.27,A+,male,50,rural,junior high,secondary education,health,other,other,father,> 1hour,< 2hours,yes,no,5,37
+Stu338,CS103,6.53,0.64,3.2,A-,male,43,rural,junior high,none,teacher,health,reputation,mother,1-15 mins,< 2hours,yes,no,7,42
+Stu339,IT102,15.4,0.55,2.57,A+,male,19,rural,higher education,junior high,civil,health,home,other,> 1hour,2-5 hours,yes,no,9,14
+Stu340,FRN101,3.01,1.5,4.18,B,male,27,urban,primary education,primary education,other,at home,course,mother,30mins - 1 hour,>10 hours,no,yes,8,10
+Stu341,UFS101,12.96,4.46,3.29,A+,male,47,urban,primary education,secondary education,teacher,civil,other,mother,1-15 mins,>10 hours,yes,no,4,50
+Stu342,IT102,1.83,3.58,4.71,B,male,27,rural,junior high,secondary education,civil,at home,course,other,> 1hour,5-10 hours,yes,yes,6,16
+Stu343,CS102,10.84,1.43,2.98,A+,male,23,rural,junior high,secondary education,health,health,course,father,30mins - 1 hour,>10 hours,yes,no,6,45
+Stu344,CS103,9.9,1.89,1.26,B+,female,34,urban,junior high,secondary education,teacher,at home,reputation,other,> 1hour,2-5 hours,no,no,4,34
+Stu345,ACCT101,7.27,2.84,0.3,C,male,46,urban,secondary education,none,teacher,teacher,home,other,> 1hour,< 2hours,yes,no,6,33
+Stu346,ENG101,7.58,2.04,0.15,C,male,53,urban,junior high,higher education,teacher,other,course,other,15-30 mins,>10 hours,yes,yes,2,24
+Stu347,ENG101,5.1,3.7,0.96,C-,female,17,rural,higher education,higher education,civil,at home,reputation,other,1-15 mins,>10 hours,no,yes,5,21
+Stu348,ACCT101,8.81,3.81,0.66,B-,female,45,rural,secondary education,none,civil,health,other,other,> 1hour,5-10 hours,no,yes,10,23
+Stu349,IT102,9.77,1.11,2.37,A+,male,29,rural,primary education,junior high,at home,health,course,other,30mins - 1 hour,>10 hours,yes,yes,6,26
+Stu350,ACCT101,2.38,3.08,2.04,D,female,37,rural,junior high,higher education,at home,teacher,course,father,15-30 mins,< 2hours,no,no,1,30
+Stu351,ACCT101,6.29,4.61,4.17,A+,male,34,rural,primary education,higher education,at home,other,reputation,mother,30mins - 1 hour,5-10 hours,no,no,6,15
+Stu352,FRN101,0.61,3.64,3.02,C-,male,53,urban,primary education,secondary education,teacher,teacher,other,other,30mins - 1 hour,>10 hours,yes,yes,9,20
+Stu353,CS103,7.9,2.9,4.88,A+,male,28,urban,primary education,secondary education,health,other,course,mother,15-30 mins,2-5 hours,no,yes,3,8
+Stu354,UFS101,10.07,2.15,4.54,A+,male,31,urban,primary education,higher education,teacher,health,other,mother,> 1hour,< 2hours,no,no,5,40
+Stu355,ENG101,10.11,3.98,4.14,A+,female,33,urban,secondary education,secondary education,teacher,teacher,home,mother,1-15 mins,2-5 hours,no,no,8,31
+Stu356,ENG101,14.44,1.0,3.64,A+,female,37,rural,junior high,secondary education,at home,other,home,father,30mins - 1 hour,5-10 hours,no,no,6,16
+Stu357,UFS101,4.61,0.74,4.71,A,female,21,rural,junior high,secondary education,civil,teacher,course,father,15-30 mins,2-5 hours,yes,yes,7,45
+Stu358,FRN101,16.75,0.63,2.14,A+,male,33,rural,higher education,secondary education,health,civil,course,mother,15-30 mins,5-10 hours,no,no,9,47
+Stu359,IT102,5.52,1.81,1.61,C+,female,38,rural,higher education,junior high,teacher,civil,course,other,> 1hour,5-10 hours,yes,yes,5,35
+Stu360,CS103,11.67,2.72,3.18,A+,female,39,rural,higher education,higher education,at home,health,course,mother,15-30 mins,5-10 hours,yes,yes,1,35
+Stu361,IT102,10.9,3.9,2.87,A+,female,45,urban,higher education,junior high,health,other,reputation,mother,1-15 mins,5-10 hours,yes,yes,1,18
+Stu362,IT102,15.22,1.38,4.07,A+,male,45,urban,higher education,none,health,civil,course,mother,> 1hour,>10 hours,yes,yes,9,8
+Stu363,CS103,16.58,0.45,4.79,A+,female,26,urban,secondary education,secondary education,at home,at home,course,other,30mins - 1 hour,< 2hours,no,no,6,11
+Stu364,CS102,13.17,2.88,2.05,A+,female,26,urban,higher education,secondary education,at home,other,other,father,1-15 mins,>10 hours,no,no,4,38
+Stu365,CS102,9.1,4.27,0.65,B-,female,23,urban,secondary education,none,teacher,at home,reputation,mother,30mins - 1 hour,2-5 hours,yes,yes,4,48
+Stu366,UFS101,3.17,2.34,1.74,C-,male,40,urban,none,junior high,civil,health,other,father,> 1hour,5-10 hours,no,no,8,12
+Stu367,FRN101,16.81,1.97,4.35,A+,female,54,rural,higher education,primary education,civil,civil,other,mother,> 1hour,2-5 hours,no,no,5,37
+Stu368,CS102,10.16,2.9,3.58,A+,female,26,urban,higher education,junior high,civil,civil,other,mother,15-30 mins,>10 hours,no,yes,2,47
+Stu369,CS102,5.4,4.93,4.4,A,female,23,rural,higher education,higher education,civil,civil,reputation,father,1-15 mins,< 2hours,no,no,1,10
+Stu370,ENG101,10.98,4.14,2.92,A+,female,18,urban,secondary education,higher education,teacher,other,course,father,1-15 mins,5-10 hours,yes,no,6,17
+Stu371,IT102,9.09,2.15,2.47,A,female,32,urban,secondary education,higher education,teacher,teacher,other,other,15-30 mins,5-10 hours,yes,yes,7,30
+Stu372,ENG101,16.75,4.87,1.77,A+,female,38,urban,none,junior high,at home,civil,home,father,30mins - 1 hour,>10 hours,no,yes,2,41
+Stu373,FRN101,15.86,0.14,1.19,A+,male,21,rural,none,junior high,civil,other,reputation,father,30mins - 1 hour,2-5 hours,no,no,5,36
+Stu374,FRN101,8.71,2.88,0.54,B-,female,25,rural,secondary education,none,civil,at home,course,father,30mins - 1 hour,< 2hours,no,no,4,33
+Stu375,ENG101,10.06,2.12,4.94,A+,female,18,urban,none,none,other,teacher,reputation,father,> 1hour,2-5 hours,yes,yes,4,44
+Stu376,ENG101,10.12,1.76,4.24,A+,female,42,rural,higher education,none,health,teacher,home,other,> 1hour,2-5 hours,yes,yes,5,30
+Stu377,IT102,5.36,2.62,3.81,A-,female,52,rural,secondary education,junior high,other,other,course,father,1-15 mins,< 2hours,no,no,3,44
+Stu378,UFS101,4.42,1.85,1.83,C,male,53,urban,primary education,secondary education,teacher,civil,home,other,30mins - 1 hour,5-10 hours,no,no,3,34
+Stu379,CS102,0.56,1.32,4.86,B-,female,43,rural,higher education,none,health,teacher,course,father,15-30 mins,>10 hours,yes,yes,9,28
+Stu380,CS102,17.37,4.52,2.42,A+,male,22,urban,none,primary education,at home,health,home,other,1-15 mins,< 2hours,no,no,6,41
+Stu381,CS103,7.56,3.29,0.89,C+,male,39,rural,primary education,primary education,health,civil,home,other,> 1hour,< 2hours,no,yes,9,54
+Stu382,ENG101,4.57,3.76,2.15,C+,female,28,urban,junior high,secondary education,health,civil,reputation,father,1-15 mins,>10 hours,yes,no,8,11
+Stu383,CS103,13.94,1.96,2.61,A+,female,48,rural,secondary education,junior high,teacher,civil,reputation,father,> 1hour,2-5 hours,no,yes,1,9
+Stu384,IT102,4.49,1.56,0.25,E,male,29,rural,higher education,none,health,other,reputation,father,15-30 mins,< 2hours,no,yes,10,45
+Stu385,FRN101,12.47,1.03,0.16,A-,female,28,rural,none,none,at home,at home,other,other,> 1hour,< 2hours,no,no,1,23
+Stu386,ENG101,15.7,4.41,3.11,A+,male,40,urban,junior high,secondary education,other,health,reputation,father,15-30 mins,2-5 hours,yes,yes,10,53
+Stu387,FRN101,13.32,3.92,3.44,A+,male,23,urban,junior high,none,other,civil,course,mother,1-15 mins,>10 hours,no,no,4,40
+Stu388,FRN101,12.84,1.13,4.13,A+,male,55,rural,secondary education,none,other,civil,other,mother,1-15 mins,< 2hours,yes,yes,9,13
+Stu389,CS102,9.93,0.95,2.26,A,female,19,rural,none,junior high,other,other,course,father,1-15 mins,< 2hours,yes,no,10,27
+Stu390,CS103,17.06,3.76,1.46,A+,male,47,urban,none,higher education,civil,at home,home,mother,1-15 mins,>10 hours,no,no,1,33
+Stu391,ACCT101,2.76,3.05,1.72,D,male,44,rural,higher education,junior high,teacher,teacher,reputation,father,30mins - 1 hour,>10 hours,no,yes,10,9
+Stu392,ENG101,2.6,4.07,2.42,C-,female,57,urban,higher education,higher education,health,other,course,other,> 1hour,2-5 hours,no,yes,10,37
+Stu393,ENG101,11.59,3.37,3.57,A+,male,48,rural,junior high,junior high,teacher,at home,home,mother,30mins - 1 hour,5-10 hours,no,yes,10,10
+Stu394,ACCT101,0.32,1.58,2.63,D,male,34,rural,junior high,higher education,health,teacher,other,father,> 1hour,>10 hours,yes,no,6,49
+Stu395,CS102,0.35,4.31,4.26,C+,female,28,rural,secondary education,higher education,other,teacher,other,other,> 1hour,5-10 hours,yes,yes,8,34
+Stu396,CS103,16.81,0.08,3.19,A+,female,31,urban,primary education,none,health,teacher,home,mother,30mins - 1 hour,2-5 hours,yes,yes,3,18
+Stu397,ACCT101,13.95,1.12,1.82,A+,male,34,urban,junior high,secondary education,health,health,course,mother,15-30 mins,< 2hours,yes,no,6,9
+Stu398,UFS101,15.72,2.64,0.58,A+,female,39,urban,secondary education,higher education,other,civil,home,father,> 1hour,2-5 hours,no,yes,8,26
+Stu399,IT102,0.02,2.53,3.95,C,female,20,rural,none,higher education,other,civil,reputation,mother,1-15 mins,2-5 hours,yes,no,1,15
+Stu400,IT102,11.06,0.02,1.69,A,male,45,urban,secondary education,secondary education,teacher,health,home,father,15-30 mins,>10 hours,yes,no,9,16
+Stu401,CS102,0.45,1.51,3.98,C,male,48,urban,none,higher education,at home,health,course,mother,30mins - 1 hour,< 2hours,yes,yes,2,54
+Stu402,UFS101,7.22,3.4,4.79,A+,male,23,rural,secondary education,secondary education,other,at home,other,father,15-30 mins,>10 hours,no,yes,9,12
+Stu403,UFS101,10.65,4.41,2.74,A+,male,50,rural,primary education,junior high,at home,other,other,other,1-15 mins,>10 hours,no,no,3,54
+Stu404,FRN101,14.76,4.97,0.73,A+,female,48,urban,junior high,junior high,civil,health,course,father,1-15 mins,< 2hours,yes,no,1,35
+Stu405,UFS101,14.29,4.06,3.67,A+,male,30,urban,none,junior high,health,civil,course,mother,1-15 mins,5-10 hours,yes,yes,8,17
+Stu406,IT102,14.51,3.23,0.85,A+,male,59,rural,none,secondary education,health,at home,other,other,30mins - 1 hour,>10 hours,no,no,9,22
+Stu407,CS102,1.56,0.39,3.57,C+,female,22,rural,none,none,health,at home,other,mother,1-15 mins,2-5 hours,no,no,2,29
+Stu408,ACCT101,12.59,1.31,1.46,A+,male,32,rural,primary education,primary education,teacher,civil,course,mother,1-15 mins,2-5 hours,yes,yes,3,8
+Stu409,IT102,12.43,1.58,0.0,B+,male,56,rural,junior high,secondary education,at home,teacher,home,father,1-15 mins,>10 hours,no,no,1,15
+Stu410,IT102,4.15,3.61,0.16,F,female,39,rural,primary education,none,teacher,other,home,mother,> 1hour,2-5 hours,no,no,8,30
+Stu411,CS103,14.27,2.98,0.95,A+,male,32,urban,primary education,none,teacher,other,reputation,other,> 1hour,>10 hours,yes,yes,9,13
+Stu412,CS103,9.24,4.14,1.89,A-,male,22,urban,junior high,higher education,at home,other,reputation,other,30mins - 1 hour,>10 hours,no,yes,7,24
+Stu413,FRN101,7.39,2.83,3.55,A,female,25,urban,secondary education,secondary education,at home,at home,other,mother,1-15 mins,5-10 hours,yes,no,3,33
+Stu414,CS103,5.91,4.06,4.39,A+,female,30,rural,higher education,higher education,at home,health,home,mother,30mins - 1 hour,>10 hours,no,yes,1,18
+Stu415,IT102,15.31,4.53,0.37,A+,female,19,rural,primary education,higher education,at home,at home,reputation,other,15-30 mins,2-5 hours,yes,no,10,20
+Stu416,UFS101,16.15,1.65,1.97,A+,male,42,urban,primary education,secondary education,civil,health,other,mother,1-15 mins,5-10 hours,yes,no,9,25
+Stu417,ACCT101,3.3,1.98,3.34,B-,female,46,rural,secondary education,primary education,teacher,civil,course,father,30mins - 1 hour,5-10 hours,yes,no,1,29
+Stu418,ACCT101,15.81,3.21,2.28,A+,male,38,rural,higher education,primary education,other,health,reputation,mother,> 1hour,>10 hours,yes,yes,4,43
+Stu419,ACCT101,7.69,1.19,1.13,B-,male,30,rural,secondary education,secondary education,teacher,other,reputation,mother,15-30 mins,2-5 hours,yes,yes,5,21
+Stu420,UFS101,9.9,0.83,1.26,B+,female,38,urban,none,secondary education,civil,civil,other,father,30mins - 1 hour,5-10 hours,yes,no,9,11
+Stu421,UFS101,16.54,4.13,1.24,A+,male,42,rural,higher education,junior high,other,at home,course,other,> 1hour,>10 hours,yes,no,1,40
+Stu422,UFS101,3.19,0.65,1.07,E,male,22,rural,secondary education,primary education,health,other,other,other,> 1hour,5-10 hours,yes,yes,7,33
+Stu423,ACCT101,11.97,4.51,0.25,B+,female,26,rural,junior high,junior high,at home,other,course,father,30mins - 1 hour,< 2hours,no,no,1,30
+Stu424,ACCT101,10.1,3.16,0.71,B+,male,42,rural,secondary education,secondary education,at home,other,reputation,mother,> 1hour,2-5 hours,no,no,4,8
+Stu425,CS103,12.24,2.49,2.44,A+,female,45,rural,secondary education,higher education,civil,civil,home,father,> 1hour,2-5 hours,yes,no,7,35
+Stu426,ACCT101,17.47,4.22,0.35,A+,male,51,rural,junior high,primary education,health,teacher,other,father,30mins - 1 hour,2-5 hours,yes,yes,6,39
+Stu427,FRN101,8.89,4.93,1.38,B+,male,45,rural,primary education,none,other,civil,course,mother,1-15 mins,2-5 hours,no,yes,3,17
+Stu428,ACCT101,8.54,1.91,4.12,A+,male,53,rural,primary education,higher education,at home,at home,other,other,> 1hour,>10 hours,no,yes,4,22
+Stu429,ENG101,3.23,2.38,1.02,E,female,30,urban,none,none,at home,teacher,home,other,15-30 mins,>10 hours,yes,no,6,27
+Stu430,FRN101,11.06,4.39,1.04,A-,female,53,rural,higher education,primary education,at home,civil,home,mother,1-15 mins,>10 hours,no,no,8,46
+Stu431,ENG101,6.54,1.88,4.38,A+,male,55,urban,none,primary education,civil,health,course,other,> 1hour,>10 hours,no,yes,3,52
+Stu432,ENG101,6.46,2.31,0.42,C-,male,19,urban,primary education,none,civil,other,other,father,> 1hour,2-5 hours,no,no,10,54
+Stu433,FRN101,3.75,2.76,0.05,F,female,42,rural,primary education,junior high,at home,at home,course,father,> 1hour,5-10 hours,no,yes,3,9
+Stu434,IT102,17.37,3.97,2.61,A+,female,48,rural,primary education,secondary education,civil,at home,home,mother,15-30 mins,< 2hours,no,yes,10,20
+Stu435,ACCT101,10.86,1.41,3.68,A+,female,40,urban,higher education,none,civil,at home,reputation,father,30mins - 1 hour,< 2hours,yes,yes,6,8
+Stu436,CS102,0.68,3.2,3.85,C,male,50,urban,higher education,junior high,at home,other,home,mother,30mins - 1 hour,2-5 hours,yes,no,3,38
+Stu437,ENG101,9.44,1.6,1.94,A-,male,38,urban,none,junior high,health,civil,reputation,father,15-30 mins,2-5 hours,yes,no,8,21
+Stu438,IT102,3.21,0.78,0.49,F,male,31,rural,none,higher education,health,at home,course,other,1-15 mins,2-5 hours,no,no,5,51
+Stu439,UFS101,4.43,4.8,4.63,A,female,36,rural,none,junior high,civil,civil,course,other,15-30 mins,< 2hours,no,no,3,27
+Stu440,IT102,2.96,1.05,0.57,F,female,44,rural,secondary education,none,at home,health,reputation,other,15-30 mins,2-5 hours,no,no,9,19
+Stu441,CS103,4.49,2.82,3.56,B+,male,31,rural,junior high,secondary education,other,civil,other,other,1-15 mins,5-10 hours,yes,yes,10,33
+Stu442,FRN101,11.25,0.55,3.45,A+,male,40,urban,junior high,primary education,at home,other,home,mother,15-30 mins,5-10 hours,no,no,5,53
+Stu443,FRN101,12.14,2.24,1.11,A,female,32,rural,primary education,junior high,other,health,other,father,15-30 mins,< 2hours,no,yes,9,54
+Stu444,CS102,3.98,1.66,4.43,A-,female,33,urban,higher education,primary education,other,civil,reputation,father,15-30 mins,2-5 hours,no,no,8,35
+Stu445,UFS101,3.26,2.19,2.62,C+,female,28,rural,secondary education,higher education,teacher,health,reputation,other,30mins - 1 hour,>10 hours,no,no,3,8
+Stu446,IT102,3.65,0.55,4.96,A,female,53,urban,secondary education,primary education,civil,teacher,course,father,> 1hour,< 2hours,yes,no,10,9
+Stu447,ENG101,0.72,3.63,1.55,F,male,49,urban,secondary education,junior high,teacher,at home,course,father,1-15 mins,>10 hours,yes,no,4,33
+Stu448,UFS101,16.97,4.33,1.56,A+,female,51,rural,higher education,none,at home,other,course,father,1-15 mins,5-10 hours,yes,yes,6,28
+Stu449,ENG101,1.18,3.92,4.6,B-,male,25,urban,higher education,secondary education,teacher,health,reputation,father,> 1hour,>10 hours,no,yes,4,42
+Stu450,ACCT101,14.94,0.33,4.85,A+,female,33,urban,junior high,primary education,other,other,other,father,30mins - 1 hour,2-5 hours,no,no,1,12
+Stu451,ENG101,8.6,3.28,4.33,A+,male,17,urban,higher education,none,civil,teacher,reputation,father,1-15 mins,2-5 hours,no,yes,6,25
+Stu452,ACCT101,6.93,1.18,0.51,C,male,42,rural,secondary education,junior high,civil,teacher,home,mother,1-15 mins,5-10 hours,no,yes,6,41
+Stu453,FRN101,12.18,2.85,0.91,A,female,17,urban,higher education,junior high,at home,teacher,reputation,father,1-15 mins,>10 hours,yes,no,6,15
+Stu454,ENG101,6.55,2.17,4.94,A+,male,28,rural,secondary education,junior high,other,health,other,mother,15-30 mins,< 2hours,yes,yes,5,53
+Stu455,CS103,8.1,1.02,1.15,B-,male,53,rural,junior high,higher education,health,teacher,other,father,> 1hour,< 2hours,yes,no,4,42
+Stu456,UFS101,15.36,3.85,3.68,A+,female,36,rural,junior high,none,at home,civil,other,father,1-15 mins,2-5 hours,yes,no,7,35
+Stu457,CS103,3.05,1.22,4.28,B+,male,48,urban,secondary education,higher education,other,at home,reputation,mother,15-30 mins,5-10 hours,no,yes,6,32
+Stu458,CS103,5.18,4.76,0.77,C-,female,22,urban,primary education,primary education,other,at home,course,father,15-30 mins,>10 hours,yes,no,1,53
+Stu459,ENG101,16.68,3.4,3.57,A+,male,51,rural,higher education,junior high,health,civil,course,other,15-30 mins,5-10 hours,no,yes,5,31
+Stu460,ACCT101,14.87,3.78,4.68,A+,female,37,urban,junior high,secondary education,teacher,at home,other,father,> 1hour,2-5 hours,yes,yes,5,10
+Stu461,FRN101,3.4,0.93,3.77,B,male,41,rural,secondary education,none,health,teacher,reputation,other,1-15 mins,< 2hours,no,no,7,35
+Stu462,IT102,6.16,4.36,2.44,B,male,31,urban,higher education,junior high,teacher,other,other,mother,1-15 mins,>10 hours,no,no,9,43
+Stu463,UFS101,6.02,0.81,1.99,B-,male,25,rural,higher education,secondary education,teacher,teacher,reputation,mother,30mins - 1 hour,< 2hours,no,yes,9,47
+Stu464,UFS101,16.85,1.11,2.81,A+,female,40,rural,higher education,secondary education,other,at home,other,father,1-15 mins,>10 hours,yes,yes,5,32
+Stu465,ACCT101,1.11,1.89,0.06,F,female,49,rural,secondary education,secondary education,other,health,home,father,> 1hour,2-5 hours,no,yes,3,12
+Stu466,ACCT101,2.48,1.68,0.43,F,female,44,urban,secondary education,junior high,at home,civil,course,other,1-15 mins,2-5 hours,no,yes,8,19
+Stu467,ACCT101,10.16,2.76,1.44,A-,female,45,urban,primary education,secondary education,at home,teacher,course,other,> 1hour,< 2hours,yes,yes,6,13
+Stu468,ACCT101,2.14,1.66,0.54,F,female,47,rural,junior high,higher education,other,civil,course,father,1-15 mins,< 2hours,yes,no,3,44
+Stu469,ENG101,13.06,1.53,1.45,A+,female,30,rural,higher education,secondary education,at home,civil,course,father,> 1hour,5-10 hours,yes,yes,1,40
+Stu470,CS102,16.03,3.85,3.51,A+,male,18,urban,none,secondary education,other,teacher,other,other,15-30 mins,5-10 hours,no,no,5,20
+Stu471,CS103,10.34,0.74,0.73,B+,female,54,urban,junior high,junior high,civil,at home,home,father,> 1hour,>10 hours,yes,yes,4,40
+Stu472,IT102,4.4,0.02,4.18,A-,male,48,urban,primary education,secondary education,teacher,health,other,other,30mins - 1 hour,2-5 hours,yes,no,4,12
+Stu473,ACCT101,9.88,2.31,0.97,B+,female,44,rural,junior high,higher education,other,health,course,mother,15-30 mins,< 2hours,yes,yes,6,53
+Stu474,IT102,10.2,1.0,0.55,B,male,39,urban,none,higher education,health,health,course,other,30mins - 1 hour,2-5 hours,no,yes,8,52
+Stu475,CS102,11.49,3.82,4.54,A+,female,28,rural,none,none,teacher,civil,course,father,15-30 mins,< 2hours,no,yes,6,19
+Stu476,ENG101,8.76,4.05,0.35,C+,female,37,rural,primary education,higher education,civil,teacher,other,mother,> 1hour,2-5 hours,no,yes,10,39
+Stu477,UFS101,12.46,1.89,1.81,A+,male,35,rural,primary education,none,at home,teacher,reputation,mother,> 1hour,>10 hours,yes,no,7,53
+Stu478,ACCT101,11.78,3.08,1.92,A+,female,58,rural,primary education,higher education,other,teacher,other,father,1-15 mins,2-5 hours,no,yes,7,19
+Stu479,ACCT101,9.09,0.59,1.13,B,female,29,rural,junior high,secondary education,civil,health,reputation,father,1-15 mins,2-5 hours,yes,no,10,41
+Stu480,CS102,12.25,0.27,1.21,A+,female,60,urban,none,secondary education,other,health,reputation,father,1-15 mins,5-10 hours,no,yes,6,41
+Stu481,CS102,11.35,0.16,1.98,A+,male,24,rural,secondary education,none,civil,civil,other,mother,30mins - 1 hour,< 2hours,yes,yes,3,22
+Stu482,CS103,8.89,1.15,1.0,B,male,47,rural,secondary education,higher education,teacher,civil,course,other,1-15 mins,< 2hours,yes,no,8,14
+Stu483,CS103,15.19,2.07,0.08,A+,female,29,rural,secondary education,higher education,health,civil,other,mother,> 1hour,2-5 hours,no,no,8,41
+Stu484,IT102,8.89,0.37,1.82,A-,male,45,urban,none,junior high,teacher,teacher,home,mother,15-30 mins,< 2hours,yes,yes,7,45
+Stu485,CS102,0.63,2.84,4.61,B-,male,45,urban,higher education,higher education,civil,other,course,father,30mins - 1 hour,>10 hours,yes,no,2,48
+Stu486,FRN101,3.01,0.25,0.32,F,male,28,urban,none,primary education,teacher,health,course,father,15-30 mins,5-10 hours,no,yes,4,31
+Stu487,ENG101,9.54,2.42,4.12,A+,male,24,urban,secondary education,junior high,teacher,health,home,other,30mins - 1 hour,< 2hours,yes,no,1,17
+Stu488,CS103,17.14,2.3,1.53,A+,male,57,urban,none,higher education,other,other,course,other,> 1hour,2-5 hours,no,yes,2,48
+Stu489,UFS101,15.61,0.92,0.93,A+,female,40,urban,none,none,health,health,course,other,1-15 mins,5-10 hours,no,yes,9,37
+Stu490,ACCT101,2.17,4.36,3.74,B-,male,17,rural,primary education,higher education,at home,civil,home,other,15-30 mins,2-5 hours,yes,yes,4,10
+Stu491,FRN101,9.84,1.64,4.23,A+,male,17,urban,primary education,secondary education,at home,other,course,mother,15-30 mins,5-10 hours,no,yes,10,31
+Stu492,CS103,0.23,1.31,0.6,F,female,58,urban,none,primary education,civil,other,reputation,other,15-30 mins,< 2hours,yes,no,8,16
+Stu493,FRN101,0.67,2.49,1.36,F,female,53,rural,secondary education,higher education,at home,health,other,other,1-15 mins,>10 hours,yes,no,6,30
+Stu494,IT102,0.75,0.41,0.72,F,male,41,rural,none,secondary education,teacher,teacher,home,other,> 1hour,>10 hours,no,no,3,39
+Stu495,IT102,15.57,2.58,1.45,A+,female,44,urban,junior high,junior high,health,health,reputation,mother,> 1hour,< 2hours,no,no,10,26
+Stu496,FRN101,9.11,0.81,1.14,B,male,49,urban,higher education,secondary education,civil,other,home,other,30mins - 1 hour,< 2hours,no,yes,5,15
+Stu497,CS103,12.91,4.64,3.7,A+,male,37,urban,primary education,secondary education,other,other,other,mother,30mins - 1 hour,2-5 hours,yes,yes,8,52
+Stu498,ENG101,14.59,3.86,0.85,A+,male,19,rural,none,secondary education,civil,at home,course,mother,1-15 mins,>10 hours,no,no,7,41
+Stu499,IT102,16.83,4.82,1.0,A+,female,24,urban,primary education,primary education,health,civil,reputation,other,30mins - 1 hour,< 2hours,no,no,9,32
+Stu500,CS103,7.0,3.36,1.63,B-,female,49,rural,none,secondary education,other,teacher,home,other,1-15 mins,5-10 hours,no,yes,3,8
+Stu501,FRN101,11.09,1.43,3.62,A+,male,55,rural,higher education,secondary education,other,civil,course,father,30mins - 1 hour,2-5 hours,yes,no,4,9
+Stu502,CS103,16.65,3.4,4.82,A+,female,57,urban,secondary education,secondary education,teacher,at home,reputation,mother,1-15 mins,>10 hours,yes,no,1,32
+Stu503,CS102,6.09,4.76,2.71,B+,male,48,rural,primary education,higher education,at home,health,other,other,30mins - 1 hour,2-5 hours,yes,no,5,9
+Stu504,ENG101,7.26,1.71,3.74,A+,female,35,urban,higher education,primary education,health,at home,other,father,30mins - 1 hour,>10 hours,no,yes,6,35
+Stu505,ENG101,10.45,3.52,3.75,A+,male,32,rural,none,secondary education,at home,health,reputation,father,1-15 mins,5-10 hours,yes,no,3,52
+Stu506,ENG101,3.74,2.08,0.79,E,female,60,rural,primary education,secondary education,other,health,reputation,mother,30mins - 1 hour,2-5 hours,yes,no,4,36
+Stu507,CS103,4.77,2.04,0.92,C-,male,58,urban,secondary education,none,health,teacher,home,mother,30mins - 1 hour,5-10 hours,yes,no,1,25
+Stu508,UFS101,14.8,1.75,0.93,A+,female,47,rural,secondary education,junior high,civil,other,reputation,mother,15-30 mins,5-10 hours,yes,no,5,37
+Stu509,IT102,16.39,4.23,0.35,A+,female,36,urban,primary education,secondary education,other,other,course,father,15-30 mins,2-5 hours,yes,yes,3,30
+Stu510,UFS101,8.07,1.92,4.05,A+,male,46,urban,secondary education,none,other,other,other,mother,> 1hour,5-10 hours,yes,no,10,21
+Stu511,ENG101,16.1,2.42,1.39,A+,male,50,rural,primary education,primary education,health,civil,reputation,father,30mins - 1 hour,>10 hours,no,no,3,23
+Stu512,FRN101,2.57,4.92,3.48,B-,male,30,urban,higher education,primary education,civil,health,home,other,> 1hour,2-5 hours,yes,yes,10,52
+Stu513,IT102,4.3,1.98,0.92,D,male,53,urban,higher education,primary education,other,at home,other,mother,> 1hour,>10 hours,yes,no,3,25
+Stu514,ACCT101,7.64,0.11,4.62,A+,female,28,urban,primary education,junior high,health,other,other,father,15-30 mins,5-10 hours,yes,no,6,10
+Stu515,ACCT101,16.14,0.65,2.27,A+,female,39,rural,primary education,junior high,health,health,course,mother,30mins - 1 hour,2-5 hours,yes,yes,10,29
+Stu516,CS103,12.52,0.7,2.08,A+,male,29,urban,secondary education,higher education,health,teacher,reputation,other,> 1hour,2-5 hours,no,yes,5,48
+Stu517,ACCT101,7.96,0.98,3.95,A+,female,30,rural,junior high,higher education,other,teacher,reputation,mother,> 1hour,< 2hours,yes,yes,6,42
+Stu518,UFS101,6.69,3.31,2.19,B,female,23,rural,secondary education,primary education,civil,health,other,father,> 1hour,5-10 hours,yes,no,2,15
+Stu519,CS103,13.87,2.83,4.89,A+,female,32,urban,none,primary education,at home,other,course,mother,> 1hour,5-10 hours,no,yes,8,29
+Stu520,CS102,16.59,4.01,0.35,A+,male,34,rural,higher education,secondary education,other,other,course,father,15-30 mins,>10 hours,yes,no,8,33
+Stu521,IT102,2.67,0.0,3.86,B-,male,55,urban,none,primary education,at home,at home,home,father,30mins - 1 hour,2-5 hours,no,no,8,26
+Stu522,ACCT101,7.07,2.11,4.51,A+,female,20,rural,none,higher education,other,at home,reputation,father,15-30 mins,>10 hours,yes,no,2,40
+Stu523,IT102,2.56,3.33,0.81,F,female,43,rural,junior high,higher education,civil,health,home,other,> 1hour,5-10 hours,no,no,5,41
+Stu524,IT102,0.81,2.16,1.56,F,male,26,rural,higher education,junior high,health,health,reputation,mother,15-30 mins,5-10 hours,yes,no,7,11
+Stu525,FRN101,0.49,1.41,1.17,F,male,58,urban,higher education,none,at home,health,home,father,30mins - 1 hour,2-5 hours,no,no,3,18
+Stu526,CS102,9.89,4.88,1.85,A,female,48,urban,none,none,other,health,reputation,father,30mins - 1 hour,5-10 hours,yes,no,2,43
+Stu527,CS102,14.0,0.07,4.87,A+,female,18,urban,primary education,junior high,at home,at home,home,father,> 1hour,>10 hours,no,no,2,49
+Stu528,ENG101,15.36,0.14,1.63,A+,male,39,urban,junior high,higher education,at home,civil,other,father,30mins - 1 hour,2-5 hours,no,yes,5,36
+Stu529,CS102,10.65,4.7,1.71,A,female,55,urban,secondary education,primary education,civil,health,home,other,1-15 mins,2-5 hours,no,no,9,23
+Stu530,ENG101,6.87,3.6,4.67,A+,female,37,urban,primary education,primary education,at home,civil,reputation,father,> 1hour,5-10 hours,no,no,10,38
+Stu531,IT102,17.35,0.22,2.67,A+,female,27,rural,higher education,none,health,health,home,father,15-30 mins,< 2hours,yes,yes,2,18
+Stu532,FRN101,4.63,1.77,0.86,D,female,58,urban,none,none,other,civil,course,mother,1-15 mins,< 2hours,yes,yes,1,16
+Stu533,ACCT101,16.77,3.9,4.27,A+,male,19,urban,higher education,higher education,teacher,civil,reputation,other,> 1hour,5-10 hours,no,no,7,22
+Stu534,IT102,13.87,4.52,4.0,A+,male,27,rural,secondary education,higher education,other,civil,other,other,> 1hour,5-10 hours,no,yes,10,52
+Stu535,ACCT101,15.44,3.66,3.11,A+,female,18,urban,junior high,secondary education,health,health,course,father,1-15 mins,< 2hours,no,no,6,37
+Stu536,FRN101,16.48,3.5,0.34,A+,female,25,rural,junior high,higher education,health,at home,other,mother,1-15 mins,5-10 hours,yes,yes,4,35
+Stu537,UFS101,3.0,2.36,4.16,B,male,45,rural,higher education,junior high,other,at home,course,father,15-30 mins,< 2hours,no,yes,7,15
+Stu538,CS103,11.31,3.35,1.51,A,female,20,urban,none,higher education,other,teacher,reputation,father,30mins - 1 hour,< 2hours,no,no,9,8
+Stu539,UFS101,5.63,2.55,3.5,A-,male,40,rural,secondary education,none,other,teacher,other,other,1-15 mins,< 2hours,no,no,9,38
+Stu540,ACCT101,0.05,1.68,3.34,C-,male,31,rural,higher education,primary education,other,health,course,other,> 1hour,2-5 hours,yes,yes,10,27
+Stu541,IT102,16.1,1.32,1.23,A+,female,27,rural,none,junior high,health,other,reputation,mother,1-15 mins,>10 hours,yes,yes,7,50
+Stu542,CS102,3.46,0.67,4.31,B+,female,24,urban,junior high,junior high,at home,teacher,course,father,15-30 mins,5-10 hours,no,no,7,42
+Stu543,IT102,10.73,1.47,2.89,A+,female,36,urban,primary education,primary education,health,at home,other,father,30mins - 1 hour,5-10 hours,yes,no,4,49
+Stu544,IT102,13.87,3.28,4.3,A+,male,46,urban,primary education,junior high,teacher,health,reputation,other,30mins - 1 hour,< 2hours,yes,yes,10,45
+Stu545,FRN101,15.53,0.67,1.92,A+,female,20,urban,secondary education,primary education,at home,health,reputation,father,> 1hour,5-10 hours,no,yes,10,34
+Stu546,IT102,6.86,2.66,2.42,B+,female,38,rural,junior high,secondary education,civil,health,home,mother,15-30 mins,5-10 hours,yes,yes,10,27
+Stu547,IT102,1.45,4.15,2.3,D,female,32,rural,higher education,junior high,other,other,course,other,> 1hour,>10 hours,yes,yes,8,24
+Stu548,UFS101,0.37,2.17,2.17,E,male,52,rural,secondary education,junior high,at home,at home,reputation,other,1-15 mins,< 2hours,yes,yes,1,54
+Stu549,CS102,1.63,0.19,1.78,E,male,44,urban,junior high,higher education,civil,teacher,course,other,1-15 mins,>10 hours,yes,yes,4,54
+Stu550,ENG101,2.33,3.31,3.82,B-,male,40,urban,higher education,none,health,teacher,course,father,1-15 mins,< 2hours,no,yes,7,18
+Stu551,IT102,4.08,4.85,2.17,C,female,27,rural,primary education,junior high,health,other,reputation,father,1-15 mins,2-5 hours,no,yes,4,54
+Stu552,CS103,14.3,3.23,3.64,A+,female,46,rural,higher education,primary education,other,civil,home,mother,15-30 mins,5-10 hours,no,yes,4,42
+Stu553,CS102,6.8,0.4,1.66,B-,female,46,rural,higher education,none,civil,other,reputation,mother,15-30 mins,< 2hours,no,yes,1,38
+Stu554,ENG101,2.93,3.95,3.64,B-,male,37,urban,junior high,higher education,health,teacher,course,father,15-30 mins,5-10 hours,no,yes,8,32
+Stu555,ACCT101,14.08,1.97,1.78,A+,female,58,rural,none,higher education,at home,other,reputation,other,1-15 mins,>10 hours,yes,yes,3,12
+Stu556,CS103,15.13,0.77,1.82,A+,female,18,rural,secondary education,higher education,teacher,teacher,reputation,other,> 1hour,< 2hours,yes,no,1,35
+Stu557,ENG101,11.47,3.0,3.06,A+,female,28,rural,higher education,primary education,civil,other,reputation,father,30mins - 1 hour,< 2hours,no,yes,6,53
+Stu558,UFS101,12.09,4.15,1.36,A+,male,34,rural,secondary education,secondary education,other,at home,course,mother,> 1hour,5-10 hours,no,yes,1,24
+Stu559,FRN101,8.22,1.74,2.37,A-,female,38,rural,junior high,secondary education,health,other,other,mother,1-15 mins,2-5 hours,yes,yes,8,19
+Stu560,ENG101,0.21,0.52,3.76,C,female,43,urban,higher education,junior high,teacher,at home,home,mother,30mins - 1 hour,>10 hours,yes,no,2,24
+Stu561,ENG101,11.73,1.82,2.71,A+,female,27,urban,none,higher education,health,other,course,other,15-30 mins,>10 hours,no,yes,1,18
+Stu562,FRN101,16.36,1.53,1.72,A+,female,34,rural,junior high,secondary education,other,other,reputation,father,1-15 mins,5-10 hours,no,no,9,11
+Stu563,CS102,16.68,0.81,3.29,A+,female,28,urban,primary education,secondary education,at home,at home,reputation,father,1-15 mins,< 2hours,no,yes,9,29
+Stu564,ACCT101,14.08,3.77,2.73,A+,male,22,urban,secondary education,junior high,other,health,reputation,father,> 1hour,>10 hours,no,yes,9,12
+Stu565,IT102,15.06,2.56,0.6,A+,male,59,urban,secondary education,secondary education,at home,teacher,home,father,1-15 mins,5-10 hours,no,yes,4,16
+Stu566,ENG101,10.65,1.47,4.49,A+,female,27,rural,higher education,secondary education,health,civil,other,other,> 1hour,< 2hours,yes,no,9,25
+Stu567,ENG101,15.01,1.01,0.97,A+,male,22,rural,higher education,none,other,other,other,other,15-30 mins,2-5 hours,yes,no,7,50
+Stu568,IT102,11.21,0.2,4.25,A+,male,39,rural,none,none,other,teacher,other,other,30mins - 1 hour,5-10 hours,yes,yes,9,31
+Stu569,ACCT101,4.56,1.72,2.23,C+,female,53,urban,primary education,junior high,other,civil,reputation,other,30mins - 1 hour,< 2hours,no,no,5,22
+Stu570,ACCT101,12.48,2.92,4.8,A+,male,34,rural,none,higher education,teacher,civil,home,other,15-30 mins,>10 hours,no,yes,1,28
+Stu571,FRN101,2.75,2.65,1.99,C-,male,29,rural,none,junior high,health,health,home,mother,1-15 mins,< 2hours,no,no,10,16
+Stu572,CS102,3.51,1.02,0.09,F,male,52,urban,none,none,health,at home,other,mother,15-30 mins,2-5 hours,yes,no,7,18
+Stu573,CS103,5.41,1.91,2.46,B-,female,49,rural,junior high,secondary education,teacher,at home,course,father,30mins - 1 hour,5-10 hours,no,no,6,48
+Stu574,FRN101,16.62,4.84,2.08,A+,male,38,urban,junior high,secondary education,at home,teacher,home,father,> 1hour,< 2hours,no,no,3,32
+Stu575,IT102,2.82,4.52,3.19,C+,female,45,urban,none,junior high,at home,health,reputation,other,30mins - 1 hour,5-10 hours,no,no,8,54
+Stu576,FRN101,4.93,3.29,3.43,B+,female,60,rural,none,none,teacher,teacher,course,other,15-30 mins,2-5 hours,no,no,9,8
+Stu577,UFS101,2.21,4.12,0.88,F,male,35,rural,none,secondary education,health,other,other,father,30mins - 1 hour,< 2hours,no,yes,3,28
+Stu578,UFS101,1.76,3.56,0.6,F,male,38,rural,primary education,junior high,civil,other,reputation,mother,1-15 mins,5-10 hours,yes,yes,10,25
+Stu579,UFS101,10.25,2.33,2.83,A+,female,26,urban,none,junior high,other,health,reputation,mother,30mins - 1 hour,< 2hours,yes,no,4,39
+Stu580,CS102,5.16,1.87,1.58,C,female,37,urban,higher education,primary education,other,other,course,mother,15-30 mins,>10 hours,yes,no,4,22
+Stu581,FRN101,7.36,2.13,3.28,A,female,39,urban,higher education,higher education,health,civil,other,mother,15-30 mins,2-5 hours,no,yes,8,21
+Stu582,IT102,2.76,0.16,2.61,C,male,50,urban,secondary education,none,teacher,other,course,mother,1-15 mins,2-5 hours,no,no,2,16
+Stu583,IT102,2.15,1.28,3.71,B-,male,60,urban,primary education,primary education,teacher,health,home,other,> 1hour,2-5 hours,yes,yes,1,38
+Stu584,CS103,17.18,3.61,2.4,A+,male,58,rural,higher education,higher education,health,health,course,other,> 1hour,>10 hours,no,yes,4,13
+Stu585,FRN101,1.88,4.56,2.04,D,male,56,urban,primary education,primary education,other,other,course,other,1-15 mins,>10 hours,no,no,1,11
+Stu586,IT102,4.38,2.79,1.16,C-,male,43,rural,higher education,primary education,teacher,other,reputation,father,30mins - 1 hour,< 2hours,no,yes,8,41
+Stu587,ACCT101,13.72,3.9,0.86,A+,male,32,rural,primary education,none,teacher,civil,course,father,30mins - 1 hour,>10 hours,yes,yes,4,36
+Stu588,ENG101,11.43,1.61,1.89,A+,male,20,urban,higher education,secondary education,teacher,teacher,home,father,30mins - 1 hour,2-5 hours,no,no,3,9
+Stu589,CS102,6.64,4.23,2.46,B+,male,34,urban,primary education,secondary education,civil,health,course,father,> 1hour,5-10 hours,yes,no,2,49
+Stu590,CS102,11.33,3.36,2.12,A+,female,56,urban,secondary education,junior high,other,civil,course,father,30mins - 1 hour,5-10 hours,no,yes,7,30
+Stu591,IT102,0.46,1.17,1.95,F,male,39,urban,secondary education,none,other,civil,other,father,15-30 mins,< 2hours,yes,no,4,33
+Stu592,CS103,6.13,0.83,4.82,A+,female,25,rural,none,secondary education,other,civil,course,mother,> 1hour,5-10 hours,yes,yes,2,49
+Stu593,ENG101,3.14,2.94,3.97,B,male,59,urban,secondary education,none,at home,civil,other,other,30mins - 1 hour,>10 hours,yes,yes,9,45
+Stu594,CS102,8.8,0.54,3.32,A+,female,37,rural,primary education,higher education,at home,civil,course,father,30mins - 1 hour,2-5 hours,yes,no,3,15
+Stu595,IT102,16.13,4.6,0.54,A+,male,45,urban,none,none,at home,teacher,other,father,1-15 mins,2-5 hours,yes,yes,8,51
+Stu596,UFS101,6.18,1.02,4.43,A+,male,43,rural,secondary education,none,other,teacher,other,mother,15-30 mins,2-5 hours,yes,no,5,19
+Stu597,IT102,4.23,1.64,0.78,D,male,21,urban,higher education,higher education,teacher,other,home,father,> 1hour,5-10 hours,yes,yes,6,52
+Stu598,IT102,16.44,0.05,2.63,A+,female,43,urban,secondary education,primary education,health,health,home,other,> 1hour,< 2hours,no,yes,9,13
+Stu599,ENG101,7.63,4.29,1.6,B,male,20,urban,primary education,none,teacher,health,home,mother,30mins - 1 hour,< 2hours,no,yes,10,9
+Stu600,CS102,0.62,2.81,3.35,C-,male,52,urban,higher education,none,other,other,home,mother,1-15 mins,5-10 hours,no,yes,5,14
+Stu601,ACCT101,5.27,3.57,2.82,B,male,55,rural,higher education,none,other,at home,home,mother,> 1hour,5-10 hours,no,yes,2,9
+Stu602,CS102,1.86,2.73,3.98,B-,male,41,urban,primary education,secondary education,at home,civil,home,father,> 1hour,2-5 hours,yes,yes,9,46
+Stu603,ACCT101,12.54,3.93,4.64,A+,female,31,rural,secondary education,none,other,other,course,other,> 1hour,>10 hours,yes,yes,1,45
+Stu604,CS102,12.52,4.3,1.55,A+,male,40,rural,secondary education,junior high,health,other,home,mother,15-30 mins,< 2hours,yes,yes,3,43
+Stu605,UFS101,17.3,4.8,3.92,A+,female,37,rural,primary education,none,health,at home,reputation,father,30mins - 1 hour,2-5 hours,yes,yes,2,51
+Stu606,ENG101,8.23,2.34,1.25,B,male,28,urban,junior high,secondary education,at home,civil,course,mother,> 1hour,5-10 hours,no,no,8,22
+Stu607,CS103,6.85,0.58,0.89,C+,female,55,urban,secondary education,junior high,at home,civil,other,mother,> 1hour,5-10 hours,no,yes,5,13
+Stu608,FRN101,17.44,1.05,0.67,A+,male,22,urban,junior high,higher education,health,civil,other,father,15-30 mins,5-10 hours,no,yes,3,24
+Stu609,ACCT101,5.36,0.77,1.36,C,female,22,urban,secondary education,secondary education,civil,health,home,other,30mins - 1 hour,>10 hours,no,yes,3,11
+Stu610,CS103,15.42,4.83,4.32,A+,female,51,rural,secondary education,secondary education,at home,teacher,reputation,father,> 1hour,5-10 hours,no,yes,4,12
+Stu611,IT102,0.15,3.42,4.87,B-,male,59,rural,junior high,none,civil,other,reputation,mother,15-30 mins,>10 hours,yes,no,4,24
+Stu612,ACCT101,8.76,3.98,3.52,A+,female,30,urban,secondary education,none,civil,at home,other,other,30mins - 1 hour,< 2hours,no,no,9,22
+Stu613,ENG101,6.2,1.43,4.52,A+,female,24,urban,junior high,none,civil,teacher,other,mother,> 1hour,>10 hours,yes,yes,7,24
+Stu614,ENG101,3.17,4.2,1.91,C-,male,60,urban,higher education,primary education,at home,civil,course,father,1-15 mins,5-10 hours,no,no,3,27
+Stu615,UFS101,2.37,4.83,1.73,D,male,35,urban,junior high,secondary education,teacher,health,course,mother,1-15 mins,2-5 hours,no,yes,8,33
+Stu616,FRN101,12.24,0.38,1.31,A+,female,59,rural,higher education,secondary education,health,health,other,other,1-15 mins,>10 hours,yes,yes,8,46
+Stu617,UFS101,5.17,3.31,1.54,C,male,32,rural,junior high,higher education,health,other,reputation,father,30mins - 1 hour,< 2hours,no,yes,6,19
+Stu618,ENG101,14.46,1.03,0.8,A+,female,55,urban,secondary education,junior high,at home,health,home,father,30mins - 1 hour,5-10 hours,no,yes,6,13
+Stu619,UFS101,9.26,4.39,2.22,A,male,36,urban,primary education,higher education,health,health,reputation,other,30mins - 1 hour,< 2hours,no,yes,7,42
+Stu620,UFS101,15.62,3.74,0.4,A+,male,43,rural,secondary education,junior high,teacher,teacher,other,father,15-30 mins,>10 hours,yes,yes,9,53
+Stu621,CS102,7.6,0.82,4.7,A+,female,38,urban,junior high,higher education,teacher,at home,home,father,30mins - 1 hour,< 2hours,yes,no,7,53
+Stu622,FRN101,3.69,3.85,4.46,A-,female,39,rural,higher education,secondary education,teacher,health,course,other,15-30 mins,>10 hours,no,yes,2,34
+Stu623,ENG101,6.53,2.58,2.69,B+,male,37,urban,secondary education,secondary education,teacher,teacher,home,father,> 1hour,2-5 hours,yes,yes,10,24
+Stu624,CS103,7.44,3.46,0.77,C+,male,52,urban,secondary education,primary education,other,teacher,other,other,1-15 mins,2-5 hours,yes,yes,2,39
+Stu625,CS102,2.32,2.8,1.99,D,male,47,urban,primary education,junior high,health,teacher,home,mother,> 1hour,< 2hours,yes,no,6,42
+Stu626,CS102,8.35,4.21,4.87,A+,male,23,rural,secondary education,secondary education,teacher,teacher,reputation,father,30mins - 1 hour,2-5 hours,yes,no,7,32
+Stu627,ACCT101,0.9,4.24,2.68,D,male,40,rural,junior high,none,at home,other,course,father,15-30 mins,< 2hours,yes,no,4,34
+Stu628,CS102,0.26,3.94,3.68,C,female,47,rural,primary education,higher education,teacher,teacher,other,father,1-15 mins,2-5 hours,yes,yes,10,37
+Stu629,ACCT101,16.33,2.86,3.74,A+,female,50,urban,higher education,junior high,civil,civil,other,mother,> 1hour,5-10 hours,no,no,9,15
+Stu630,ENG101,2.07,3.91,0.38,F,female,58,urban,secondary education,primary education,civil,civil,home,father,30mins - 1 hour,2-5 hours,yes,yes,8,30
+Stu631,FRN101,15.79,3.72,0.62,A+,female,21,rural,primary education,primary education,civil,teacher,reputation,mother,> 1hour,5-10 hours,no,yes,3,13
+Stu632,FRN101,6.3,3.02,3.42,A-,male,19,rural,primary education,higher education,teacher,at home,other,mother,30mins - 1 hour,5-10 hours,yes,no,7,39
+Stu633,CS102,6.8,4.94,2.35,B+,male,27,urban,higher education,primary education,health,teacher,home,father,> 1hour,5-10 hours,no,no,1,45
+Stu634,ACCT101,5.23,2.51,4.26,A,male,38,rural,none,higher education,civil,teacher,home,father,30mins - 1 hour,2-5 hours,yes,no,8,54
+Stu635,ENG101,4.38,4.31,3.56,B+,female,37,urban,junior high,secondary education,at home,teacher,reputation,other,> 1hour,< 2hours,yes,no,8,51
+Stu636,ACCT101,6.73,2.7,4.9,A+,female,27,urban,none,none,civil,at home,home,other,> 1hour,< 2hours,no,no,5,14
+Stu637,UFS101,12.79,4.22,1.78,A+,female,33,rural,secondary education,secondary education,teacher,other,course,father,> 1hour,2-5 hours,no,yes,1,22
+Stu638,CS102,12.03,3.99,4.99,A+,male,41,rural,primary education,secondary education,at home,teacher,other,other,15-30 mins,>10 hours,yes,no,10,22
+Stu639,UFS101,16.77,2.29,1.07,A+,male,27,urban,higher education,secondary education,other,teacher,home,other,30mins - 1 hour,2-5 hours,no,yes,6,51
+Stu640,ACCT101,12.35,2.66,1.81,A+,female,45,rural,higher education,primary education,at home,teacher,reputation,other,30mins - 1 hour,5-10 hours,no,no,2,12
+Stu641,CS103,7.07,1.41,2.65,B+,female,31,urban,higher education,secondary education,health,teacher,other,mother,15-30 mins,< 2hours,no,no,1,20
+Stu642,ACCT101,10.41,2.33,3.18,A+,female,31,urban,primary education,junior high,at home,health,course,mother,30mins - 1 hour,2-5 hours,no,no,6,52
+Stu643,ENG101,8.82,0.54,4.54,A+,male,49,urban,secondary education,secondary education,civil,at home,reputation,father,15-30 mins,5-10 hours,no,yes,4,29
+Stu644,CS102,16.91,4.95,1.74,A+,male,59,urban,none,secondary education,other,civil,other,father,15-30 mins,< 2hours,yes,yes,10,39
+Stu645,CS103,12.08,2.1,0.52,A-,female,39,rural,secondary education,secondary education,civil,health,reputation,father,> 1hour,>10 hours,no,yes,1,39
+Stu646,ENG101,16.9,2.06,2.71,A+,male,37,rural,primary education,higher education,civil,at home,reputation,father,15-30 mins,2-5 hours,yes,no,6,9
+Stu647,CS102,8.58,0.03,2.39,A-,male,27,urban,none,higher education,health,health,reputation,mother,> 1hour,5-10 hours,yes,yes,2,50
+Stu648,UFS101,4.09,1.22,1.22,C-,male,45,urban,none,none,other,at home,reputation,other,> 1hour,2-5 hours,no,yes,9,15
+Stu649,ACCT101,8.35,0.01,1.66,B+,female,24,rural,secondary education,higher education,health,health,other,mother,> 1hour,2-5 hours,no,yes,10,34
+Stu650,ACCT101,15.62,2.51,4.46,A+,female,26,rural,secondary education,higher education,teacher,health,other,other,15-30 mins,< 2hours,no,yes,1,18
+Stu651,CS103,4.54,1.72,2.93,B-,male,53,urban,primary education,none,at home,health,other,other,15-30 mins,>10 hours,yes,yes,9,45
+Stu652,ENG101,5.72,4.49,1.06,C,female,37,rural,junior high,secondary education,health,at home,reputation,other,> 1hour,2-5 hours,no,no,9,11
+Stu653,CS102,0.53,3.87,1.72,F,female,40,urban,junior high,junior high,at home,other,other,mother,> 1hour,>10 hours,yes,yes,1,34
+Stu654,IT102,13.13,4.73,3.12,A+,male,56,rural,primary education,primary education,at home,civil,reputation,mother,30mins - 1 hour,< 2hours,no,no,3,52
+Stu655,CS102,11.48,4.46,2.88,A+,male,20,rural,secondary education,none,health,teacher,home,mother,30mins - 1 hour,2-5 hours,no,yes,1,17
+Stu656,IT102,0.37,3.89,2.34,E,female,34,urban,higher education,primary education,other,at home,home,other,30mins - 1 hour,2-5 hours,no,no,8,10
+Stu657,CS102,17.12,4.24,4.36,A+,female,50,urban,secondary education,higher education,teacher,civil,home,mother,> 1hour,>10 hours,no,yes,1,12
+Stu658,CS102,2.76,0.05,1.29,E,female,46,urban,secondary education,secondary education,civil,at home,reputation,other,1-15 mins,2-5 hours,yes,yes,9,18
+Stu659,CS102,12.06,1.83,0.57,A-,male,51,urban,none,none,at home,at home,other,father,15-30 mins,2-5 hours,yes,no,4,40
+Stu660,UFS101,7.31,2.28,0.33,C,female,33,urban,secondary education,secondary education,civil,other,reputation,other,1-15 mins,>10 hours,yes,no,6,54
+Stu661,FRN101,3.67,0.12,4.51,A-,female,33,rural,none,primary education,other,at home,home,mother,1-15 mins,< 2hours,no,yes,6,54
+Stu662,CS102,0.25,1.99,1.48,F,male,42,urban,primary education,none,at home,other,reputation,father,> 1hour,>10 hours,yes,no,2,48
+Stu663,UFS101,13.77,2.48,3.46,A+,male,18,urban,none,none,at home,other,home,father,30mins - 1 hour,>10 hours,yes,yes,3,24
+Stu664,CS103,1.56,2.18,4.84,B,female,57,rural,primary education,higher education,at home,teacher,reputation,father,15-30 mins,2-5 hours,yes,no,3,22
+Stu665,FRN101,2.67,0.44,0.28,F,male,48,rural,none,none,health,health,home,father,1-15 mins,< 2hours,yes,yes,5,22
+Stu666,ACCT101,0.76,3.61,3.02,C-,female,26,urban,junior high,secondary education,civil,at home,other,father,30mins - 1 hour,< 2hours,no,yes,3,37
+Stu667,ACCT101,16.55,0.93,3.97,A+,female,54,urban,none,junior high,civil,other,other,other,> 1hour,>10 hours,no,no,3,30
+Stu668,ENG101,5.36,2.84,2.75,B,female,54,urban,secondary education,higher education,at home,other,reputation,father,30mins - 1 hour,2-5 hours,yes,yes,4,21
+Stu669,ACCT101,1.99,0.68,1.6,E,female,58,rural,none,primary education,at home,other,reputation,other,15-30 mins,5-10 hours,yes,yes,4,30
+Stu670,CS103,12.08,1.28,0.39,A-,female,53,urban,none,none,other,teacher,reputation,father,15-30 mins,>10 hours,yes,yes,3,23
+Stu671,ENG101,7.76,2.18,0.1,C,male,41,rural,junior high,junior high,other,civil,other,mother,15-30 mins,< 2hours,no,yes,6,47
+Stu672,CS102,11.2,0.94,3.74,A+,male,46,rural,none,junior high,civil,at home,reputation,other,> 1hour,2-5 hours,yes,yes,9,25
+Stu673,FRN101,7.69,2.41,0.79,C+,female,55,urban,none,primary education,teacher,teacher,reputation,mother,15-30 mins,>10 hours,yes,no,9,18
+Stu674,FRN101,3.15,3.28,3.93,B,female,60,urban,none,none,civil,at home,home,mother,> 1hour,>10 hours,no,yes,7,34
+Stu675,CS103,6.48,1.65,4.73,A+,female,41,urban,junior high,primary education,health,civil,reputation,father,15-30 mins,< 2hours,yes,no,2,16
+Stu676,CS102,12.75,2.06,0.19,A-,female,47,urban,secondary education,higher education,civil,civil,course,mother,15-30 mins,2-5 hours,yes,yes,6,53
+Stu677,CS102,16.15,0.64,3.18,A+,female,46,urban,primary education,primary education,health,health,reputation,mother,1-15 mins,5-10 hours,no,no,5,48
+Stu678,IT102,1.37,1.11,4.26,B-,male,41,urban,junior high,junior high,teacher,at home,course,mother,15-30 mins,>10 hours,yes,yes,3,33
+Stu679,CS102,2.85,1.16,0.36,F,female,57,rural,primary education,primary education,other,teacher,other,mother,15-30 mins,>10 hours,yes,no,1,20
+Stu680,FRN101,0.04,3.3,4.58,C+,female,34,urban,none,secondary education,civil,health,other,mother,1-15 mins,< 2hours,yes,no,6,11
+Stu681,FRN101,10.93,4.92,4.63,A+,male,30,urban,secondary education,secondary education,at home,teacher,other,other,> 1hour,< 2hours,no,no,3,13
+Stu682,CS103,12.68,1.72,4.48,A+,male,28,rural,junior high,junior high,teacher,civil,other,mother,1-15 mins,< 2hours,no,yes,1,41
+Stu683,CS103,12.55,2.96,0.24,A-,female,25,urban,none,secondary education,civil,other,course,father,1-15 mins,5-10 hours,yes,yes,3,36
+Stu684,UFS101,0.75,2.15,1.57,F,male,42,urban,secondary education,primary education,at home,civil,other,other,15-30 mins,< 2hours,yes,yes,3,45
+Stu685,IT102,5.37,0.35,2.72,B,male,44,urban,none,primary education,health,other,home,father,30mins - 1 hour,2-5 hours,yes,no,4,46
+Stu686,FRN101,7.14,0.3,1.73,B,female,44,urban,secondary education,junior high,at home,other,other,other,> 1hour,5-10 hours,yes,no,5,15
+Stu687,CS102,14.11,0.71,3.97,A+,female,28,urban,secondary education,primary education,teacher,other,reputation,mother,30mins - 1 hour,< 2hours,yes,no,3,32
+Stu688,ACCT101,10.43,1.42,1.13,A-,male,18,urban,primary education,junior high,other,at home,course,mother,1-15 mins,5-10 hours,no,yes,4,54
+Stu689,UFS101,2.01,0.77,4.5,B,male,18,urban,primary education,junior high,other,civil,home,father,15-30 mins,>10 hours,no,no,9,18
+Stu690,FRN101,11.58,0.37,2.37,A+,male,34,rural,primary education,higher education,civil,teacher,home,father,15-30 mins,< 2hours,yes,no,10,30
+Stu691,CS102,11.45,0.47,5.0,A+,male,53,urban,none,secondary education,at home,civil,other,father,1-15 mins,>10 hours,no,no,2,48
+Stu692,CS102,7.54,2.23,4.86,A+,male,22,rural,junior high,higher education,teacher,civil,other,other,15-30 mins,5-10 hours,no,no,8,25
+Stu693,UFS101,0.58,0.62,0.15,F,male,42,urban,secondary education,secondary education,teacher,civil,reputation,mother,15-30 mins,5-10 hours,yes,no,7,33
+Stu694,CS102,8.0,1.01,2.04,B+,male,52,rural,secondary education,junior high,at home,civil,course,other,30mins - 1 hour,2-5 hours,no,yes,3,25
+Stu695,FRN101,0.98,1.86,0.41,F,female,34,urban,none,junior high,other,teacher,home,mother,1-15 mins,>10 hours,no,no,2,15
+Stu696,ACCT101,1.33,2.59,3.52,C,male,24,urban,none,higher education,at home,health,other,father,30mins - 1 hour,>10 hours,yes,no,3,43
+Stu697,CS103,0.77,1.46,2.8,D,male,29,urban,none,none,health,civil,reputation,mother,30mins - 1 hour,2-5 hours,yes,no,3,46
+Stu698,ENG101,10.16,1.42,2.81,A+,male,28,urban,secondary education,primary education,civil,at home,home,father,15-30 mins,>10 hours,yes,yes,4,26
+Stu699,ENG101,14.41,1.08,0.35,A+,male,40,urban,junior high,higher education,health,at home,home,mother,> 1hour,< 2hours,yes,no,2,25
+Stu700,ACCT101,16.98,2.45,0.89,A+,male,51,urban,junior high,primary education,teacher,health,home,father,1-15 mins,5-10 hours,yes,yes,7,35
+Stu701,CS103,11.5,2.37,3.1,A+,female,43,rural,junior high,junior high,teacher,health,course,father,30mins - 1 hour,5-10 hours,yes,yes,1,40
+Stu702,UFS101,9.47,1.36,1.48,B+,female,42,urban,higher education,junior high,other,health,reputation,father,15-30 mins,< 2hours,no,yes,7,14
+Stu703,CS103,3.28,3.19,2.33,C,female,18,rural,higher education,none,at home,at home,home,mother,> 1hour,5-10 hours,no,no,3,27
+Stu704,UFS101,16.66,0.98,3.91,A+,female,23,rural,junior high,none,other,other,other,mother,> 1hour,>10 hours,no,yes,7,38
+Stu705,UFS101,1.81,4.56,4.15,B-,male,57,urban,higher education,primary education,civil,health,home,father,15-30 mins,>10 hours,yes,no,8,51
+Stu706,ACCT101,1.84,3.88,2.76,C-,male,48,rural,primary education,primary education,at home,other,course,mother,> 1hour,>10 hours,yes,no,1,32
+Stu707,ENG101,17.29,0.09,2.89,A+,female,24,rural,none,higher education,health,civil,reputation,father,30mins - 1 hour,2-5 hours,yes,no,6,52
+Stu708,CS102,10.11,3.47,3.39,A+,female,55,urban,primary education,secondary education,at home,at home,course,mother,> 1hour,2-5 hours,no,no,4,32
+Stu709,UFS101,11.46,1.24,4.84,A+,male,25,rural,junior high,primary education,health,other,home,father,30mins - 1 hour,>10 hours,no,no,2,49
+Stu710,UFS101,5.47,2.93,2.77,B,female,57,urban,higher education,secondary education,health,teacher,other,other,> 1hour,>10 hours,no,no,8,34
+Stu711,ACCT101,7.7,4.47,0.22,C,female,21,rural,primary education,secondary education,health,health,course,father,1-15 mins,>10 hours,no,no,4,10
+Stu712,IT102,5.86,0.68,1.4,C+,female,35,urban,junior high,none,at home,health,course,mother,30mins - 1 hour,>10 hours,yes,no,7,37
+Stu713,ACCT101,3.1,4.19,0.47,F,male,29,urban,none,none,civil,other,other,mother,1-15 mins,>10 hours,no,yes,1,44
+Stu714,ACCT101,11.97,0.66,2.48,A+,male,53,urban,junior high,primary education,health,other,other,father,1-15 mins,>10 hours,yes,no,3,51
+Stu715,CS103,14.32,2.05,0.5,A+,male,39,urban,none,secondary education,teacher,civil,reputation,other,> 1hour,5-10 hours,no,yes,5,29
+Stu716,CS103,14.74,3.28,3.63,A+,female,43,urban,junior high,none,civil,health,home,mother,15-30 mins,2-5 hours,yes,yes,10,26
+Stu717,ACCT101,2.67,4.33,3.53,B-,male,55,urban,junior high,none,at home,at home,course,mother,30mins - 1 hour,>10 hours,no,yes,7,40
+Stu718,FRN101,14.77,1.85,2.13,A+,female,37,urban,none,primary education,at home,at home,reputation,father,> 1hour,2-5 hours,no,no,7,11
+Stu719,ENG101,15.26,3.22,1.67,A+,female,31,rural,primary education,secondary education,teacher,civil,course,other,30mins - 1 hour,2-5 hours,yes,no,8,11
+Stu720,FRN101,13.9,2.98,3.28,A+,female,31,rural,none,none,other,teacher,course,mother,1-15 mins,< 2hours,no,yes,10,53
+Stu721,UFS101,12.48,2.09,0.77,A,male,24,urban,junior high,higher education,other,at home,reputation,father,> 1hour,2-5 hours,yes,yes,2,49
+Stu722,IT102,2.33,2.72,0.44,F,male,18,urban,none,higher education,at home,teacher,course,other,> 1hour,5-10 hours,yes,yes,7,23
+Stu723,CS103,6.66,4.12,1.53,B-,female,55,rural,none,junior high,teacher,other,home,other,15-30 mins,2-5 hours,yes,no,5,16
+Stu724,FRN101,3.46,0.89,2.99,C+,male,60,urban,higher education,none,civil,other,other,father,1-15 mins,< 2hours,yes,yes,3,49
+Stu725,CS103,7.05,1.17,0.96,C+,male,58,urban,none,junior high,other,at home,reputation,other,30mins - 1 hour,>10 hours,no,yes,4,47
+Stu726,CS103,3.4,4.49,1.86,C-,male,44,urban,none,primary education,civil,other,reputation,other,> 1hour,< 2hours,no,no,10,30
+Stu727,ACCT101,13.74,0.95,1.16,A+,male,25,rural,junior high,primary education,teacher,teacher,reputation,mother,15-30 mins,5-10 hours,no,yes,9,29
+Stu728,ACCT101,0.22,1.34,0.22,F,male,26,rural,none,secondary education,at home,at home,home,mother,> 1hour,2-5 hours,no,yes,9,21
+Stu729,ACCT101,15.74,0.42,4.16,A+,female,48,urban,secondary education,higher education,other,other,home,mother,30mins - 1 hour,< 2hours,yes,yes,10,39
+Stu730,IT102,3.22,1.5,1.22,D,male,42,urban,primary education,junior high,other,at home,reputation,father,1-15 mins,2-5 hours,no,no,10,46
+Stu731,IT102,8.12,2.75,3.53,A+,female,46,rural,secondary education,none,at home,health,home,mother,> 1hour,2-5 hours,no,no,2,42
+Stu732,IT102,5.89,2.44,1.92,B-,male,30,urban,none,junior high,health,civil,course,other,15-30 mins,< 2hours,no,no,1,46
+Stu733,IT102,9.12,1.87,2.64,A,male,23,urban,primary education,none,teacher,teacher,other,other,1-15 mins,2-5 hours,yes,no,6,19
+Stu734,UFS101,9.18,0.01,2.15,A-,male,17,urban,primary education,primary education,other,at home,home,father,15-30 mins,>10 hours,no,no,4,40
+Stu735,FRN101,8.64,2.19,0.08,C+,male,45,urban,none,higher education,health,teacher,course,father,1-15 mins,5-10 hours,yes,no,6,39
+Stu736,CS102,12.41,0.58,2.84,A+,male,40,rural,secondary education,secondary education,other,health,reputation,father,15-30 mins,5-10 hours,yes,yes,5,25
+Stu737,CS102,0.35,2.91,2.84,D,female,27,urban,higher education,secondary education,teacher,teacher,course,mother,> 1hour,5-10 hours,yes,no,1,31
+Stu738,IT102,16.89,3.25,0.79,A+,male,20,rural,secondary education,secondary education,civil,other,reputation,father,30mins - 1 hour,>10 hours,yes,yes,3,41
+Stu739,IT102,6.19,4.09,3.63,A-,male,27,urban,higher education,higher education,civil,teacher,home,other,15-30 mins,5-10 hours,no,no,2,40
+Stu740,FRN101,16.43,3.91,4.19,A+,male,43,rural,secondary education,junior high,at home,health,course,mother,15-30 mins,< 2hours,no,no,6,11
+Stu741,FRN101,11.7,0.16,0.73,A-,female,49,rural,junior high,primary education,at home,teacher,course,other,30mins - 1 hour,>10 hours,no,no,5,43
+Stu742,FRN101,12.26,3.12,3.55,A+,male,45,urban,none,secondary education,teacher,civil,other,other,15-30 mins,< 2hours,yes,no,9,41
+Stu743,UFS101,4.91,3.26,2.06,C+,female,37,urban,junior high,secondary education,at home,civil,home,mother,1-15 mins,< 2hours,no,no,9,28
+Stu744,ACCT101,9.25,3.77,4.55,A+,male,44,urban,higher education,junior high,civil,at home,other,mother,> 1hour,5-10 hours,no,no,5,9
+Stu745,CS102,8.76,1.75,2.1,A-,female,47,urban,primary education,primary education,teacher,health,course,father,15-30 mins,5-10 hours,no,no,1,19
+Stu746,IT102,5.41,4.8,2.2,B-,male,30,rural,primary education,primary education,civil,civil,home,father,> 1hour,5-10 hours,no,no,6,22
+Stu747,ENG101,13.14,1.99,1.16,A+,female,52,urban,primary education,primary education,civil,civil,other,father,30mins - 1 hour,2-5 hours,no,no,7,14
+Stu748,UFS101,0.87,2.46,3.48,C,male,29,rural,secondary education,none,civil,health,home,mother,> 1hour,>10 hours,no,yes,6,22
+Stu749,CS103,12.49,3.68,0.21,A-,male,22,rural,junior high,higher education,other,teacher,reputation,father,1-15 mins,2-5 hours,no,no,4,18
+Stu750,ENG101,13.11,1.04,0.26,A,female,58,rural,junior high,none,at home,other,other,other,30mins - 1 hour,5-10 hours,no,no,5,41
+Stu751,ACCT101,13.63,3.92,0.79,A+,female,36,rural,none,secondary education,at home,other,reputation,other,15-30 mins,>10 hours,yes,no,5,20
+Stu752,UFS101,10.51,3.05,4.65,A+,female,43,urban,higher education,none,at home,at home,reputation,other,> 1hour,5-10 hours,no,yes,2,13
+Stu753,CS102,8.26,4.51,1.8,B+,male,45,rural,primary education,none,teacher,civil,home,mother,> 1hour,2-5 hours,yes,yes,3,54
+Stu754,IT102,1.05,3.24,1.56,F,female,33,rural,none,primary education,at home,other,home,other,> 1hour,>10 hours,no,no,1,20
+Stu755,IT102,15.83,0.24,4.78,A+,female,36,urban,higher education,junior high,teacher,health,reputation,father,> 1hour,< 2hours,yes,yes,4,49
+Stu756,FRN101,0.07,4.88,2.33,E,female,18,urban,junior high,higher education,health,teacher,reputation,father,30mins - 1 hour,5-10 hours,yes,yes,10,23
+Stu757,ENG101,8.54,4.2,4.1,A+,male,44,urban,junior high,secondary education,other,health,other,other,> 1hour,2-5 hours,no,yes,1,42
+Stu758,IT102,3.37,3.9,0.79,E,male,31,rural,secondary education,secondary education,at home,health,reputation,father,15-30 mins,2-5 hours,yes,yes,4,23
+Stu759,UFS101,16.66,1.95,0.28,A+,female,53,urban,secondary education,primary education,other,at home,home,mother,> 1hour,< 2hours,yes,no,9,13
+Stu760,IT102,12.24,1.06,0.8,A,female,56,urban,higher education,secondary education,other,other,course,father,30mins - 1 hour,>10 hours,yes,yes,2,48
+Stu761,ACCT101,13.7,3.08,2.7,A+,male,17,rural,primary education,none,civil,health,home,father,1-15 mins,>10 hours,yes,no,10,36
+Stu762,UFS101,5.68,0.4,2.53,B,male,24,urban,higher education,secondary education,at home,civil,course,father,30mins - 1 hour,2-5 hours,no,yes,5,48
+Stu763,FRN101,2.34,2.28,0.05,F,male,33,rural,secondary education,primary education,other,health,reputation,other,> 1hour,5-10 hours,yes,yes,3,36
+Stu764,CS102,7.92,4.58,3.51,A+,male,36,urban,none,secondary education,other,at home,home,mother,15-30 mins,>10 hours,yes,yes,1,17
+Stu765,IT102,2.0,4.16,2.83,C,female,55,rural,higher education,none,teacher,civil,course,other,1-15 mins,5-10 hours,no,no,10,52
+Stu766,FRN101,6.83,1.76,1.48,B-,male,48,urban,higher education,none,civil,teacher,course,mother,15-30 mins,>10 hours,no,no,1,27
+Stu767,CS102,6.07,3.16,2.06,B-,male,17,urban,secondary education,higher education,civil,health,home,other,1-15 mins,5-10 hours,no,no,2,34
+Stu768,CS103,3.77,4.93,3.8,B,female,33,rural,secondary education,primary education,health,at home,course,father,30mins - 1 hour,>10 hours,no,no,4,8
+Stu769,UFS101,14.7,1.8,1.37,A+,male,32,rural,primary education,none,civil,at home,reputation,father,30mins - 1 hour,>10 hours,yes,no,9,35
+Stu770,CS102,8.55,0.75,0.51,B-,male,23,rural,secondary education,primary education,teacher,other,other,other,1-15 mins,>10 hours,yes,no,3,16
+Stu771,UFS101,12.24,0.43,1.64,A+,male,36,urban,none,none,health,health,reputation,mother,1-15 mins,5-10 hours,yes,no,10,21
+Stu772,CS102,4.82,0.25,4.83,A,female,24,rural,higher education,primary education,at home,health,home,other,1-15 mins,5-10 hours,yes,yes,8,27
+Stu773,CS103,11.75,2.14,3.85,A+,male,51,rural,higher education,junior high,health,civil,course,father,30mins - 1 hour,2-5 hours,no,yes,6,16
+Stu774,ENG101,8.31,2.23,2.34,A-,male,53,rural,secondary education,higher education,other,at home,other,mother,30mins - 1 hour,5-10 hours,no,yes,3,35
+Stu775,ENG101,16.51,4.33,2.08,A+,male,21,rural,junior high,primary education,other,teacher,home,other,15-30 mins,< 2hours,no,yes,2,10
+Stu776,ACCT101,8.62,4.88,2.34,A-,male,46,urban,junior high,primary education,civil,health,course,father,30mins - 1 hour,< 2hours,yes,no,2,38
+Stu777,ACCT101,3.4,1.42,1.9,C-,male,52,rural,primary education,secondary education,other,civil,reputation,father,> 1hour,2-5 hours,yes,yes,7,28
+Stu778,FRN101,6.71,4.99,4.72,A+,male,47,rural,secondary education,none,other,health,course,mother,1-15 mins,>10 hours,no,yes,8,14
+Stu779,IT102,10.54,1.08,2.11,A+,female,40,urban,primary education,none,health,civil,home,mother,30mins - 1 hour,>10 hours,yes,no,5,54
+Stu780,UFS101,10.41,0.43,4.37,A+,female,38,rural,primary education,junior high,health,other,course,mother,15-30 mins,>10 hours,no,yes,8,25
+Stu781,UFS101,17.27,4.95,1.87,A+,female,56,rural,none,primary education,teacher,at home,course,mother,1-15 mins,2-5 hours,no,yes,10,24
+Stu782,CS102,5.35,3.27,2.39,B-,female,41,urban,primary education,secondary education,civil,teacher,reputation,mother,1-15 mins,>10 hours,no,no,9,28
+Stu783,CS102,14.98,3.2,3.56,A+,male,29,rural,higher education,secondary education,civil,civil,other,mother,> 1hour,< 2hours,yes,no,6,27
+Stu784,CS102,5.66,3.04,3.08,B+,male,27,rural,junior high,none,teacher,civil,course,other,15-30 mins,>10 hours,yes,yes,7,14
+Stu785,ACCT101,0.23,4.69,1.58,F,male,34,urban,secondary education,none,other,teacher,reputation,mother,> 1hour,>10 hours,yes,yes,10,28
+Stu786,UFS101,10.96,2.62,4.64,A+,female,23,urban,secondary education,primary education,other,civil,other,other,> 1hour,2-5 hours,yes,no,4,46
+Stu787,CS103,8.87,2.63,3.15,A+,female,45,urban,primary education,higher education,other,health,reputation,mother,1-15 mins,2-5 hours,no,yes,9,14
+Stu788,CS103,7.92,2.33,3.47,A+,male,60,urban,secondary education,primary education,other,health,other,father,15-30 mins,>10 hours,yes,yes,9,15
+Stu789,ACCT101,12.84,0.4,0.71,A,male,18,rural,primary education,higher education,civil,at home,reputation,other,1-15 mins,>10 hours,yes,yes,8,40
+Stu790,CS103,1.18,3.11,3.0,C-,male,18,urban,higher education,primary education,at home,teacher,other,father,1-15 mins,>10 hours,no,yes,5,18
+Stu791,CS102,9.81,4.05,4.79,A+,female,34,urban,secondary education,secondary education,other,civil,course,father,> 1hour,>10 hours,yes,no,4,48
+Stu792,ENG101,16.2,3.48,4.72,A+,female,25,urban,none,higher education,other,other,course,mother,1-15 mins,2-5 hours,yes,yes,1,36
+Stu793,FRN101,1.32,1.79,2.96,C-,male,59,urban,junior high,none,civil,teacher,course,mother,> 1hour,>10 hours,yes,no,3,49
+Stu794,ENG101,13.78,0.44,2.6,A+,female,49,rural,higher education,junior high,civil,teacher,other,mother,30mins - 1 hour,2-5 hours,no,no,4,46
+Stu795,CS103,0.05,0.11,0.57,F,female,51,urban,none,junior high,health,at home,reputation,other,15-30 mins,2-5 hours,yes,yes,10,48
+Stu796,ACCT101,8.58,0.49,2.26,A-,male,47,rural,none,primary education,other,other,reputation,father,1-15 mins,>10 hours,no,no,4,15
+Stu797,FRN101,2.39,1.47,4.34,B,female,38,urban,none,junior high,at home,teacher,other,other,15-30 mins,>10 hours,yes,no,6,15
+Stu798,CS102,14.01,1.22,1.01,A+,female,46,rural,secondary education,secondary education,other,civil,other,other,> 1hour,< 2hours,no,yes,10,9
+Stu799,ACCT101,15.25,4.21,1.59,A+,female,36,rural,junior high,junior high,health,health,other,other,> 1hour,5-10 hours,yes,no,7,50
+Stu800,CS103,4.78,2.92,1.82,C,male,35,rural,secondary education,higher education,other,teacher,reputation,other,> 1hour,2-5 hours,yes,yes,2,21
+Stu801,ACCT101,4.5,2.3,1.03,C-,male,50,rural,none,none,civil,teacher,home,father,> 1hour,5-10 hours,yes,no,8,39
+Stu802,ENG101,1.33,1.5,1.48,F,male,21,rural,higher education,secondary education,teacher,health,other,mother,30mins - 1 hour,>10 hours,yes,yes,2,8
+Stu803,CS102,1.81,4.53,0.42,F,male,37,urban,secondary education,secondary education,civil,health,course,other,> 1hour,>10 hours,no,yes,10,43
+Stu804,ENG101,9.78,2.16,1.23,B+,female,23,rural,primary education,secondary education,at home,at home,reputation,other,15-30 mins,2-5 hours,yes,no,3,34
+Stu805,FRN101,6.89,3.21,3.93,A+,female,27,rural,junior high,higher education,civil,teacher,course,other,1-15 mins,2-5 hours,no,yes,7,45
+Stu806,ACCT101,11.65,2.39,0.17,B+,female,31,urban,secondary education,none,civil,civil,other,father,> 1hour,2-5 hours,no,yes,8,30
+Stu807,CS103,0.36,1.67,0.64,F,male,34,urban,higher education,junior high,health,civil,reputation,other,1-15 mins,>10 hours,no,yes,6,22
+Stu808,IT102,4.1,4.4,0.2,E,female,57,rural,secondary education,higher education,teacher,health,course,mother,1-15 mins,< 2hours,no,no,7,21
+Stu809,UFS101,0.56,0.34,4.23,C+,male,17,urban,higher education,secondary education,other,health,reputation,other,1-15 mins,>10 hours,no,yes,4,17
+Stu810,CS102,13.22,4.11,3.76,A+,female,41,urban,secondary education,higher education,at home,at home,course,father,15-30 mins,>10 hours,yes,no,2,28
+Stu811,ACCT101,8.31,2.41,3.94,A+,male,34,urban,secondary education,higher education,teacher,teacher,home,father,> 1hour,2-5 hours,no,yes,4,29
+Stu812,ACCT101,10.4,2.62,1.44,A-,female,23,urban,none,none,at home,at home,reputation,father,15-30 mins,2-5 hours,yes,no,7,9
+Stu813,CS102,5.3,1.35,1.95,C+,female,52,rural,junior high,higher education,teacher,health,other,father,> 1hour,2-5 hours,no,yes,4,44
+Stu814,UFS101,6.54,4.14,3.51,A,female,21,rural,junior high,higher education,at home,civil,other,father,30mins - 1 hour,2-5 hours,yes,no,8,17
+Stu815,UFS101,9.77,0.56,0.7,B,female,33,urban,secondary education,secondary education,at home,at home,other,other,30mins - 1 hour,>10 hours,no,no,4,17
+Stu816,ACCT101,7.05,2.33,1.94,B,male,55,urban,secondary education,junior high,teacher,health,other,other,> 1hour,5-10 hours,yes,yes,7,50
+Stu817,CS103,5.4,2.7,0.67,C-,male,22,urban,secondary education,none,at home,civil,home,other,15-30 mins,5-10 hours,yes,yes,3,34
+Stu818,FRN101,10.18,0.95,1.61,A-,male,47,urban,junior high,primary education,other,at home,course,father,> 1hour,5-10 hours,no,no,1,44
+Stu819,ENG101,3.75,0.01,2.52,C+,male,55,rural,junior high,junior high,at home,health,course,father,30mins - 1 hour,>10 hours,no,no,8,17
+Stu820,ACCT101,11.86,4.17,1.73,A+,female,26,urban,primary education,higher education,health,teacher,other,mother,15-30 mins,5-10 hours,no,no,6,49
+Stu821,IT102,0.7,3.19,2.01,E,male,42,urban,primary education,higher education,at home,civil,home,mother,1-15 mins,5-10 hours,yes,yes,5,41
+Stu822,IT102,13.76,1.99,3.86,A+,male,40,rural,junior high,junior high,teacher,other,home,other,30mins - 1 hour,>10 hours,yes,no,8,54
+Stu823,FRN101,16.29,1.45,2.13,A+,female,41,urban,higher education,none,teacher,health,course,father,30mins - 1 hour,5-10 hours,yes,no,8,10
+Stu824,ENG101,10.69,0.98,2.13,A+,female,59,rural,junior high,junior high,at home,other,reputation,father,> 1hour,< 2hours,yes,yes,1,48
+Stu825,FRN101,15.9,0.92,4.38,A+,female,45,rural,secondary education,secondary education,health,civil,course,father,> 1hour,2-5 hours,no,yes,1,20
+Stu826,ACCT101,9.91,0.28,1.46,A-,male,56,rural,secondary education,secondary education,health,health,other,mother,> 1hour,5-10 hours,no,no,1,26
+Stu827,CS102,10.81,0.08,0.47,B+,female,54,urban,secondary education,secondary education,teacher,other,other,other,1-15 mins,5-10 hours,yes,yes,6,32
+Stu828,IT102,4.7,1.7,2.53,B-,male,53,urban,primary education,junior high,civil,at home,other,mother,> 1hour,>10 hours,yes,no,5,46
+Stu829,ENG101,1.14,0.5,1.74,E,male,18,urban,secondary education,junior high,health,at home,other,other,> 1hour,< 2hours,no,yes,1,35
+Stu830,ENG101,7.89,2.95,1.35,B,male,40,urban,none,primary education,teacher,teacher,other,mother,1-15 mins,< 2hours,yes,yes,9,10
+Stu831,IT102,13.09,4.42,4.7,A+,male,36,rural,secondary education,higher education,other,health,home,father,> 1hour,5-10 hours,yes,yes,6,42
+Stu832,CS102,12.1,0.1,1.63,A+,female,53,urban,higher education,primary education,at home,health,course,mother,30mins - 1 hour,< 2hours,no,no,1,36
+Stu833,UFS101,17.31,3.22,0.34,A+,male,33,urban,junior high,none,at home,civil,other,mother,30mins - 1 hour,5-10 hours,yes,no,6,18
+Stu834,CS102,4.77,3.28,3.2,B,female,46,rural,higher education,secondary education,teacher,other,reputation,other,30mins - 1 hour,< 2hours,yes,yes,10,10
+Stu835,UFS101,11.66,0.35,3.02,A+,male,38,urban,junior high,primary education,at home,health,reputation,other,15-30 mins,2-5 hours,no,yes,8,43
+Stu836,UFS101,4.49,3.33,3.51,B+,male,57,urban,junior high,junior high,teacher,other,home,mother,1-15 mins,5-10 hours,no,yes,1,52
+Stu837,FRN101,0.91,2.21,0.37,F,female,43,rural,none,secondary education,health,teacher,other,other,15-30 mins,5-10 hours,yes,no,2,18
+Stu838,FRN101,14.12,0.49,2.68,A+,female,26,rural,none,secondary education,civil,health,reputation,other,15-30 mins,2-5 hours,no,no,8,23
+Stu839,UFS101,13.79,1.94,1.35,A+,female,54,rural,none,higher education,teacher,teacher,home,father,> 1hour,2-5 hours,yes,no,5,11
+Stu840,UFS101,4.44,2.01,3.96,B+,female,25,rural,primary education,higher education,teacher,at home,reputation,mother,30mins - 1 hour,< 2hours,yes,no,2,22
+Stu841,IT102,1.22,3.68,1.35,F,female,32,urban,junior high,higher education,other,health,reputation,father,> 1hour,5-10 hours,yes,no,8,46
+Stu842,ENG101,7.85,0.27,2.13,B+,male,26,urban,secondary education,higher education,at home,civil,reputation,other,> 1hour,2-5 hours,no,yes,7,52
+Stu843,IT102,15.26,4.45,5.0,A+,female,18,rural,higher education,secondary education,at home,health,other,other,30mins - 1 hour,2-5 hours,yes,yes,8,21
+Stu844,IT102,9.08,4.01,1.61,B+,female,17,urban,junior high,junior high,health,civil,course,father,> 1hour,< 2hours,no,no,10,41
+Stu845,CS102,0.31,1.83,0.43,F,female,49,rural,higher education,junior high,other,teacher,other,other,30mins - 1 hour,2-5 hours,no,no,4,8
+Stu846,ENG101,15.61,4.67,2.46,A+,female,44,rural,higher education,primary education,health,teacher,course,father,15-30 mins,>10 hours,yes,yes,5,17
+Stu847,IT102,11.06,4.28,2.12,A+,male,27,rural,secondary education,higher education,at home,health,reputation,father,> 1hour,5-10 hours,no,no,4,26
+Stu848,CS103,16.16,2.13,1.25,A+,female,30,rural,higher education,junior high,health,health,other,father,> 1hour,2-5 hours,yes,no,2,48
+Stu849,UFS101,8.69,1.05,4.06,A+,female,60,urban,secondary education,primary education,civil,health,other,mother,30mins - 1 hour,2-5 hours,yes,no,10,53
+Stu850,FRN101,15.43,4.28,4.77,A+,female,51,rural,none,primary education,at home,teacher,home,mother,15-30 mins,2-5 hours,yes,no,3,40
+Stu851,CS102,7.95,4.14,0.17,C,female,22,urban,none,secondary education,teacher,teacher,course,other,15-30 mins,>10 hours,yes,no,6,23
+Stu852,CS102,10.05,0.55,3.07,A+,female,21,urban,secondary education,junior high,health,civil,other,mother,1-15 mins,5-10 hours,no,no,6,51
+Stu853,ACCT101,2.66,4.92,1.19,E,male,56,rural,primary education,secondary education,health,health,reputation,other,30mins - 1 hour,5-10 hours,yes,no,4,15
+Stu854,ACCT101,17.24,2.52,0.96,A+,female,34,rural,primary education,primary education,at home,health,other,father,> 1hour,5-10 hours,no,yes,3,22
+Stu855,FRN101,14.35,2.19,3.62,A+,female,48,urban,junior high,junior high,health,teacher,course,father,30mins - 1 hour,>10 hours,no,no,1,36
+Stu856,UFS101,3.25,3.07,1.34,D,female,23,urban,primary education,higher education,other,other,reputation,father,1-15 mins,< 2hours,no,yes,7,15
+Stu857,UFS101,7.36,4.45,0.47,C,female,44,rural,secondary education,none,at home,at home,reputation,mother,30mins - 1 hour,< 2hours,no,no,5,52
+Stu858,IT102,4.68,2.93,3.83,B+,male,41,urban,higher education,secondary education,other,other,home,other,15-30 mins,5-10 hours,yes,yes,10,9
+Stu859,IT102,16.97,1.36,2.98,A+,male,37,rural,none,primary education,civil,at home,course,other,15-30 mins,< 2hours,yes,no,8,23
+Stu860,CS102,2.17,4.28,4.31,B,male,29,urban,primary education,higher education,civil,other,home,father,30mins - 1 hour,2-5 hours,no,yes,5,16
+Stu861,FRN101,1.0,1.9,3.46,C,male,17,urban,higher education,none,teacher,at home,other,mother,30mins - 1 hour,2-5 hours,no,yes,1,20
+Stu862,IT102,15.75,1.14,2.37,A+,female,50,urban,higher education,higher education,teacher,civil,reputation,father,30mins - 1 hour,< 2hours,yes,yes,6,32
+Stu863,UFS101,1.16,4.65,0.34,F,male,43,urban,secondary education,primary education,other,teacher,reputation,father,> 1hour,< 2hours,no,no,9,19
+Stu864,ACCT101,13.53,0.65,4.08,A+,male,60,rural,primary education,secondary education,civil,health,reputation,other,30mins - 1 hour,5-10 hours,no,yes,2,49
+Stu865,ENG101,2.12,3.96,1.89,D,female,56,rural,secondary education,none,teacher,health,reputation,other,> 1hour,5-10 hours,yes,no,8,41
+Stu866,CS103,4.1,4.74,4.49,A-,male,38,rural,none,none,teacher,at home,other,mother,> 1hour,>10 hours,no,no,6,22
+Stu867,ENG101,1.95,3.8,1.26,F,male,53,rural,none,primary education,civil,teacher,other,other,15-30 mins,>10 hours,yes,no,9,28
+Stu868,ACCT101,1.1,2.1,4.72,B,male,37,rural,higher education,primary education,civil,health,other,mother,30mins - 1 hour,5-10 hours,no,yes,9,51
+Stu869,CS102,1.61,4.05,0.87,F,female,56,urban,none,primary education,health,civil,other,father,1-15 mins,< 2hours,yes,no,10,15
+Stu870,ENG101,10.62,1.88,4.83,A+,male,37,urban,none,secondary education,at home,civil,home,father,15-30 mins,>10 hours,no,no,3,18
+Stu871,ACCT101,8.97,0.89,4.57,A+,female,50,urban,primary education,higher education,teacher,health,reputation,father,30mins - 1 hour,< 2hours,no,yes,8,32
+Stu872,IT102,15.74,1.39,4.64,A+,male,37,rural,higher education,secondary education,teacher,teacher,other,father,30mins - 1 hour,2-5 hours,yes,yes,3,46
+Stu873,IT102,11.99,0.96,2.75,A+,male,20,rural,secondary education,junior high,health,other,other,mother,30mins - 1 hour,5-10 hours,no,no,4,11
+Stu874,CS102,8.05,3.03,4.33,A+,female,52,rural,none,secondary education,at home,health,course,mother,> 1hour,>10 hours,no,yes,1,25
+Stu875,UFS101,11.64,1.99,1.12,A,female,32,urban,junior high,primary education,teacher,teacher,course,father,15-30 mins,2-5 hours,no,no,1,37
+Stu876,FRN101,15.93,0.89,4.12,A+,male,32,rural,higher education,junior high,civil,teacher,course,mother,1-15 mins,>10 hours,no,yes,8,28
+Stu877,FRN101,6.2,3.85,2.65,B+,male,56,rural,junior high,secondary education,health,at home,course,mother,1-15 mins,>10 hours,no,no,8,17
+Stu878,ACCT101,4.39,3.75,0.11,E,female,60,urban,secondary education,primary education,teacher,health,home,father,1-15 mins,5-10 hours,no,yes,8,45
+Stu879,IT102,4.21,1.19,4.8,A,female,42,rural,secondary education,secondary education,teacher,health,other,father,15-30 mins,< 2hours,yes,yes,4,16
+Stu880,CS103,15.85,0.96,4.86,A+,female,23,rural,secondary education,junior high,civil,civil,other,father,1-15 mins,>10 hours,yes,yes,7,52
+Stu881,IT102,8.21,4.53,4.91,A+,female,25,rural,none,higher education,civil,health,home,father,1-15 mins,2-5 hours,yes,no,6,8
+Stu882,CS103,7.48,1.38,4.91,A+,female,23,urban,none,none,other,at home,other,other,30mins - 1 hour,2-5 hours,yes,no,4,38
+Stu883,CS102,0.88,0.57,1.69,F,male,49,urban,higher education,secondary education,other,other,other,father,> 1hour,>10 hours,no,yes,7,30
+Stu884,ENG101,4.24,0.65,4.36,A-,male,39,urban,junior high,junior high,other,civil,course,mother,1-15 mins,2-5 hours,yes,yes,4,54
+Stu885,UFS101,12.05,0.99,3.82,A+,male,40,rural,secondary education,primary education,teacher,teacher,other,mother,1-15 mins,>10 hours,yes,no,8,23
+Stu886,CS103,14.61,4.07,0.01,A+,male,60,urban,primary education,primary education,other,teacher,home,father,30mins - 1 hour,>10 hours,yes,no,3,45
+Stu887,CS102,15.5,2.62,4.9,A+,male,36,rural,primary education,primary education,teacher,other,other,father,1-15 mins,>10 hours,yes,yes,3,29
+Stu888,FRN101,9.58,3.29,1.18,B+,female,25,rural,junior high,junior high,health,at home,home,other,> 1hour,2-5 hours,no,no,10,28
+Stu889,FRN101,12.12,2.81,3.82,A+,female,38,urban,primary education,none,other,health,other,other,30mins - 1 hour,< 2hours,no,yes,2,16
+Stu890,FRN101,4.03,2.97,1.41,C-,male,27,rural,junior high,higher education,health,teacher,other,father,1-15 mins,< 2hours,yes,no,3,29
+Stu891,ACCT101,3.42,4.58,1.34,D,male,42,urban,secondary education,secondary education,teacher,health,other,other,> 1hour,2-5 hours,yes,no,10,20
+Stu892,CS103,15.97,2.39,2.29,A+,male,38,rural,secondary education,primary education,other,other,reputation,father,15-30 mins,< 2hours,no,yes,8,12
+Stu893,UFS101,3.2,0.25,4.57,B+,female,45,urban,higher education,none,civil,teacher,reputation,other,15-30 mins,>10 hours,no,yes,10,20
+Stu894,FRN101,10.47,1.02,0.32,B,female,31,urban,none,secondary education,health,other,home,other,> 1hour,5-10 hours,no,yes,6,23
+Stu895,FRN101,7.76,2.91,2.33,B+,female,59,rural,junior high,primary education,civil,at home,home,other,30mins - 1 hour,5-10 hours,no,yes,2,46
+Stu896,CS103,9.76,3.12,0.87,B,male,56,urban,none,junior high,health,other,other,mother,1-15 mins,>10 hours,no,yes,9,42
+Stu897,CS103,10.64,3.53,3.99,A+,female,22,urban,higher education,primary education,health,teacher,other,father,15-30 mins,2-5 hours,yes,no,5,18
+Stu898,ACCT101,10.07,4.68,3.44,A+,male,29,rural,secondary education,junior high,other,at home,course,father,1-15 mins,>10 hours,no,yes,4,8
+Stu899,ACCT101,11.62,3.57,3.72,A+,female,52,urban,secondary education,junior high,other,other,reputation,other,1-15 mins,5-10 hours,yes,no,9,37
+Stu900,FRN101,16.64,1.92,4.74,A+,male,27,rural,primary education,none,other,teacher,reputation,mother,> 1hour,5-10 hours,yes,no,2,31
+Stu901,IT102,8.4,4.76,4.2,A+,male,28,rural,higher education,primary education,teacher,at home,reputation,mother,30mins - 1 hour,< 2hours,yes,yes,10,15
+Stu902,FRN101,5.92,0.27,2.77,B,male,32,urban,higher education,secondary education,other,at home,course,other,1-15 mins,2-5 hours,no,no,2,47
+Stu903,CS102,12.24,1.78,2.73,A+,male,20,rural,secondary education,none,health,health,reputation,mother,> 1hour,>10 hours,no,no,3,42
+Stu904,IT102,13.86,4.73,4.64,A+,male,37,rural,higher education,higher education,teacher,at home,reputation,father,15-30 mins,2-5 hours,no,no,4,27
+Stu905,ENG101,0.72,4.4,2.5,D,male,54,urban,none,junior high,civil,at home,reputation,mother,1-15 mins,5-10 hours,no,no,9,39
+Stu906,ENG101,3.02,4.0,1.48,D,male,36,urban,secondary education,secondary education,other,health,course,mother,> 1hour,5-10 hours,yes,no,10,24
+Stu907,CS103,1.71,3.3,0.68,F,male,23,urban,none,none,teacher,at home,other,other,15-30 mins,2-5 hours,no,yes,1,19
+Stu908,FRN101,8.73,0.51,0.89,B,male,44,rural,none,higher education,other,other,home,other,30mins - 1 hour,>10 hours,no,no,2,26
+Stu909,FRN101,5.08,2.91,4.56,A,female,24,urban,primary education,higher education,other,teacher,home,mother,1-15 mins,< 2hours,yes,yes,4,12
+Stu910,UFS101,13.21,2.61,0.94,A+,female,32,urban,none,higher education,health,other,reputation,other,15-30 mins,< 2hours,no,no,4,20
+Stu911,CS103,15.54,1.81,3.39,A+,male,58,urban,secondary education,none,health,health,other,mother,> 1hour,< 2hours,yes,yes,7,44
+Stu912,CS103,15.24,4.94,0.02,A+,female,41,urban,higher education,higher education,other,health,reputation,father,15-30 mins,2-5 hours,no,yes,2,43
+Stu913,ENG101,1.08,4.15,2.89,C-,female,30,urban,primary education,none,other,teacher,reputation,other,15-30 mins,2-5 hours,yes,yes,5,36
+Stu914,ENG101,8.55,4.17,3.46,A+,male,17,urban,primary education,none,at home,teacher,reputation,father,> 1hour,>10 hours,yes,yes,6,45
+Stu915,IT102,1.62,2.57,3.77,C+,female,36,urban,junior high,junior high,civil,at home,reputation,father,> 1hour,< 2hours,no,no,9,20
+Stu916,CS103,2.13,0.77,2.36,C-,male,37,urban,higher education,primary education,teacher,teacher,other,father,> 1hour,>10 hours,no,no,6,26
+Stu917,UFS101,4.23,3.0,2.35,C+,male,50,urban,primary education,higher education,teacher,other,reputation,father,> 1hour,5-10 hours,no,no,1,50
+Stu918,FRN101,2.62,1.66,3.55,B-,male,53,rural,junior high,junior high,teacher,civil,home,father,15-30 mins,2-5 hours,yes,yes,4,51
+Stu919,ENG101,6.38,0.12,3.73,A,female,36,rural,secondary education,junior high,civil,civil,other,other,15-30 mins,>10 hours,no,yes,2,29
+Stu920,ENG101,17.36,0.17,3.4,A+,male,49,rural,none,none,at home,health,other,mother,30mins - 1 hour,5-10 hours,no,no,7,26
+Stu921,CS102,4.72,1.25,4.76,A,male,21,rural,junior high,secondary education,teacher,other,other,other,1-15 mins,< 2hours,no,no,2,50
+Stu922,FRN101,7.9,1.2,0.02,C,male,43,urban,higher education,junior high,at home,teacher,other,father,15-30 mins,< 2hours,yes,no,5,8
+Stu923,IT102,15.43,0.58,3.07,A+,male,37,urban,higher education,none,other,teacher,home,mother,> 1hour,2-5 hours,yes,no,6,52
+Stu924,FRN101,10.36,1.96,0.17,B,female,27,urban,none,higher education,civil,civil,other,mother,1-15 mins,5-10 hours,yes,yes,10,23
+Stu925,ENG101,14.56,3.43,1.39,A+,male,44,rural,primary education,higher education,health,civil,home,other,15-30 mins,2-5 hours,no,no,7,41
+Stu926,ACCT101,10.69,1.97,0.19,B,female,18,urban,none,none,civil,health,home,other,1-15 mins,>10 hours,yes,no,8,48
+Stu927,IT102,16.25,2.54,3.11,A+,female,42,rural,none,higher education,at home,at home,home,mother,> 1hour,< 2hours,no,no,8,43
+Stu928,FRN101,11.98,4.88,2.86,A+,male,47,urban,higher education,secondary education,teacher,teacher,course,mother,30mins - 1 hour,< 2hours,no,yes,10,26
+Stu929,CS102,4.61,3.95,2.7,B-,female,17,urban,primary education,none,civil,civil,home,other,30mins - 1 hour,5-10 hours,yes,yes,1,48
+Stu930,CS103,4.34,2.28,1.72,C,female,50,urban,higher education,primary education,at home,teacher,home,other,30mins - 1 hour,5-10 hours,no,no,9,22
+Stu931,IT102,4.55,4.15,3.99,A-,female,33,rural,junior high,junior high,health,teacher,other,other,30mins - 1 hour,5-10 hours,yes,yes,6,22
+Stu932,IT102,6.84,0.03,0.78,C,female,43,urban,higher education,none,at home,at home,other,father,30mins - 1 hour,< 2hours,yes,yes,8,47
+Stu933,IT102,2.04,4.89,4.09,B-,female,51,rural,secondary education,higher education,teacher,at home,home,father,1-15 mins,< 2hours,yes,no,5,28
+Stu934,IT102,6.43,2.49,4.63,A+,female,26,rural,primary education,none,health,teacher,reputation,father,> 1hour,>10 hours,yes,no,6,49
+Stu935,CS102,0.59,3.62,3.41,C-,male,51,urban,none,higher education,health,teacher,home,other,> 1hour,2-5 hours,yes,yes,1,29
+Stu936,ACCT101,16.51,0.54,0.22,A+,male,48,urban,none,junior high,health,health,home,father,1-15 mins,< 2hours,no,no,10,10
+Stu937,IT102,6.17,4.68,3.38,A-,male,28,rural,higher education,secondary education,other,teacher,home,father,> 1hour,2-5 hours,yes,yes,7,15
+Stu938,CS103,16.49,0.33,4.09,A+,male,47,rural,primary education,none,at home,teacher,home,father,15-30 mins,< 2hours,no,yes,2,38
+Stu939,UFS101,1.22,1.34,2.31,D,male,25,urban,primary education,higher education,civil,at home,reputation,mother,30mins - 1 hour,2-5 hours,no,yes,7,38
+Stu940,IT102,5.68,0.74,4.25,A,female,53,rural,none,higher education,at home,civil,home,other,15-30 mins,5-10 hours,no,no,9,47
+Stu941,UFS101,10.53,1.98,4.91,A+,male,37,rural,primary education,secondary education,other,health,course,other,1-15 mins,2-5 hours,no,yes,3,49
+Stu942,CS102,2.36,4.78,4.3,B,female,52,rural,higher education,secondary education,other,at home,course,other,1-15 mins,>10 hours,no,yes,1,41
+Stu943,IT102,7.6,0.09,2.23,B+,male,40,rural,junior high,junior high,health,health,reputation,father,> 1hour,>10 hours,yes,no,7,9
+Stu944,IT102,12.22,4.61,3.68,A+,female,32,rural,secondary education,junior high,other,civil,course,other,15-30 mins,5-10 hours,yes,yes,1,40
+Stu945,IT102,15.0,4.98,3.69,A+,male,33,urban,primary education,junior high,health,health,home,father,> 1hour,< 2hours,yes,yes,4,9
+Stu946,ENG101,3.41,2.44,3.36,B-,male,51,urban,primary education,higher education,other,at home,course,father,> 1hour,5-10 hours,no,yes,4,52
+Stu947,FRN101,9.88,3.99,1.73,A-,male,60,rural,secondary education,none,at home,at home,home,other,1-15 mins,< 2hours,no,yes,4,27
+Stu948,UFS101,16.31,3.46,3.72,A+,male,22,urban,primary education,primary education,civil,other,reputation,mother,> 1hour,2-5 hours,no,yes,3,38
+Stu949,ACCT101,13.28,1.13,3.14,A+,male,45,urban,none,primary education,at home,health,home,mother,15-30 mins,5-10 hours,yes,yes,9,31
+Stu950,UFS101,12.6,4.23,1.06,A+,male,45,rural,higher education,secondary education,civil,civil,course,father,15-30 mins,2-5 hours,no,no,9,27
+Stu951,CS103,3.55,2.15,4.18,B+,male,24,rural,none,none,civil,civil,other,mother,1-15 mins,2-5 hours,yes,no,3,12
+Stu952,UFS101,15.55,4.47,0.52,A+,female,30,urban,higher education,none,teacher,at home,course,mother,15-30 mins,>10 hours,no,no,8,31
+Stu953,ENG101,8.58,3.67,4.06,A+,male,37,urban,junior high,primary education,other,health,reputation,mother,1-15 mins,< 2hours,yes,no,8,37
+Stu954,FRN101,12.74,3.32,2.08,A+,male,26,rural,none,primary education,health,at home,course,father,1-15 mins,>10 hours,no,no,3,53
+Stu955,CS102,5.94,2.05,1.78,B-,male,44,rural,none,junior high,civil,other,course,other,30mins - 1 hour,2-5 hours,no,yes,6,20
+Stu956,UFS101,11.23,4.29,0.41,B+,female,26,urban,secondary education,secondary education,health,teacher,reputation,mother,1-15 mins,2-5 hours,no,no,3,28
+Stu957,CS102,4.84,1.82,4.81,A,female,38,urban,primary education,junior high,other,health,course,father,30mins - 1 hour,< 2hours,yes,no,2,53
+Stu958,ENG101,13.61,3.23,4.34,A+,male,20,urban,higher education,higher education,teacher,civil,home,mother,1-15 mins,5-10 hours,yes,no,7,27
+Stu959,UFS101,3.63,0.13,1.29,D,male,57,urban,none,none,health,at home,home,other,> 1hour,2-5 hours,no,no,3,13
+Stu960,UFS101,14.66,3.24,4.2,A+,female,60,rural,primary education,junior high,teacher,health,course,other,> 1hour,2-5 hours,yes,yes,4,13
+Stu961,FRN101,0.98,2.02,4.53,B-,male,30,urban,primary education,primary education,other,at home,home,mother,> 1hour,< 2hours,yes,yes,9,49
+Stu962,CS102,17.42,4.06,2.4,A+,female,43,urban,none,secondary education,other,civil,other,father,> 1hour,2-5 hours,no,no,6,28
+Stu963,CS102,16.0,3.36,1.68,A+,female,60,rural,secondary education,higher education,at home,teacher,home,mother,30mins - 1 hour,5-10 hours,yes,yes,2,13
+Stu964,ACCT101,14.03,2.89,4.81,A+,female,56,urban,junior high,none,health,other,reputation,mother,30mins - 1 hour,2-5 hours,yes,no,8,51
+Stu965,ACCT101,2.11,4.8,1.23,E,female,48,urban,secondary education,secondary education,civil,other,reputation,father,> 1hour,>10 hours,no,yes,5,8
+Stu966,FRN101,2.06,4.54,2.12,D,male,40,rural,primary education,secondary education,at home,health,course,other,> 1hour,5-10 hours,yes,no,4,8
+Stu967,IT102,1.57,3.23,4.59,B,male,36,rural,higher education,higher education,other,health,home,other,15-30 mins,>10 hours,no,yes,9,37
+Stu968,CS102,2.51,1.35,1.37,E,male,24,rural,junior high,higher education,civil,health,reputation,father,1-15 mins,>10 hours,no,yes,7,11
+Stu969,CS102,11.19,4.42,3.65,A+,male,17,rural,secondary education,secondary education,civil,health,home,mother,15-30 mins,< 2hours,yes,no,2,12
+Stu970,FRN101,13.77,2.94,2.67,A+,male,55,rural,primary education,secondary education,teacher,at home,other,other,30mins - 1 hour,2-5 hours,no,no,5,45
+Stu971,UFS101,16.09,3.65,4.18,A+,female,45,rural,secondary education,higher education,health,civil,reputation,mother,1-15 mins,>10 hours,no,no,8,29
+Stu972,ACCT101,16.29,2.0,0.37,A+,male,58,rural,higher education,primary education,other,civil,other,father,1-15 mins,5-10 hours,no,yes,3,31
+Stu973,UFS101,3.33,3.78,2.59,C+,female,51,urban,higher education,primary education,civil,teacher,other,mother,15-30 mins,5-10 hours,yes,yes,9,39
+Stu974,UFS101,7.92,3.57,1.29,B,female,52,urban,none,higher education,at home,civil,course,father,30mins - 1 hour,< 2hours,no,yes,3,28
+Stu975,ENG101,11.53,1.52,3.92,A+,female,23,rural,none,secondary education,other,health,course,mother,15-30 mins,< 2hours,no,no,2,38
+Stu976,CS103,2.12,1.91,3.31,C+,male,44,rural,none,junior high,at home,teacher,reputation,other,1-15 mins,< 2hours,yes,yes,10,47
+Stu977,CS102,11.12,2.93,3.28,A+,female,18,rural,higher education,primary education,health,health,home,father,1-15 mins,2-5 hours,yes,no,5,50
+Stu978,CS103,7.64,1.44,2.93,A,female,46,urban,higher education,none,civil,health,other,father,> 1hour,< 2hours,yes,no,1,28
+Stu979,CS102,11.21,2.08,1.39,A,female,47,rural,junior high,none,at home,teacher,reputation,other,1-15 mins,< 2hours,yes,no,8,26
+Stu980,IT102,11.84,4.91,3.12,A+,female,48,urban,none,secondary education,teacher,at home,course,mother,> 1hour,< 2hours,no,yes,1,18
+Stu981,ENG101,15.48,1.49,2.46,A+,male,50,urban,primary education,higher education,teacher,teacher,home,other,1-15 mins,< 2hours,yes,yes,8,49
+Stu982,ENG101,16.77,0.33,3.45,A+,male,36,rural,none,junior high,teacher,civil,other,other,30mins - 1 hour,5-10 hours,yes,no,10,33
+Stu983,ACCT101,3.87,0.1,2.97,B-,male,33,urban,higher education,higher education,teacher,other,other,other,1-15 mins,< 2hours,yes,no,5,16
+Stu984,ENG101,1.72,2.64,0.63,F,female,44,rural,secondary education,primary education,teacher,health,other,mother,15-30 mins,>10 hours,yes,no,3,35
+Stu985,CS103,5.07,1.99,3.8,A-,male,42,urban,secondary education,secondary education,health,at home,course,mother,15-30 mins,2-5 hours,no,no,10,14
+Stu986,CS103,14.33,2.34,4.03,A+,female,21,urban,none,higher education,other,teacher,reputation,mother,1-15 mins,5-10 hours,no,yes,2,15
+Stu987,ENG101,7.06,4.17,3.6,A,female,35,rural,higher education,junior high,teacher,health,other,father,15-30 mins,>10 hours,no,no,2,25
+Stu988,CS102,2.34,2.46,1.65,D,male,49,rural,primary education,secondary education,teacher,other,course,father,> 1hour,>10 hours,yes,no,3,46
+Stu989,CS102,11.8,1.23,2.64,A+,female,32,urban,secondary education,junior high,civil,civil,reputation,father,15-30 mins,2-5 hours,yes,yes,8,18
+Stu990,FRN101,3.62,0.08,2.72,C+,female,60,rural,primary education,primary education,teacher,civil,reputation,father,15-30 mins,5-10 hours,yes,yes,6,30
+Stu991,CS103,3.46,3.89,1.88,C-,male,56,urban,primary education,none,teacher,civil,course,other,> 1hour,2-5 hours,no,yes,7,44
+Stu992,ACCT101,7.62,0.22,0.84,C+,male,45,urban,primary education,junior high,civil,other,home,mother,15-30 mins,2-5 hours,yes,no,8,35
+Stu993,CS102,1.26,0.82,0.05,F,male,40,rural,secondary education,none,health,teacher,home,mother,15-30 mins,>10 hours,yes,yes,6,30
+Stu994,UFS101,15.86,0.86,0.93,A+,female,35,rural,primary education,junior high,health,at home,other,father,15-30 mins,>10 hours,yes,no,7,22
+Stu995,UFS101,11.85,2.26,2.61,A+,female,40,rural,primary education,none,teacher,at home,other,mother,30mins - 1 hour,>10 hours,no,no,7,38
+Stu996,FRN101,9.23,1.22,1.88,A-,female,51,rural,none,none,health,civil,course,mother,1-15 mins,< 2hours,yes,no,5,40
+Stu997,IT102,4.86,2.01,3.94,A-,female,38,urban,higher education,junior high,teacher,teacher,other,mother,15-30 mins,5-10 hours,no,yes,1,20
+Stu998,CS102,13.01,2.25,2.89,A+,male,44,rural,higher education,junior high,other,health,other,other,15-30 mins,< 2hours,no,no,4,25
+Stu999,CS103,0.46,3.72,4.19,C+,male,23,rural,none,primary education,health,at home,other,father,15-30 mins,>10 hours,no,no,4,49

@@ -8,10 +8,8 @@ from st_aggrid.grid_options_builder import GridOptionsBuilder
 from streamlit_option_menu import option_menu
 import matplotlib.pyplot as plt
 import seaborn as sns
-import aps_rf as model
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.compose import ColumnTransformer
-import random
+import APS_CODE.aps_rf as model
+
 
 sns.set()
 
@@ -701,22 +699,26 @@ def predict_submenu():
         )
     
     if selected == submenu[0]:
-        student = st.multiselect('Select a Student', all_students_list)
+        student = st.sidebar.multiselect('Select a Student', all_students_list)
         if student:
-            predictPage(student = student)
+            if st.sidebar.button('Predict'):
+                predictPage(student = student)
 
     elif selected == submenu[1]:
-        student = st.multiselect('Select a Lecturer', all_lecturer_list)
+        student = st.sidebar.multiselect('Select a Lecturer', all_lecturer_list)
         if student:
-            predictPage(student = student)
+            if st.sidebar.button('Predict'):
+                predictPage(student = student)
 
     elif selected == submenu[2]:
-        courses = st.multiselect('Select Course you want to predict for', all_course_list)
+        courses = st.sidebar.multiselect('Select Course you want to predict for', all_course_list)
         #run prediction here
         if courses:
-            predictPage(courses)
-        if st.checkbox('Select All Courses'):
-            predictPage()
+            if st.sidebar.button('Predict'):
+                predictPage(courses)
+        if st.sidebar.checkbox('Select All Courses'):
+            if st.sidebar.button('Predict'):
+                predictPage()
          
 
 
@@ -980,14 +982,15 @@ def generate_hue(data,header):
     st.pyplot(fig)
 
 def predictPage(courses=all_course_list, student = [], lecturer = []):
-        if st.button('Predict'):
+      
+            
             #run prediction model here
             if student:
                 id_list = [i for i in student]
-            if lecturer:
+                df=generate_gradesheet_model(ids = id_list)
+            elif lecturer:
                 id_list = [i for i in lecturer]
-
-                df=generate_gradesheet_model(ids = id_list, lecturers= id_list)
+                df=generate_gradesheet_model( lecturers= id_list)
             else:
                 df = generate_gradesheet_model(courses)
             if not df.empty:
@@ -1008,15 +1011,21 @@ def predictPage(courses=all_course_list, student = [], lecturer = []):
                         data = row.to_numpy().reshape(1, -1)
                         prediction = model.predict(predictor,data)
                         predictions.append(prediction[0])
-                
-                    df['Predicted Scores'] = predictions
-                    st.dataframe(df.style.apply(highlight_survived, axis=1))
-                    st.dataframe(df.style.applymap(color_survived, subset=['Predicted Scores']))
-            else:
+                    
+                    #df = df[list(gradesheet_keys)]
+                    df['Predicted Grade'] = predictions
+                    
+                    if len(predictions) == 1:
+                        generate_report(df)
+                    else:
+                        st.dataframe(df.style.apply(highlight_survived, axis=1))
+                        st.dataframe(df.style.applymap(color_survived, subset=['Predicted Grade']))
+                        st.balloons()
+            else:   
                 st.info("No Data For this User")
 
 def highlight_survived(s):
-    return ['background-color: green']*len(s) if s['Predicted Scores'] in UPPER_GRADES else ['background-color: red']*len(s)
+    return ['background-color: green']*len(s) if s['Predicted Grade'] in UPPER_GRADES else ['background-color: red']*len(s)
 
 def color_survived(val):
     color = 'green' if val else 'red'
@@ -1025,12 +1034,24 @@ def color_survived(val):
 def predict_student(student):
     generate_gradesheet_model(student['basket'], student['id'])
     
-
-
-
-
-         
-            
+def student_report_view(student):
+    stu = student.iloc[0]
+    stu_model = Student.get(Student.id == stu['id'])
+    st.subheader('Summary report')
+    
+    
+    st.subheader(stu_model.name)
+    col1, col2  = st.columns(2)
+    for c, i in enumerate(list(student.columns)):
+        
+        col = col1 if c % 2 == 0 else col1
+        with col:
+            if i == 'Predicted Grade':
+                pass
+            else:
+                lab= i.replace('_',' ').title()
+                st.markdown(f':blue[{lab}] : {stu[i]}')
+    
 
 ENTITY_VIEWS = {
     ENTITY[0]: add_admin,
@@ -1039,7 +1060,160 @@ ENTITY_VIEWS = {
     ENTITY[3]: add_course,
 }
 
+def lecturer_page():
+    with st.sidebar:
+        menu_options = [
+            "Dashboard",
+            "Predictions",
+        ]
+        selected = option_menu(
+            "Main Menu",
+            menu_options,
+            icons=["person-plus-fill",'kanban'],
+            menu_icon="list",
+            styles={
+                "container": {"padding": "0!important", "background-color": "#fafafa"},
+                "menu-title": {"text-align": "center"},
+                'container':{'background-color':'#F0F2F6'},
+                "menu-icon": {"display": "None"},
+            },
+        )
+
+
+
 ENTITY_CHECKS = {ENTITY[4]: check_gradedata, ENTITY[5]: check_demographics}
+
+
+def generate_report(data):
+    
+    # Check if the input is a pandas DataFrame
+    if not isinstance(data, pd.DataFrame):
+        st.error("Input is not a pandas DataFrame")
+        return
+
+    # Check if the required columns are present in the DataFrame
+    required_columns = [
+        "id",
+        "course_code",
+        "mid_score",
+        "mid_participation_score",
+        "mid_lab_score",
+        "sex",
+        "age",
+        "address",
+        "Medu",
+        "Fedu",
+        "Mjob",
+        "Fjob",
+        "reason",
+        "guardian",
+        "traveltime",
+        "studytime",
+        "activities",
+        "higher",
+        "health",
+        "wassce",
+        "Predicted Grade"
+    ]
+    for col in required_columns:
+        if col not in data.columns:
+            st.error(f"Column '{col}' not found in the input DataFrame")
+            return
+
+    # Check if the input data is for a single student or multiple students
+    if data["id"].nunique() == 1:
+        # Input data is for a single student
+        student_id = data["id"].iloc[0]
+
+
+        # Show the demographic factors
+        st.subheader("Demographic Information:")
+        demographic_factors = [
+            "sex",
+            "age",
+            "address",
+            "Medu",
+            "Fedu",
+            "Mjob",
+            "Fjob",
+            "reason",
+            "guardian",
+            "traveltime",
+            "studytime",
+            "activities",
+            "higher",
+            "health",
+            "wassce"
+        ]
+        col1, col2  = st.columns(2)
+        for c,factor in enumerate(demographic_factors):
+            col = col1 if c % 2 == 0 else col2
+            with col:
+                disp = factor.title().replace('_',' ')
+                
+                new_title = f"""
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0 text-info">{disp}</h6>
+                    </div>
+                    <div class="col-sm-9 text-success">
+                      {data[factor].iloc[0]}
+                    </div>
+                  </div>
+                  <hr>
+            """
+                st.markdown(new_title, unsafe_allow_html=True)
+
+        # Show the predicted grades for each course
+        st.subheader("Predicted Grades:")
+        st.write(data[["course_code", "Predicted Grade"]])
+
+    # Add a download button for the report
+    csv = convert_df(data)
+
+    st.download_button(
+        label = "Download Report",
+        data = csv,
+        file_name=f"{student_id}_report.csv",
+        mime = 'text/csv'
+        )
+
+def lecturer_dashboard():
+    st.title("Lecturer Dashboard")
+    st.header(f"{session['current_user'].name}, Welcome to your dashboard ")
+    st.write("Here you can view all the courses you're currently taking and predict grades.")
+
+    # Get the list of courses
+    courses = session['current_user'].basket
+    
+    with st.expander('Active Courses'):
+        st.subheader('Active Courses')
+        for i in courses:
+            st.checkbox(i, key=i)
+    
+    predict = []
+    for i in courses:
+        if i in session:
+            if session[i]:
+                predict.append(i)
+    
+    if predict and st.button('Make Predictions'):
+        predictPage(predict)
+
+
+@st.cache
+def convert_df(df):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return df.to_csv().encode('utf-8')
+
+# Create the student dashboard
+def student_dashboard(student ):
+    # Select the student
+    # Generate the report
+    predictPage(student=[student.id])
+
 
 if __name__ == "__main__":
     current_user = None
@@ -1052,14 +1226,32 @@ if __name__ == "__main__":
     if "current_user" in session:
         current_user = session["current_user"]
         if current_user.role == "Student":
-            # student_page()
+            html =f"""
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+             <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    <div class="mt-1">
+                      <h4>{current_user.name}</h4>
+                      <p class="text-secondary  fw-bold mb-1">{current_user.role}</p>
+                      <p class="text-muted font-size-sm">{current_user.school}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            """
+            st.markdown(html, unsafe_allow_html=True)
+            student_dashboard(current_user)
             pass
 
         elif current_user.role == "Administrator":
             admin_page()
 
         elif current_user.role == "Lecturer":
-            # lecturer_page()
-            pass
+            lecturer_dashboard()
+            
     else:
         login_page()
+
+# create a string of HTML and CSS
