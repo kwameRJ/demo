@@ -381,6 +381,7 @@ def assign_values(entity_title, entity):
 
         if field_name in session:
             session[field_name] = eval(f"entity.{key}")
+
         if key == "demographics":
             for key in dictionaries.keys():
                 try:
@@ -705,10 +706,10 @@ def predict_submenu():
                 predictPage(student = student)
 
     elif selected == submenu[1]:
-        student = st.sidebar.multiselect('Select a Lecturer', all_lecturer_list)
-        if student:
+        lec = st.sidebar.multiselect('Select a Lecturer', all_lecturer_list)
+        if lec:
             if st.sidebar.button('Predict'):
-                predictPage(student = student)
+                predictPage(lecturer = lec)
 
     elif selected == submenu[2]:
         courses = st.sidebar.multiselect('Select Course you want to predict for', all_course_list)
@@ -719,8 +720,6 @@ def predict_submenu():
         if st.sidebar.checkbox('Select All Courses'):
             if st.sidebar.button('Predict'):
                 predictPage()
-         
-
 
 
 def user_submenu(entity):
@@ -789,20 +788,20 @@ def data_submenu(entity):
             
 def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
     values = list(Gradesheet.select().dicts())
-    
     dataset = []
-
+    
+    if lecturers:
+        courses = []
+        for id in lecturers:
+            user = Lecturer.get(Lecturer.name==id)
+            courses += user.basket
+        
     if ids:
         values = []
         for id in ids:
             values += list(Gradesheet.select().where(Gradesheet.id == id.upper()).dicts())
-    
-    if lecturers:
-        values = []
-        for id in ids:
-            values += list(Course.select().where(Course.lecturer == id).dicts())
         
-
+    
     for val in list(values):
         try:
             user = Student.get(Student.id == val['id'])
@@ -811,10 +810,13 @@ def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
             dataset.append(entry)
         except DoesNotExist:
             values.remove(val)
+
+        
    
     df = pd.DataFrame.from_dict(dataset)
+    
     df = df.loc[df['course_code'].isin(courses)]
-
+    df = df.loc[df['final_grade'] == 'nan']
     return df
 
 def generate_data(cls, cls_string):
@@ -982,8 +984,6 @@ def generate_hue(data,header):
     st.pyplot(fig)
 
 def predictPage(courses=all_course_list, student = [], lecturer = []):
-      
-            
             #run prediction model here
             if student:
                 id_list = [i for i in student]
@@ -996,31 +996,37 @@ def predictPage(courses=all_course_list, student = [], lecturer = []):
             if not df.empty:
                 if df['mid_participation_score'].isnull().any() or df['mid_lab_score'].isnull().any():
                     predictor= model.load_model('ds1_model')
-                    df2 = df.copy()
-                    df2.drop( [i for i in df.columns if i not in ds1],axis=1, inplace=True)
-                    for i in model.categorical_columns:
-                        for k,v in dictionaries[i].items():
-                                df2[i] = df2[i].apply(lambda x:x.lower() if isinstance(x,str) else x)
-                                df2[i] = df2[i].apply(lambda x: v if isinstance(x,str) and k in x else x)
+                    keys = ds1
+
+                    
+                else:
+                    predictor= model.load_model('ds2_model')
+                    keys = ds2
                 
-                    # Create a ColumnTransformer to handle the categorical variables
-                    predictions = []
-                    for i in range(len(df2)):
-                        row = df2.iloc[i, :]
-                    # Use the transform method of the ColumnTransformer to convert the selected row
-                        data = row.to_numpy().reshape(1, -1)
-                        prediction = model.predict(predictor,data)
-                        predictions.append(prediction[0])
-                    
-                    #df = df[list(gradesheet_keys)]
-                    df['Predicted Grade'] = predictions
-                    
-                    if len(predictions) == 1:
-                        generate_report(df)
-                    else:
-                        st.dataframe(df.style.apply(highlight_survived, axis=1))
-                        st.dataframe(df.style.applymap(color_survived, subset=['Predicted Grade']))
-                        st.balloons()
+                df2 = df.copy()
+                df2.drop( [i for i in df.columns if i not in keys],axis=1, inplace=True)
+                for i in model.categorical_columns:
+                    for k,v in dictionaries[i].items():
+                            df2[i] = df2[i].apply(lambda x:x.lower() if isinstance(x,str) else x)
+                            df2[i] = df2[i].apply(lambda x: v if isinstance(x,str) and k in x else x)
+                # Create a ColumnTransformer to handle the categorical variables
+                predictions = []
+                for i in range(len(df2)):
+                    row = df2.iloc[i, :]
+                # Use the transform method of the ColumnTransformer to convert the selected row
+                    data = row.to_numpy().reshape(1, -1)
+                    prediction = model.predict(predictor,data)
+                    predictions.append(prediction[0])
+                
+                #df = df[list(gradesheet_keys)]
+                df['Predicted Grade'] = predictions
+                
+                if len(predictions) == 1:
+                    generate_report(df)
+                else:
+                    st.dataframe(df.style.apply(highlight_survived, axis=1))
+                    st.dataframe(df.style.applymap(color_survived, subset=['Predicted Grade']))
+                    st.balloons()
             else:   
                 st.info("No Data For this User")
 
@@ -1033,25 +1039,7 @@ def color_survived(val):
 
 def predict_student(student):
     generate_gradesheet_model(student['basket'], student['id'])
-    
-def student_report_view(student):
-    stu = student.iloc[0]
-    stu_model = Student.get(Student.id == stu['id'])
-    st.subheader('Summary report')
-    
-    
-    st.subheader(stu_model.name)
-    col1, col2  = st.columns(2)
-    for c, i in enumerate(list(student.columns)):
-        
-        col = col1 if c % 2 == 0 else col1
-        with col:
-            if i == 'Predicted Grade':
-                pass
-            else:
-                lab= i.replace('_',' ').title()
-                st.markdown(f':blue[{lab}] : {stu[i]}')
-    
+
 
 ENTITY_VIEWS = {
     ENTITY[0]: add_admin,
@@ -1127,7 +1115,8 @@ def generate_report(data):
 
 
         # Show the demographic factors
-        st.subheader("Demographic Information:")
+        st.header(f':blue[{student_id}]')
+        st.subheader(":blue[Demographic Information]")
         demographic_factors = [
             "sex",
             "age",
@@ -1181,7 +1170,7 @@ def generate_report(data):
         )
 
 def lecturer_dashboard():
-    st.title("Lecturer Dashboard")
+
     st.header(f"{session['current_user'].name}, Welcome to your dashboard ")
     st.write("Here you can view all the courses you're currently taking and predict grades.")
 
@@ -1201,7 +1190,7 @@ def lecturer_dashboard():
     
     if predict and st.button('Make Predictions'):
         predictPage(predict)
-
+    
 
 @st.cache
 def convert_df(df):
@@ -1216,6 +1205,8 @@ def student_dashboard(student ):
 
 
 if __name__ == "__main__":
+    assign_courses_to_lec()
+    assign_courses_to_students()
     current_user = None
     if "main_page" not in session:
         session["main_page"] = None
