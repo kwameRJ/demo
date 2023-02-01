@@ -700,19 +700,19 @@ def predict_submenu():
         )
     
     if selected == submenu[0]:
-        student = st.sidebar.multiselect('Select a Student', all_students_list)
+        student = st.sidebar.multiselect('Select a Student', [i.id for i in Student.select()])
         if student:
             if st.sidebar.button('Predict'):
                 predictPage(student = student)
 
     elif selected == submenu[1]:
-        lec = st.sidebar.multiselect('Select a Lecturer', all_lecturer_list)
+        lec = st.sidebar.multiselect('Select a Lecturer',[i.id for i in Lecturer.select()])
         if lec:
             if st.sidebar.button('Predict'):
                 predictPage(lecturer = lec)
 
     elif selected == submenu[2]:
-        courses = st.sidebar.multiselect('Select Course you want to predict for', all_course_list)
+        courses = st.sidebar.multiselect('Select Course you want to predict for', all_students_list = [i.course for i in Student.select()])
         #run prediction here
         if courses:
             if st.sidebar.button('Predict'):
@@ -1024,17 +1024,31 @@ def predictPage(courses=all_course_list, student = [], lecturer = []):
                 if len(predictions) == 1:
                     generate_report(df)
                 else:
-                    st.dataframe(df.style.apply(highlight_survived, axis=1))
-                    st.dataframe(df.style.applymap(color_survived, subset=['Predicted Grade']))
+                    
+                    show = list(gradesheet_keys)
+                    data = df[show+['Predicted Grade']] if show else df
+                    a,b,c = st.columns([1,8,1])
+                    with b:
+                        st.subheader('Predicted Results Per Your Selection')
+                        st.dataframe(data.style.apply(highlight_survived, axis=1))
+                        #st.dataframe(data.style.applymap(color_survived, subset=['Predicted Grade']))
+                    
+                        csv = convert_df(data)
+                        st.download_button(
+                            label = "Download Report",
+                            data = csv,
+                            file_name=f"report.csv",
+                            mime = 'text/csv'
+                        )
                     st.balloons()
             else:   
                 st.info("No Data For this User")
 
 def highlight_survived(s):
-    return ['background-color: green']*len(s) if s['Predicted Grade'] in UPPER_GRADES else ['background-color: red']*len(s)
+    return ['background-color: green; color:white']*len(s) if s['Predicted Grade'] in UPPER_GRADES else ['background-color: red; color:white']*len(s)
 
 def color_survived(val):
-    color = 'green' if val else 'red'
+    color = '#0f0a' if val else 'red'
     return f'background-color: {color}'
 
 def predict_student(student):
@@ -1245,4 +1259,3 @@ if __name__ == "__main__":
     else:
         login_page()
 
-# create a string of HTML and CSS
