@@ -712,7 +712,7 @@ def predict_submenu():
                 predictPage(lecturer = lec)
 
     elif selected == submenu[2]:
-        courses = st.sidebar.multiselect('Select Course you want to predict for', all_students_list = [i.id for i in Course.select()])
+        courses = st.sidebar.multiselect('Select Course you want to predict for', [i.id for i in Course.select()])
         #run prediction here
         if courses:
             if st.sidebar.button('Predict'):
