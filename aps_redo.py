@@ -610,7 +610,7 @@ def check_gradedata(data):
         errors["id"] = [False, message]
         errors["id"] = message
 
-    if data["course_code"] not in all_course_list:
+    if data["course_code"].strip() not in all_course_list:
         message = "Course not registered."
         errors["course_code"] = [False, message]
 
