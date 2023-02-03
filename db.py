@@ -248,8 +248,6 @@ def assign_courses_to_lec():
         key.save()
 
 
-assign_courses_to_lec()
-assign_courses_to_students()
 
 
 try:
