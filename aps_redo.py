@@ -370,17 +370,60 @@ def add_course(entity, update=False):
         semester = st.selectbox(
             "Select Semester", SEMESTERS, key=f"{entity}_semester_field"
         )
-        assigned = st.selectbox(
-            "Lecturer", ["Unassigned"] + lecturers, key=f"{entity}_lecturer_field"
-        )
+        if update:
+            assigned = st.selectbox(
+                "Lecturer", ["Unassigned"] + lecturers, key=f"{entity}_lecturer_field"
+            )
 
+def add_gradesheet(entity, update=False):
+        a,b = st.columns([3,2])
+        c,d,e = st.columns(3)
+        try:
+            with a:
+                
+                    if update:
+                        id = st.text_input(f"Student ID", key=f"{entity}_id_field", disabled=update)
+
+                    else:
+                        students =  [i.id for i in list(Student.select())]
+                        id = st.selectbox(f"Student ID",students , key=f"{entity}_id_field")
+                
+                    
+            with b:
+                if update:
+                    course = st.text_input("Course Title", key=f"{entity}_course_code_field", disabled = update)
+                else:
+                    course = st.selectbox("Course Title", [i.id for i in list(Course.select())], key=f"{entity}_course_code_field")
+                    
+                    
+            with c:
+                midscore = st.number_input('Midscore',min_value= -1.0, key=f"{entity}_mid_score_field")
+            with d:
+                midpart = st.number_input('Mid Participation Score', -1.0, key=f"{entity}_mid_participation_score_field")
+            with e:
+                midlab = st.number_input('Mid Lab Score', -1.0, key=f"{entity}_mid_lab_score_field")
+            assigned = st.selectbox(
+                    "Final Grade", ["None"] + GRADES, key=f"{entity}_final_grade_field"
+                )
+        except:
+                pass
 
 def assign_values(entity_title, entity):
+    
     for key in ENTITY_KEYS[entity_title]:
-        field_name = f"{entity_title}_{key}_field"
 
+        field_name = f"{entity_title}_{key}_field"
+     
         if field_name in session:
-            session[field_name] = eval(f"entity.{key}")
+            val = eval(f"entity.{key}")
+            if 'score' in key and val == None:
+                    session[field_name] = -1.0
+            
+            elif key == 'final_grade'  and (val == None or val == "nan" or val=='None'):
+                    session[field_name] = "None"
+
+            else:
+                session[field_name] = eval(f"entity.{key}")
 
         if key == "demographics":
             for key in dictionaries.keys():
@@ -392,6 +435,7 @@ def assign_values(entity_title, entity):
                         session[f"{entity_title}_{key}_demo"] = entity.demographics[key]
 
 
+    
 
 def set_values(entity, user):
     if user:
@@ -445,11 +489,34 @@ def create_user(entity_title, entity={}):
         if key == "program":
             entity["school"] = SCHOOL_PROGRAMS[entity[key]]
 
+        if 'score' in key and entity[key]==-1:
+                entity[key] = None
+
+        if key == 'final_grade' and (entity[key]=='nan' or entity[key]=='None'):
+                entity[key] = None
+
     entity["role"] = entity_title
+    entity['basket'] = []
+    entity['lecturer'] = 'Unassigned'
     try:
+        entry = ''
         if not entity["id"]:
             raise ValueError
-        create_entity(ENTITIES[entity_title], **entity)
+        
+        if entity_title == 'Gradesheet':
+            try:
+                entry = Gradesheet.get(
+                            Gradesheet.id == entity["id"].upper(),
+                            Gradesheet.course_code == entity["course_code"].upper()
+                            )
+                update_entity(entry, **entity)
+            except DoesNotExist:
+                create_entity(ENTITIES[entity_title], **entity)
+            
+            
+        else:
+            create_entity(ENTITIES[entity_title], **entity)
+
         clear_fields(entity_title)
         st.success("User created successfully")
     except IntegrityError:
@@ -458,33 +525,43 @@ def create_user(entity_title, entity={}):
         st.error(e.args)
     except ValueError:
         st.error("ID is not valid")
+    
 
 
 def save_user(entity_title, entity={}):
-    for key in ENTITY_KEYS[entity_title]:
-        if key == "name":
-            title_text(entity_title)
-
-        elif key == "id":
-            upper_id(entity_title)
-
-        field_name = f"{entity_title}_{key}_field"
-
-        if field_name in session:
-            entity[key] = session[field_name]
-        if key == "program":
-            entity["school"] = SCHOOL_PROGRAMS[entity[key]]
-
-        if key == "demographics":
-            d = {}
-            for i in dictionaries.keys():
-                if i =='health':
-                    st.write('here')
-                d[i] = session[f"{entity_title}_{i}_demo"]
-            entity["demographics"] = d
-
-    model = ENTITIES[entity_title]
     try:
+        for key in ENTITY_KEYS[entity_title]:
+            if key == "name":
+                title_text(entity_title)
+
+            elif key == "id":
+                upper_id(entity_title)
+
+            field_name = f"{entity_title}_{key}_field"
+
+            if field_name in session:
+                entity[key] = session[field_name]
+            if key == "program":
+                entity["school"] = SCHOOL_PROGRAMS[entity[key]]
+                
+                    
+            if key == "demographics":
+                d = {}
+                for i in dictionaries.keys():
+                    if i =='health':
+                        st.write('here')
+                    d[i] = session[f"{entity_title}_{i}_demo"]
+                entity["demographics"] = d
+        
+            if 'score' in key and entity[key]==-1:
+                entity[key] = None
+
+            if key == 'final_grade' and (entity[key]=='nan' or entity[key]=='None'):
+                entity[key] = None
+                
+
+        model = ENTITIES[entity_title]
+        
         update_entity(model.get(model.id == entity["id"]), **entity)
         st.success("User saved")
 
@@ -593,7 +670,6 @@ def add_csv(data):
 def check_demographics(data):
     pass
 
-
 # --------Data Checks------#
 def check_gradedata(data):
     errors = {k: [True, ""] for k in data.keys()}
@@ -610,7 +686,7 @@ def check_gradedata(data):
         errors["id"] = [False, message]
         errors["id"] = message
 
-    if data["course_code"].strip() not in all_course_list:
+    if data["course_code"].strip(0).upper() not in all_course_list:
         message = "Course not registered."
         errors["course_code"] = [False, message]
 
@@ -706,7 +782,7 @@ def predict_submenu():
                 predictPage(student = student)
 
     elif selected == submenu[1]:
-        lec = st.sidebar.multiselect('Select a Lecturer',[i.id for i in Lecturer.select()])
+        lec = st.sidebar.multiselect('Select a Lecturer',[i.name for i in Lecturer.select()])
         if lec:
             if st.sidebar.button('Predict'):
                 predictPage(lecturer = lec)
@@ -740,6 +816,7 @@ def user_submenu(entity):
         )
     ent = entity[: len(entity) - 1]
     if selected == submenu[0]:
+        mainPage.info(f'From here you can add new {ent.lower()}s')
         entity_view(ent)
 
     elif selected == submenu[1]:
@@ -764,8 +841,12 @@ def data_submenu(entity):
         )
     entity = entity.replace(" ", "")
     if selected == submenu[0]:
-        add_csv(entity)
-
+        if entity == 'Gradesheet':
+            with mainPage.expander('Add Single Entry'):
+                entity_view(entity)
+            with mainPage.expander('Upload gradesheet as CSV'):
+                add_csv(entity)
+    
     elif selected == submenu[1]:
         user_data_view(ENTITIES[entity], entity.lower())
 
@@ -811,12 +892,19 @@ def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
         except DoesNotExist:
             values.remove(val)
 
-        
-   
-    df = pd.DataFrame.from_dict(dataset)
     
-    df = df.loc[df['course_code'].isin(courses)]
-    df = df.loc[df['final_grade'] == 'nan']
+    for i in list(dataset):
+        if i['final_grade'] != None:
+            dataset.remove(i)
+        elif i['mid_score'] == None:
+            dataset.remove(i)
+
+
+    
+    df = pd.DataFrame.from_dict(dataset)
+    if dataset:
+        df = df.loc[df['course_code'].isin(courses)]
+
     return df
 
 def generate_data(cls, cls_string):
@@ -927,27 +1015,31 @@ def user_data_view(cls, cls_string):
                 on_change=column_selection,
             )
             
-
             if selected_rows:
                 primary_key = "id"
                 if len(selected_rows) == 1:
                     user = cls.get(cls.id == selected_rows[0][primary_key])
-                    if cls_string != "gradesheet" and cls_string != "trainingdata":
-                        entity_view(cls_string.title(), user)
+                    if st.sidebar.checkbox('Edit'):
+                            if cls_string != "trainingdata":
+                                entity_view(cls_string.title(), user)
 
                 if st.sidebar.button("Delete Selected Data"):
                     warning = ""
                     for i in selected_rows:
-                        st.write(i)
                         try:
-                            user = cls.get(eval(f"cls.{primary_key}") == i[primary_key])
-                            if user.id == session["current_user"].id:
-                                warning = "Cannot Delete current user"
-                                rerun = False
+                            if cls_string == 'gradesheet':
+                                Gradesheet.delete().where(eval(f"cls.{primary_key}") == i[primary_key], cls.course_code==i['course_code']).execute()
                             else:
-                                user.delete_instance()
-                                rerun = True
-                                st.write("User Deleted Successfully")
+                                if user.id == session["current_user"].id:
+                                    warning = "Cannot Delete current user"
+                                    rerun = False
+
+                                else:
+                                    user.delete_instance()
+
+                            rerun = True
+                            st.success("User Deleted Successfully")
+
                         except:
                             warning = warning if warning else "User Not Found"
                             st.warning(warning)
@@ -990,57 +1082,57 @@ def predictPage(courses=all_course_list, student = [], lecturer = []):
                 df=generate_gradesheet_model(ids = id_list)
             elif lecturer:
                 id_list = [i for i in lecturer]
-                df=generate_gradesheet_model( lecturers= id_list)
+                df=generate_gradesheet_model(lecturers= id_list)
             else:
                 df = generate_gradesheet_model(courses)
             if not df.empty:
                 if df['mid_participation_score'].isnull().any() or df['mid_lab_score'].isnull().any():
                     predictor= model.load_model('ds1_model')
                     keys = ds1
-
-                    
+            
                 else:
                     predictor= model.load_model('ds2_model')
                     keys = ds2
                 
-                df2 = df.copy()
-                df2.drop( [i for i in df.columns if i not in keys],axis=1, inplace=True)
-                for i in model.categorical_columns:
-                    for k,v in dictionaries[i].items():
-                            df2[i] = df2[i].apply(lambda x:x.lower() if isinstance(x,str) else x)
-                            df2[i] = df2[i].apply(lambda x: v if isinstance(x,str) and k in x else x)
-                # Create a ColumnTransformer to handle the categorical variables
-                predictions = []
-                for i in range(len(df2)):
-                    row = df2.iloc[i, :]
-                # Use the transform method of the ColumnTransformer to convert the selected row
-                    data = row.to_numpy().reshape(1, -1)
-                    prediction = model.predict(predictor,data)
-                    predictions.append(prediction[0])
-                
-                #df = df[list(gradesheet_keys)]
-                df['Predicted Grade'] = predictions
-                
-                if len(predictions) == 1:
-                    generate_report(df)
-                else:
+                if predictor:
+                    df2 = df.copy()
+                    df2.drop( [i for i in df.columns if i not in keys],axis=1, inplace=True)
+                    for i in model.categorical_columns:
+                        for k,v in dictionaries[i].items():
+                                df2[i] = df2[i].apply(lambda x:x.lower() if isinstance(x,str) else x)
+                                df2[i] = df2[i].apply(lambda x: v if isinstance(x,str) and k in x else x)
+                    # Create a ColumnTransformer to handle the categorical variables
+                    predictions = []
+                    for i in range(len(df2)):
+                        row = df2.iloc[i, :]
+                    # Use the transform method of the ColumnTransformer to convert the selected row
+                        data = row.to_numpy().reshape(1, -1)
+                        prediction = model.predict(predictor,data)
+                        predictions.append(prediction[0])
                     
-                    show = list(gradesheet_keys)
-                    data = df[show+['Predicted Grade']] if show else df
-                    a,b,c = st.columns([1,8,1])
-                    with b:
-                        st.subheader('Predicted Results Per Your Selection')
-                        st.dataframe(data.style.apply(highlight_survived, axis=1))
-                        #st.dataframe(data.style.applymap(color_survived, subset=['Predicted Grade']))
+                    #df = df[list(gradesheet_keys)]
+                    df['Predicted Grade'] = predictions
                     
-                        csv = convert_df(data)
-                        st.download_button(
-                            label = "Download Report",
-                            data = csv,
-                            file_name=f"report.csv",
-                            mime = 'text/csv'
-                        )
-                    st.balloons()
+                    if len(predictions) == 1:
+                        generate_report(df)
+                    else:
+                        
+                        show = list(gradesheet_keys)
+                        data = df[show+['Predicted Grade']] if show else df
+                        a,b,c = st.columns([1,8,1])
+                        with b:
+                            st.subheader('Predicted Results Per Your Selection')
+                            st.dataframe(data.style.apply(highlight_survived, axis=1))
+                            #st.dataframe(data.style.applymap(color_survived, subset=['Predicted Grade']))
+                        
+                            csv = convert_df(data)
+                            st.download_button(
+                                label = "Download Report",
+                                data = csv,
+                                file_name=f"report.csv",
+                                mime = 'text/csv'
+                            )
+                        st.balloons()
             else:   
                 st.info("No Data For this User")
 
@@ -1060,6 +1152,7 @@ ENTITY_VIEWS = {
     ENTITY[1]: add_lecturer,
     ENTITY[2]: add_student,
     ENTITY[3]: add_course,
+    ENTITY[4]: add_gradesheet
 }
 
 def lecturer_page():
@@ -1148,26 +1241,32 @@ def generate_report(data):
             "health",
             "wassce"
         ]
-        col1, col2  = st.columns(2)
-        for c,factor in enumerate(demographic_factors):
-            col = col1 if c % 2 == 0 else col2
-            with col:
-                disp = factor.title().replace('_',' ')
-                
-                new_title = f"""
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        with st.expander('Show Demographic information'):
+            col1, col2,col3  = st.columns(3)
+            for c,factor in enumerate(demographic_factors):
+                if c % 3 == 0:
+                    col = col1
+                elif c % 3 == 1:
+                    col = col2
+                else:
+                    col = col3
+                with col:
+                    disp = factor.title().replace('_',' ')
+                    
+                    new_title = f"""
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0 text-info">{disp}</h6>
+                    <div class="row">
+                        <div class="col-sm-3">
+                        <h6 class="mb-0 text-danger">{disp}:</h6>
+                        </div>
+                        <div class="col-sm-9 text-success">
+                        {data[factor].iloc[0]}
+                        </div>
                     </div>
-                    <div class="col-sm-9 text-success">
-                      {data[factor].iloc[0]}
-                    </div>
-                  </div>
-                  <hr>
-            """
-                st.markdown(new_title, unsafe_allow_html=True)
+                    <hr>
+                """
+                    st.markdown(new_title, unsafe_allow_html=True)
 
         # Show the predicted grades for each course
         st.subheader("Predicted Grades:")
@@ -1221,6 +1320,9 @@ def student_dashboard(student ):
 if __name__ == "__main__":
     assign_courses_to_lec()
     assign_courses_to_students()
+    all_course_list = [i.id for i in Course.select()]
+    all_students_list = [i.id for i in Student.select()]
+    all_lecturer_list = [i.name for i in Lecturer.select()]
     current_user = None
     if "main_page" not in session:
         session["main_page"] = None
@@ -1251,6 +1353,21 @@ if __name__ == "__main__":
             pass
 
         elif current_user.role == "Administrator":
+            html =f"""
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+             <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    <div class="mt-1">
+                      <h4>{current_user.name}</h4>
+                      <p class="text-secondary  fw-bold mb-1">{current_user.role}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            """
+            st.sidebar.markdown(html, unsafe_allow_html=True)
             admin_page()
 
         elif current_user.role == "Lecturer":
