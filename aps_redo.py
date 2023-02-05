@@ -899,12 +899,13 @@ def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
         elif i['mid_score'] == None:
             dataset.remove(i)
 
-
+    
     
     df = pd.DataFrame.from_dict(dataset)
+    df
     if dataset:
         df = df.loc[df['course_code'].isin(courses)]
-
+    df
     return df
 
 def generate_data(cls, cls_string):
