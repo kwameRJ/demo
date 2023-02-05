@@ -489,7 +489,7 @@ def create_user(entity_title, entity={}):
         if key == "program":
             entity["school"] = SCHOOL_PROGRAMS[entity[key]]
 
-        if 'score' in key and entity[key]==-1:
+        if 'score' in key and entity[key]<0:
                 entity[key] = None
 
         if key == 'final_grade' and (entity[key]=='nan' or entity[key]=='None'):
@@ -527,7 +527,6 @@ def create_user(entity_title, entity={}):
         st.error("ID is not valid")
     
 
-
 def save_user(entity_title, entity={}):
     try:
         for key in ENTITY_KEYS[entity_title]:
@@ -553,7 +552,7 @@ def save_user(entity_title, entity={}):
                     d[i] = session[f"{entity_title}_{i}_demo"]
                 entity["demographics"] = d
         
-            if 'score' in key and entity[key]==-1:
+            if 'score' in key and entity[key]<0:
                 entity[key] = None
 
             if key == 'final_grade' and (entity[key]=='nan' or entity[key]=='None'):
@@ -866,7 +865,9 @@ def data_submenu(entity):
                 generate_hue(df,hue)
             if countplot:
                 generate_countplot(df,countplot)
-            
+
+
+
 def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
     values = list(Gradesheet.select().dicts())
     dataset = []
@@ -882,9 +883,11 @@ def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
         for id in ids:
             values += list(Gradesheet.select().where(Gradesheet.id == id.upper()).dicts())
         
-    values
+    
     for val in list(values):
         try:
+            if val['final_grade'] == 'nan':
+                val['final_grade ']== None
             user = Student.get(Student.id == val['id'])
             dem = user.demographics
             entry = {**val, **dem}
@@ -899,13 +902,12 @@ def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
         elif i['mid_score'] == None:
             dataset.remove(i)
 
-    
+
     
     df = pd.DataFrame.from_dict(dataset)
-    df
     if dataset:
         df = df.loc[df['course_code'].isin(courses)]
-    df
+
     return df
 
 def generate_data(cls, cls_string):
@@ -1377,3 +1379,4 @@ if __name__ == "__main__":
     else:
         login_page()
 
+# create a string of HTML and CSS
