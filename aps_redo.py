@@ -882,7 +882,7 @@ def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
         for id in ids:
             values += list(Gradesheet.select().where(Gradesheet.id == id.upper()).dicts())
         
-    
+    values
     for val in list(values):
         try:
             user = Student.get(Student.id == val['id'])
