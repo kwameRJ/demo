@@ -232,18 +232,17 @@ def assign_courses_to_lec():
 
         if course.lecturer != 'Unassigned':
             try:
-               lec = Lecturer.get(Lecturer.name == course.lecturer)
+                lec = Lecturer.get(Lecturer.name == course.lecturer)
+                if course.school != 'GENERAL' and course.school != lec.school:
+                  #print(course, course.lecturer)
+                  print(lecturers)
+                  course.lecturer = 'Unassigned'
+                  course.save()
+                else:
+                  lecturers[lec].append(course.id)
             except:
-               lec =course.lecturer
-            
-            if course.school != 'GENERAL' and course.school != lec.school:
-              #print(course, course.lecturer)
-              print(lecturers)
               course.lecturer = 'Unassigned'
               course.save()
-            else:
-              lecturers[lec].append(course.id)
-                
 
     for key, val in lecturers.items():
         print(key, val)
