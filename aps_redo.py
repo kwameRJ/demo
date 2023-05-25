@@ -24,6 +24,7 @@ userform = mainPage.container()
 grid, edit = mainSection.columns([3, 1])
 warningSection = mainSection.container()
 
+
 ENTITY = [
     "Administrator",
     "Lecturer",
@@ -935,38 +936,24 @@ def generate_data(cls, cls_string):
 
 
 def generate_grid(df, cls_string):
-    gd = GridOptionsBuilder.from_dataframe(df)
-    gd.configure_pagination(enabled=True)
+    #gd = GridOptionsBuilder.from_dataframe(df)
+    #gd.configure_pagination(enabled=True)
 
-    if "grid_multiple_select" not in session:
-        session["grid_multiple_select"] = False
+    #if "grid_multiple_select" not in session:
+        #session["grid_multiple_select"] = False
 
-    if session["grid_multiple_select"]:
-        gd.configure_selection(selection_mode="multiple", use_checkbox=True)
-        editable = False
-    else:
-        gd.configure_selection(selection_mode="single", use_checkbox=False)
-        editable = True
+    #if session["grid_multiple_select"]:
+        #gd.configure_selection(selection_mode="multiple", use_checkbox=True)
+        #editable = False
+    #else:
+        #gd.configure_selection(selection_mode="single", use_checkbox=False)
+        #editable = True
 
-    gd.configure_default_column(editable=editable, groupable=True)
-    gd.configure_column("id", editable=False)
+    #gd.configure_default_column(editable=editable, groupable=True)
+    #gd.configure_column("id", editable=False)
 
-    gridOptions = gd.build()
-    st.write(df)
-    grid_table = AgGrid(
-        df,
-        gridOptions=gridOptions,
-        fit_columns_on_grid_load=True,
-        height=500,
-        width="100%",
-        theme="streamlit",
-        update_mode=GridUpdateMode.SELECTION_CHANGED | GridUpdateMode.GRID_CHANGED,
-        reload_data=editable,
-        allow_unsafe_jscode=True,
-        editable=editable,
-        enable_enterprise_modules=False,
-    )
-
+    #gridOptions = gd.build()
+    
     return grid_table
 
 
@@ -1000,11 +987,49 @@ def user_data_view(cls, cls_string):
                 )
                 data = df[show] if show else df
 
-            grid_table = generate_grid(data, cls_string)
-            if "grid" not in session:
-                session["grid"] = grid_table
+            
+            grid_table = st.experimental_data_editor(df, key="data_editor",num_rows='dynamic')
+            
+            edited_table = session["data_editor"]
+            
+            
+            if st.button('Save Changes'):
+                edited_cells = edited_table['edited_cells']
+                added_rows = edited_table['added_rows']
+                deleted_rows = edited_table['deleted_rows']
+                if edited_cells:
+                    for key, val in edited_cells.items():
+                        data_index, col_index =key.split(':')
+                        col = list(df.columns)[int(col_index)-1]
+                        if col not in ['role', 'id']:
+                            data = dataset[int(data_index)-1]
+                            #st.write(data_index, col_index,  col, data, val)
+                            user = cls.get(cls.id == data['id'])
+                            data[col] = val
+                            update_entity(user, **data)
 
-            selected_rows = grid_table["selected_rows"]
+                if added_rows:
+                    for row in deleted_rows:
+                        pass
+                if deleted_rows:
+                    for row in deleted_rows:
+                        try:
+                         if cls_string == 'gradesheet':
+                             Gradesheet.delete().where((cls.id) == i['id'], cls.course_code==i['course_code']).execute()
+                         else:
+                             if user.id == session["current_user"].id:
+                                 warning = "Cannot Delete current user"
+                                 rerun = False
+
+                             else:
+                                 user.delete_instance()
+                        except:
+                            warning = warning if warning else "User Not Found"
+                            st.warning(warning)
+            
+            
+
+            #selected_rows = grid_table["selected_rows"]
 
             st.sidebar.write("\n\n\n\n\n\n\n")
             st.sidebar.subheader("Table Options")
@@ -1019,48 +1044,47 @@ def user_data_view(cls, cls_string):
                 on_change=column_selection,
             )
             
-            if selected_rows:
-                primary_key = "id"
-                if len(selected_rows) == 1:
-                    user = cls.get(cls.id == selected_rows[0][primary_key])
-                    if st.sidebar.checkbox('Edit'):
-                            if cls_string != "trainingdata":
-                                entity_view(cls_string.title(), user)
+         #if selected_rows:
+         #    primary_key = "id"
+         #    if len(selected_rows) == 1:
+         #        user = cls.get(cls.id == selected_rows[0][primary_key])
+         #        if st.sidebar.checkbox('Edit'):
+         #                if cls_string != "trainingdata":
+         #                    entity_view(cls_string.title(), user)
 
-                if st.sidebar.button("Delete Selected Data"):
-                    warning = ""
-                    for i in selected_rows:
-                        try:
-                            if cls_string == 'gradesheet':
-                                Gradesheet.delete().where(eval(f"cls.{primary_key}") == i[primary_key], cls.course_code==i['course_code']).execute()
-                            else:
-                                if user.id == session["current_user"].id:
-                                    warning = "Cannot Delete current user"
-                                    rerun = False
+         #    if st.sidebar.button("Delete Selected Data"):
+         #        warning = ""
+         #        for i in selected_rows:
+         #            try:
+         #                if cls_string == 'gradesheet':
+         #                    Gradesheet.delete().where(eval(f"cls.{primary_key}") == i[primary_key], cls.course_code==i['course_code']).execute()
+         #                else:
+         #                    if user.id == session["current_user"].id:
+         #                        warning = "Cannot Delete current user"
+         #                        rerun = False
 
-                                else:
-                                    user.delete_instance()
+         #                    else:
+         #                        user.delete_instance()
 
-                            rerun = True
-                            st.success("User Deleted Successfully")
+         #                rerun = True
+         #                st.success("User Deleted Successfully")
 
-                        except:
-                            warning = warning if warning else "User Not Found"
-                            st.warning(warning)
-                            rerun = False
+         #            except:
+         #                warning = warning if warning else "User Not Found"
+         #                st.warning(warning)
+         #                rerun = False
 
-                    if rerun:
-                        dataset = generate_data(cls, cls_string)
-                        df = pd.DataFrame.from_dict(dataset)
-                        del grid_table
-                        session["grid"] = generate_grid(df, cls_string)
-
-            with st.sidebar.expander("Delete All Data"):
-                rerun = False
-                response = st.button('Confirm Deletion')
-                if response:
-                    cls.delete().execute()
-                    st.success('All Data Deleted')
+         #        if rerun:
+         #            dataset = generate_data(cls, cls_string)
+         #            df = pd.DataFrame.from_dict(dataset)
+         #            del grid_table
+         #            session["grid"] = generate_grid(df, cls_string)
+         #with st.sidebar.expander("Delete All Data"):
+         #    rerun = False
+         #    response = st.button('Confirm Deletion')
+         #    if response:
+         #        cls.delete().execute()
+         #        st.success('All Data Deleted')
                 
 
         # st.write(grid_table["selected_rows"])
