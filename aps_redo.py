@@ -952,6 +952,7 @@ def generate_grid(df, cls_string):
     gd.configure_column("id", editable=False)
 
     gridOptions = gd.build()
+    st.write(df)
     grid_table = AgGrid(
         df,
         gridOptions=gridOptions,
