@@ -888,7 +888,7 @@ def generate_gradesheet_model(courses=all_course_list, ids=[], lecturers = []):
     for val in list(values):
         try:
             if val['final_grade'] == 'nan':
-                val['final_grade ']== None
+                val['final_grade']== None
             user = Student.get(Student.id == val['id'])
             dem = user.demographics
             entry = {**val, **dem}
@@ -1009,8 +1009,14 @@ def user_data_view(cls, cls_string):
                             update_entity(user, **data)
 
                 if added_rows:
-                    for row in deleted_rows:
-                        pass
+                    for row in added_rows:
+                        data = {}
+                        for i in ENTITY_KEYS[cls_string]:
+                            data[i] = row[str(ENTITY_KEYS[cls_string].index(i))]
+
+                        create_entity(cls, **data)
+            
+                        
                 if deleted_rows:
                     for row in deleted_rows:
                         try:
