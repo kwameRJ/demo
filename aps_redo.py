@@ -182,7 +182,7 @@ def login_page():
                     session["current_user"] = user
                     st.success(f"Logged in as {role}")
                     # redirect to appropriate page
-                    st.experimental_rerun()
+                    st.rerun()
 
                 else:
                     st.error("Invalid credentials")
